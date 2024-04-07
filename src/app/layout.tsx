@@ -20,6 +20,7 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
+	const currentYear = new Date().getFullYear();
 	return (
 		<html lang='en' className='dark'>
 			<body
@@ -28,7 +29,21 @@ export default function RootLayout({
 					'font-sans bg-white dark:bg-black relative'
 				)}>
 				<ThemeSwitcher />
-				{children}
+				<div className='mt-[84px] md:mt-24'>{children}</div>
+				<footer className='max-w-[1280px] m-auto mt-14 py-5 xl:px-20 px-8'>
+					<p className='text-dark-grey-400 text-sm leading-5 text-center md:text-left font-medium'>
+						&copy; {`${currentYear}`} - Oluwadamilola Babalola.
+						Designed by{' '}
+						<a
+							href='/'
+							className='dark:text-light-grey-100 text-black'>
+							Templatecookie
+						</a>{' '}
+						and coded in Visual Studio Code by yours truly. Built
+						with Next.js and Tailwind CSS, deployed with Netlify.
+						All text is set in the Inter typeface.
+					</p>
+				</footer>
 			</body>
 		</html>
 	);
