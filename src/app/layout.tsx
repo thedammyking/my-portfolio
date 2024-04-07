@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import cx from 'classnames';
+import ThemeSwitcher from 'src/components/ThemeSwitcher';
 
 const inter = Inter({
 	subsets: ['latin'],
@@ -24,8 +25,9 @@ export default function RootLayout({
 			<body
 				className={cx(
 					inter.variable,
-					'bg-white dark:bg-black relative'
+					'font-sans bg-white dark:bg-black relative'
 				)}>
+				<ThemeSwitcher />
 				{children}
 			</body>
 		</html>
