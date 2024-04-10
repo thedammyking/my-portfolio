@@ -1,3 +1,5 @@
+'use client';
+
 import { useRouter } from 'next/navigation';
 import ErrorPage from 'src/components/ErrorPage';
 
