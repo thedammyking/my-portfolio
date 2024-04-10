@@ -1,8 +1,10 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import './globals.css';
+import '../styles/base.scss';
+import '../styles/global.css';
 import cx from 'classnames';
 import ThemeSwitcher from 'src/components/ThemeSwitcher';
+import Footer from 'src/components/Footer';
 
 const inter = Inter({
 	subsets: ['latin'],
@@ -20,30 +22,12 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
-	const currentYear = new Date().getFullYear();
 	return (
 		<html lang='en' className='dark'>
-			<body
-				className={cx(
-					inter.variable,
-					'font-sans bg-white dark:bg-black relative pt-[84px] md:pt-24'
-				)}>
+			<body className={cx(inter.variable, 'body')}>
 				<ThemeSwitcher />
 				{children}
-				<footer className='max-w-[1280px] mx-auto py-5 xl:px-20 px-8'>
-					<p className='text-dark-grey-400 text-sm leading-5 text-center md:text-left font-medium'>
-						&copy; {`${currentYear}`} - Oluwadamilola Babalola.
-						Designed by{' '}
-						<a
-							href='/'
-							className='dark:text-light-grey-100 text-black'>
-							Templatecookie
-						</a>{' '}
-						and coded in Visual Studio Code by yours truly. Built
-						with Next.js and Tailwind CSS, deployed with Netlify.
-						All text is set in the Inter typeface.
-					</p>
-				</footer>
+				<Footer />
 			</body>
 		</html>
 	);

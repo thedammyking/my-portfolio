@@ -14,7 +14,10 @@ const config: Config = {
 			colors: {
 				black: '#1A1A1A',
 				white: '#FFFFFF',
-				accent: '#158CE1',
+				accent: {
+					light: '#158CE1',
+					dark: '#0279CE',
+				},
 				'dark-grey': {
 					100: '#D6D4D4',
 					200: '#A8A8A8',
