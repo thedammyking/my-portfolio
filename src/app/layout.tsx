@@ -26,11 +26,11 @@ export default function RootLayout({
 			<body
 				className={cx(
 					inter.variable,
-					'font-sans bg-white dark:bg-black relative'
+					'font-sans bg-white dark:bg-black relative pt-[84px] md:pt-24'
 				)}>
 				<ThemeSwitcher />
-				<div className='mt-[84px] md:mt-24'>{children}</div>
-				<footer className='max-w-[1280px] m-auto mt-14 py-5 xl:px-20 px-8'>
+				{children}
+				<footer className='max-w-[1280px] mx-auto py-5 xl:px-20 px-8'>
 					<p className='text-dark-grey-400 text-sm leading-5 text-center md:text-left font-medium'>
 						&copy; {`${currentYear}`} - Oluwadamilola Babalola.
 						Designed by{' '}
