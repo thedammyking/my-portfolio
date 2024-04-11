@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { ThemeMode } from 'src/types/globals';
 
 const useSetThemeToDocument = (mode: ThemeMode) => {

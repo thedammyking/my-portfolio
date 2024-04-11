@@ -1,10 +1,11 @@
+import cx from 'classnames';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import Footer from 'src/components/Footer';
+import ThemeSwitcher from 'src/components/ThemeSwitcher';
+
 import '../styles/base.scss';
 import '../styles/global.css';
-import cx from 'classnames';
-import ThemeSwitcher from 'src/components/ThemeSwitcher';
-import Footer from 'src/components/Footer';
 
 const inter = Inter({
 	subsets: ['latin'],

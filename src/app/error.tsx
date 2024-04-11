@@ -1,8 +1,9 @@
 'use client';
 
-import { default as ErrorType } from 'next/error';
 import React from 'react';
+import { default as ErrorType } from 'next/error';
 import ErrorPage from 'src/components/ErrorPage';
+
 import useSentryErrorReport from 'src/hooks/useSentryErrorReport';
 
 interface ErrorProps {

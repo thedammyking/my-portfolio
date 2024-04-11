@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Loader } from 'src/assets';
 
 export default function Loading() {

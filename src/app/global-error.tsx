@@ -1,16 +1,18 @@
 'use client';
 
-import Error from 'next/error';
 import React from 'react';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import cx from 'classnames';
-import ThemeSwitcher from 'src/components/ThemeSwitcher';
+import type { Metadata } from 'next';
+import Error from 'next/error';
+import { Inter } from 'next/font/google';
 import ErrorPage from 'src/components/ErrorPage';
+import Footer from 'src/components/Footer';
+import ThemeSwitcher from 'src/components/ThemeSwitcher';
+
+import useSentryErrorReport from 'src/hooks/useSentryErrorReport';
+
 import '../styles/base.scss';
 import '../styles/global.css';
-import Footer from 'src/components/Footer';
-import useSentryErrorReport from 'src/hooks/useSentryErrorReport';
 
 const inter = Inter({
 	subsets: ['latin'],
