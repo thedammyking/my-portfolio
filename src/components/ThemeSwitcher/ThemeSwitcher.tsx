@@ -23,10 +23,8 @@ const ThemeSwitcher: React.FC = () => {
   });
 
   const toggleThemeMode = () => {
-    console.log('activeMode :>> ', activeMode);
     if (activeMode === ThemeMode.Dark) return setTheme(ThemeMode.Light);
     if (activeMode === ThemeMode.Light) return setTheme(ThemeMode.Dark);
-    console.log('toggleThemeMode :>> ', 'done');
   };
 
   useSetThemeToDocument(activeMode as ThemeMode);
