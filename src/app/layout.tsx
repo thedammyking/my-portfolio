@@ -2,8 +2,11 @@ import React from 'react';
 import cx from 'classnames';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import { ThemeProvider } from 'next-themes';
 import Footer from 'src/components/Footer';
 import ThemeSwitcher from 'src/components/ThemeSwitcher';
+
+import { THEME_MODE_KEY } from 'src/data/contants';
 
 import '../styles/base.scss';
 import '../styles/global.css';
@@ -25,11 +28,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en' className='dark'>
+    <html suppressHydrationWarning lang='en'>
       <body className={cx(inter.variable, 'body')}>
-        <ThemeSwitcher />
-        {children}
-        <Footer />
+        <ThemeProvider attribute='class' storageKey={THEME_MODE_KEY} enableSystem={false}>
+          <ThemeSwitcher />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
