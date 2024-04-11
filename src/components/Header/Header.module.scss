@@ -1,0 +1,8 @@
+.Header {
+  h1 {
+    @apply font-medium md:font-bold #{!important};
+  }
+  h4 {
+    font-weight: normal !important;
+  }
+}
