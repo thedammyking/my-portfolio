@@ -12,7 +12,7 @@ import styles from './ThemeSwitcher.module.scss';
 
 const ThemeSwitcher: React.FC = () => {
   const [isMounted, setIsMounted] = React.useState(false);
-  const { theme: activeMode, setTheme } = useTheme();
+  const { systemTheme, theme: activeMode, setTheme } = useTheme();
 
   const toggleThemeMode = () => {
     if (activeMode === ThemeMode.Dark) return setTheme(ThemeMode.Light);
@@ -22,6 +22,12 @@ const ThemeSwitcher: React.FC = () => {
   React.useEffect(() => {
     setIsMounted(true);
   }, []);
+
+  React.useEffect(() => {
+    if (systemTheme && activeMode === ThemeMode.System) {
+      setTheme(systemTheme);
+    }
+  }, [systemTheme, activeMode, setTheme]);
 
   return (
     <div className='z-50 fixed w-full left-0 right-0 flex justify-center top-4 md:top-6'>

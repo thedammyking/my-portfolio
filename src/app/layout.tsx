@@ -8,6 +8,8 @@ import ThemeSwitcher from 'src/components/ThemeSwitcher';
 
 import { THEME_MODE_KEY } from 'src/data/contants';
 
+import { ThemeMode } from 'src/types/globals';
+
 import '../styles/base.scss';
 import '../styles/global.css';
 
@@ -30,7 +32,13 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang='en'>
       <body className={cx(inter.variable, 'body')}>
-        <ThemeProvider attribute='class' storageKey={THEME_MODE_KEY} enableSystem={false}>
+        <ThemeProvider
+          attribute='class'
+          storageKey={THEME_MODE_KEY}
+          enableSystem
+          themes={[ThemeMode.Dark, ThemeMode.Light]}
+          defaultTheme={ThemeMode.Dark}
+        >
           <ThemeSwitcher />
           {children}
           <Footer />
