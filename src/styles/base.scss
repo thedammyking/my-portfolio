@@ -8,7 +8,7 @@ h6 {
 }
 
 .body {
-  @apply font-sans relative pt-[84px] md:pt-24;
+  @apply font-sans relative sm:pt-[84px] md:pt-[96px] lg:pt-0;
 }
 
 :root {

@@ -1,0 +1,13 @@
+.Navigation {
+  &Item {
+    &_active {
+      @apply text-black dark:text-white;
+
+      & > span {
+        &:nth-of-type(2) {
+          @apply w-16;
+        }
+      }
+    }
+  }
+}

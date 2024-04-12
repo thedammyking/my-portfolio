@@ -4,9 +4,19 @@ const config: Config = {
   darkMode: 'selector',
   content: ['./src/components/**/*.{js,ts,jsx,tsx,mdx}', './src/app/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
+    screens: {
+      sm: '320px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px'
+    },
     extend: {
       fontFamily: {
         sans: ['var(--font-inter)']
+      },
+      gridTemplateColumns: {
+        content: '1fr minmax(34.921875%, 477px)'
       },
       colors: {
         black: '#1A1A1A',
