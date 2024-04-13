@@ -1,17 +1,29 @@
-import About from 'src/components/About';
-import Articles from 'src/components/Articles';
-import Experience from 'src/components/Experience';
-import Header from 'src/components/Header';
-import Projects from 'src/components/Projects';
+import React from 'react';
+import { uniqueId } from 'lodash';
+
+import ContentContainer from '@/components/ContentContainer';
+import Header from '@/components/Header';
+import { CONTENT_SECTIONS } from '@/data/contentSections';
+import ActiveSectionStoreProvider from '@/providers/ActiveSectionStoreProvider';
+import { ContentSection } from '@/types/globals';
 
 export default function Home() {
+  const contentSectionKeys = Object.keys(CONTENT_SECTIONS) as ContentSection[];
   return (
-    <main className='px-4 md:px-8 lg:px-0'>
-      <Header />
-      <About />
-      <Experience />
-      <Projects />
-      <Articles />
-    </main>
+    <ActiveSectionStoreProvider>
+      <div className='lg:flex lg:justify-between lg:gap-24'>
+        <Header />
+        <main id='content' className='lg:pt-24 lg:w-1/2 lg:py-24'>
+          {contentSectionKeys.map(key => {
+            const { label, content: Content } = CONTENT_SECTIONS[key];
+            return (
+              <ContentContainer key={uniqueId('content-container')} id={key} label={label}>
+                <Content />
+              </ContentContainer>
+            );
+          })}
+        </main>
+      </div>
+    </ActiveSectionStoreProvider>
   );
 }

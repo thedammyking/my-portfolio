@@ -1,30 +1,39 @@
 import React, { HTMLAttributes } from 'react';
 import cx from 'classnames';
-import { omit } from 'lodash';
 
-import styles from './Navigation.module.scss';
-
-interface NavigationItemProps extends HTMLAttributes<HTMLParagraphElement> {
+interface NavigationItemProps extends Omit<HTMLAttributes<HTMLParagraphElement>, 'children'> {
   label: string;
   active?: boolean;
+  inContent?: boolean;
 }
 
-const NavigationItem: React.FC<NavigationItemProps> = ({ label, active, className, ...props }) => {
+const NavigationItem: React.FC<NavigationItemProps> = ({
+  label,
+  active,
+  inContent,
+  className,
+  ...props
+}) => {
   return (
-    <p
-      className={cx(
-        'group py-2 w-max text-dark-grey-400 hover:text-black active:text-black dark:hover:text-white dark:active:text-white text-xs font-bold uppercase leading-none flex items-center gap-4',
-        className,
-        {
-          [styles.NavigationItem_active]: active
-        }
-      )}
-      {...omit(props, ['children'])}
+    <div
+      className={cx('group lg:w-max', {
+        ['is-active']: active
+      })}
     >
-      <span className='sr-only'>{label}</span>
-      <span className='w-8 h-px text-current bg-current group-hover:w-16 group-active:w-16 transition-all ease-in-out duration-300' />
-      {label}
-    </p>
+      <p
+        className={cx(
+          ' py-2 w-max text-dark-grey-400 hover:text-black active:text-black dark:hover:text-white dark:active:text-white group-[.is-active]:text-black group-[.is-active]:dark:text-white text-xs font-bold uppercase leading-none flex items-center gap-4 transition-colors ease-in-out duration-200',
+          className
+        )}
+        {...props}
+      >
+        <span className='sr-only'>{label}</span>
+        {!inContent && (
+          <span className='w-8 h-px text-current bg-current group-hover:w-16 group-active:w-16 group-[.is-active]:w-16  transition-width ease-in-out duration-200' />
+        )}
+        {label}
+      </p>
+    </div>
   );
 };
 

@@ -4,9 +4,8 @@ import React from 'react';
 import cx from 'classnames';
 import { useTheme } from 'next-themes';
 
-import { LightIcon, MoonIcon } from 'src/assets';
-
-import { ThemeMode } from 'src/types/globals';
+import { LightIcon, MoonIcon } from '@/assets';
+import { ThemeMode } from '@/types/globals';
 
 import styles from './ThemeSwitcher.module.scss';
 

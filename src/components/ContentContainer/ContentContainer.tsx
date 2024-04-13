@@ -1,9 +1,13 @@
+'use client';
+
 import React, { HTMLAttributes } from 'react';
+import { useInView } from 'react-intersection-observer';
 import cx from 'classnames';
 
-import { NavigationItem } from '../Navigation';
+import { useActiveSectionStore } from '@/providers/ActiveSectionStoreProvider';
+import { ContentSection } from '@/types/globals';
 
-import styles from './ContentContainer.module.scss';
+import { NavigationItem } from '../Navigation';
 
 interface ContentContainerProps extends HTMLAttributes<HTMLDivElement> {
   label: string;
@@ -15,20 +19,27 @@ const ContentContainer: React.FC<ContentContainerProps> = ({
   className,
   ...props
 }) => {
+  const setActiveSection = useActiveSectionStore(state => state.setActiveSection);
+  const { ref } = useInView({
+    onChange: (inView, entry) =>
+      inView && setActiveSection(entry.target.getAttribute('id') as ContentSection),
+    threshold: 0.5
+  });
+
   return (
-    <aside
+    <section
       {...props}
-      className={cx(styles.ContentContainer, 'w-full flex justify-center', className)}
+      className={cx(
+        'relative mb-16 md:mb-24 lg:mb-36 scroll-mt-16 lg:scroll-mt-24 lg:pt-0',
+        className
+      )}
+      ref={ref}
     >
-      <div className='w-full max-w-[1280px] lg:px-20 h-max'>
-        <div className='lg:ml-auto lg:max-w-[477px] lg:w-[42.589%]'>
-          <div className='lg:hidden w-full bg-[var(--background)'>
-            <NavigationItem label={label} className='py-[30px]' />
-          </div>
-          {children}
-        </div>
+      <div className='top-0 -mx-[16px] md:-mx-[32px] sticky z-20 w-screen py-[30px] px-4 md:px-8 lg:sr-only bg-[var(--background) backdrop-blur'>
+        <NavigationItem inContent active label={label} className='lg:sr-only py-0' />
       </div>
-    </aside>
+      {children}
+    </section>
   );
 };
 

@@ -1,3 +1,4 @@
+export { default as AngleUpIcon } from './AngleUpIcon';
 export { default as GitHubIcon } from './GitHubIcon';
 export { default as InstagramIcon } from './InstagramIcon';
 export { default as LightIcon } from './LightIcon';

@@ -2,29 +2,29 @@
 
 import React from 'react';
 import { default as ErrorType } from 'next/error';
-import ErrorPage from 'src/components/ErrorPage';
 
-import useSentryErrorReport from 'src/hooks/useSentryErrorReport';
+import ErrorPage from '@/components/ErrorPage';
+import useSentryErrorReport from '@/hooks/useSentryErrorReport';
 
 interface ErrorProps {
-	error: ErrorType & { digest?: string };
-	reset: () => void;
+  error: ErrorType & { digest?: string };
+  reset: () => void;
 }
 
 const Error: React.FC<ErrorProps> = ({ error, reset }) => {
-	useSentryErrorReport(error);
+  useSentryErrorReport(error);
 
-	return (
-		<ErrorPage
-			title='Oops!'
-			subTitle='Something went wrong'
-			description='An unexpected error occured while you are trying to access this resource'
-			action={{
-				onClick: () => reset(),
-				label: 'Reload',
-			}}
-		/>
-	);
+  return (
+    <ErrorPage
+      title='Oops!'
+      subTitle='Something went wrong'
+      description='An unexpected error occured while you are trying to access this resource'
+      action={{
+        onClick: () => reset(),
+        label: 'Reload'
+      }}
+    />
+  );
 };
 
 export default Error;

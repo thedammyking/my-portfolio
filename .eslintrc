@@ -27,8 +27,7 @@
               // Packages `react` related packages come first.
               ["^react", "^@?\\w"],
               // Internal packages.
-              ["^(@|components)(/.*|$)"],
-              ["^(@|src/sharedComponents)(/.*|$)"],
+              ["^(@|src/components)(/.*|$)"],
               ["^(@|src/assets)(/.*|$)"],
               ["^(@|src/modules)(/.*|$)"],
               ["^(@|src/hooks)(/.*|$)"],
@@ -38,6 +37,7 @@
               ["^(@|src/utils)(/.*|$)"],
               ["^(@|src/types)(/.*|$)"],
               ["^(@|src/services)(/.*|$)"],
+              ["^(@|src/providers)(/.*|$)"],
               // Side effect imports.
               ["^\\u0000"],
               // Parent imports. Put `..` last.

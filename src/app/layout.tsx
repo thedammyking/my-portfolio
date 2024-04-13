@@ -3,12 +3,12 @@ import cx from 'classnames';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { ThemeProvider } from 'next-themes';
-import Footer from 'src/components/Footer';
-import ThemeSwitcher from 'src/components/ThemeSwitcher';
 
-import { THEME_MODE_KEY } from 'src/data/contants';
-
-import { ThemeMode } from 'src/types/globals';
+import BackToTop from '@/components/BackToTop';
+import Footer from '@/components/Footer';
+import ThemeSwitcher from '@/components/ThemeSwitcher';
+import { THEME_MODE_KEY } from '@/data/contants';
+import { ThemeMode } from '@/types/globals';
 
 import '../styles/base.scss';
 import '../styles/global.css';
@@ -40,7 +40,10 @@ export default function RootLayout({
           defaultTheme={ThemeMode.Dark}
         >
           <ThemeSwitcher />
-          {children}
+          <div className='mx-auto min-h-screen max-w-screen-xl px-4 md:px-8 lg:px-20 '>
+            {children}
+          </div>
+          <BackToTop />
           <Footer />
         </ThemeProvider>
       </body>

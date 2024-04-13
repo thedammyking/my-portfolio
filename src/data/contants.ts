@@ -1,4 +1,4 @@
-import { GitHubIcon, InstagramIcon, LinkedInIcon, MailIcon, XIcon } from 'src/assets';
+import { GitHubIcon, InstagramIcon, LinkedInIcon, MailIcon, XIcon } from '@/assets';
 
 export const THEME_MODE_KEY = 'theme-mode';
 
@@ -29,5 +29,3 @@ export const CONTACT_LINKS = [
     url: ''
   }
 ];
-
-export const NAVIGATION_LINKS = ['About', 'Experience', 'Projects', 'ARTICLES'];
