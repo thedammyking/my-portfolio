@@ -3,21 +3,17 @@ import React, { SVGAttributes } from 'react';
 const XIcon: React.FC<SVGAttributes<any>> = props => {
   return (
     <svg
-      width='24px'
-      height='24px'
-      viewBox='0 0 24 24'
-      strokeWidth='1.5'
+      width='48'
+      height='48'
+      viewBox='0 0 48 48'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      color='currentcolor'
       {...props}
     >
       <path
-        d='M16.8198 20.7684L3.75317 3.96836C3.44664 3.57425 3.72749 3 4.22678 3H6.70655C6.8917 3 7.06649 3.08548 7.18016 3.23164L20.2468 20.0316C20.5534 20.4258 20.2725 21 19.7732 21H17.2935C17.1083 21 16.9335 20.9145 16.8198 20.7684Z'
-        stroke='currentcolor'
-        strokeWidth='1.5'
-      ></path>
-      <path d='M20 3L4 21' stroke='currentcolor' strokeWidth='1.5' strokeLinecap='round'></path>
+        d='M36.6526 3.80782H43.3995L28.6594 20.6548L46 43.5798H32.4225L21.7881 29.6759L9.61989 43.5798H2.86886L18.6349 25.56L2 3.80782H15.9222L25.5348 16.5165L36.6526 3.80782ZM34.2846 39.5414H38.0232L13.8908 7.63408H9.87892L34.2846 39.5414Z'
+        fill='currentcolor'
+      />
     </svg>
   );
 };
