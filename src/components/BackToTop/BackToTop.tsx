@@ -37,7 +37,7 @@ const BackToTop = () => {
       <div className='w-full max-w-[1280px] '>
         <button
           aria-label='Back To Top'
-          className='relative w-10 h-10 p-1 bg-light-grey-100 dark:bg-dark-grey-600 lg:hover:bg-dark-grey-600 lg:dark:hover:bg-light-grey-100 rounded-full overflow-hidden flex justify-center items-center ml-auto xl:mr-20 lg:mr-12 md:mr-8 mr-4 text-black dark:text-white lg:hover:text-white lg:dark:hover:text-black transition-all ease-in-out duration-300'
+          className='relative w-10 h-10 p-1 bg-light-grey-100 dark:bg-dark-grey-600 lg:hover:bg-dark-grey-600 lg:dark:hover:bg-light-grey-100 rounded-full overflow-hidden flex justify-center items-center ml-auto xl:mr-20 lg:mr-12 md:mr-8 mr-4 text-black dark:text-white lg:hover:text-white lg:dark:hover:text-black lg:transition-all lg:ease-in-out lg:duration-300'
           onClick={() =>
             window?.scrollTo({
               top: 0,
@@ -45,7 +45,7 @@ const BackToTop = () => {
             })
           }
         >
-          <AngleUpIcon />
+          <AngleUpIcon className='text-current' />
         </button>
       </div>
     </div>
