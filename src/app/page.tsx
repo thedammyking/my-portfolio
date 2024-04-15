@@ -15,7 +15,7 @@ export default function Home() {
         <Header />
         <main
           id='content'
-          className='lg:pt-24 lg:w-1/2 pb-12 lg:py-24 flex flex-col gap-10 md:gap-16 lg:gap-24'
+          className='lg:w-1/2 pb-12 lg:py-24 flex flex-col gap-10 md:gap-16 lg:gap-24'
         >
           {contentSectionKeys.map(key => {
             const { label, content: Content } = CONTENT_SECTIONS[key];

@@ -29,11 +29,11 @@ const ThemeSwitcher: React.FC = () => {
   }, [systemTheme, activeMode, setTheme]);
 
   return (
-    <div className='z-50 fixed w-full left-0 right-0 flex justify-center top-4 md:top-6'>
+    <div className='fixed w-full left-0 right-0 flex justify-center top-4 md:top-6'>
       <div className='w-full max-w-[1280px]'>
         <button
           aria-label='Theme Switch'
-          className='relative w-[76px] h-10 p-1 bg-light-grey-100 dark:bg-dark-grey-600 rounded-full overflow-hidden flex justify-between items-center ml-auto xl:mr-20 lg:mr-12 md:mr-8 mr-4 text-black dark:text-white'
+          className='z-50 relative w-[76px] h-10 p-1 bg-light-grey-100 dark:bg-dark-grey-600 rounded-full overflow-hidden flex justify-between items-center ml-auto xl:mr-20 lg:mr-12 md:mr-8 mr-4 text-black dark:text-white'
           onClick={toggleThemeMode}
         >
           <span className='sr-only'>Switch Theme</span>

@@ -10,7 +10,7 @@ import { ButtonVariant } from '@/types/enums';
 import Button from '../Button';
 import ProjectCard from '../ProjectCard';
 
-const Projects = () => {
+const ProjectArchive = () => {
   const router = useRouter();
   return (
     <div className='w-full h-max'>
@@ -37,4 +37,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default ProjectArchive;

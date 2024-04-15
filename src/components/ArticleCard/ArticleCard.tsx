@@ -1,4 +1,5 @@
 import React from 'react';
+import cx from 'classnames';
 import Image from 'next/image';
 
 import { ExternalLinkIcon } from '@/assets';
@@ -7,11 +8,19 @@ import articleImage from '@/assets/images/article.png';
 import Card from '../Card';
 import Tags from '../Tags';
 
-const ArticleCard = () => {
+interface ArticleCardProps {
+  block?: boolean;
+}
+
+const ArticleCard: React.FC<ArticleCardProps> = ({ block }) => {
   return (
     <Card
       label='Project'
-      className='p-0 sm:p-4 lg:p-0 xl:p-6 overflow-hidden sm:grid lg:block xl:grid sm:grid-cols-[max-content_1fr] sm:gap-4 md:gap-4 lg:gap-6 items-center'
+      className={cx({
+        ['overflow-hidden']: block,
+        ['p-0 sm:p-4 lg:p-0 xl:p-6 overflow-hidden sm:grid lg:block xl:grid sm:grid-cols-[max-content_1fr] sm:gap-4 md:gap-4 lg:gap-6 items-center']:
+          !block
+      })}
     >
       <a
         href='/'
@@ -21,7 +30,13 @@ const ArticleCard = () => {
         aria-label='Spotify Profile'
       />
       <span className='sr-only'>Spotify Profile (2018)</span>
-      <div className='sm:border lg:border-none xl:border border-transparent dark:lg:group-hover:border-light-grey-200 lg:group-hover:border-dark-grey-200 xl:w-[120px] xl:h-20 sm:w-[168px] sm:h-24 w-full h-44 lg:h-44 lg:w-full relative mb-6 lg:mb-6 sm:mb-0 xl:mb-0 sm:rounded-[5px] xl:rounded-[5px] lg:rounded-none overflow-hidden'>
+      <div
+        className={cx('relative overflow-hidden', {
+          ['sm:border lg:border-none xl:border border-transparent dark:lg:group-hover:border-light-grey-200 lg:group-hover:border-dark-grey-200 xl:w-[120px] xl:h-20 sm:w-[168px] sm:h-24 w-full h-44 lg:h-44 lg:w-full mb-6 lg:mb-6 sm:mb-0 xl:mb-0 sm:rounded-[5px] xl:rounded-[5px] lg:rounded-none overflow-hidden']:
+            !block,
+          ['w-full h-44 mb-6']: block
+        })}
+      >
         <Image
           src={articleImage}
           alt='Spotify Profile'
@@ -30,7 +45,7 @@ const ArticleCard = () => {
           className='object-cover'
         />
       </div>
-      <div className='p-4 pt-0 sm:p-0 lg:p-6 lg:pt-0 xl:p-0'>
+      <div className={cx('p-4 pt-0 lg:p-6 lg:pt-0', { ['sm:p-0 xl:p-0']: !block })}>
         <div className='flex justify-between items-center mb-2'>
           <p
             aria-label='2024'

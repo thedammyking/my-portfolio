@@ -1,5 +1,6 @@
 export { default as AngleRightIcon } from './AngleRightIcon';
 export { default as AngleUpIcon } from './AngleUpIcon';
+export { default as ArrowLeftIcon } from './ArrowLeftIcon';
 export { default as DownloadIcon } from './DownloadIcon';
 export { default as ExternalLinkIcon } from './ExternalLinkIcon';
 export { default as GitHubIcon } from './GitHubIcon';
