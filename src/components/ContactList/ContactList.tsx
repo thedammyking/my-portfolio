@@ -17,6 +17,8 @@ const ContactList: React.FC = () => {
               className='flex justify-center items-center w-11 h-11 rounded-full bg-dark-grey-600 hover:bg-black dark:hover:bg-dark-grey-500 text-light-grey-100 dark:text-light-grey-300 hover:text-white transition-all ease-in-out duration-300'
               href={link.url}
               title={link.label}
+              rel='noreferrer'
+              target='_blank'
             >
               <span className='sr-only'>{link.label}</span>
               <I className='w-5 h-5 text-current' />

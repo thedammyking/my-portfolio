@@ -2,7 +2,7 @@
 
 import React, { SVGAttributes } from 'react';
 
-const Loader: React.FC<SVGAttributes<any>> = props => {
+const Loader: React.FC<SVGAttributes<SVGElement>> = props => {
   return (
     <svg
       version='1.1'

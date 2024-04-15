@@ -2,6 +2,10 @@
 
 import React from 'react';
 
+import { ButtonVariant } from '@/types/enums';
+
+import Button from '../Button';
+
 interface ErrorPageProps {
   title: string;
   subTitle: string;
@@ -19,13 +23,10 @@ const ErrorPage: React.FC<ErrorPageProps> = ({ title, subTitle, description, act
       <h3 className='text-[28px] md:text-5xl mb-[8px] md:mb-[13px] leading-[33.60px] md:leading-[56px]'>
         {subTitle}
       </h3>
-      <p className='text-opacity-80 text-xl mb-[24px] md:mb-[40px] leading-7'>{description}</p>
-      <button
-        className='selector rounded-lg bg-accent-dark dark:bg-accent-light w-full md:w-max min-w-[168px] leading-tight h-14 px-12 text-white dark:text-white text-base font-bold'
-        onClick={action.onClick}
-      >
+      <p className='text-opacity-80 text-xl mb-6 md:mb-10 leading-7'>{description}</p>
+      <Button variant={ButtonVariant.Primary} onClick={action.onClick}>
         {action.label}
-      </button>
+      </Button>
     </main>
   );
 };

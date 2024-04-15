@@ -4,7 +4,7 @@ import About from '@/components/About';
 import Articles from '@/components/Articles';
 import Experience from '@/components/Experience';
 import Projects from '@/components/Projects';
-import { ContentSection } from '@/types/globals';
+import { ContentSection } from '@/types/enums';
 
 export const CONTENT_SECTIONS: {
   [x in ContentSection]: {

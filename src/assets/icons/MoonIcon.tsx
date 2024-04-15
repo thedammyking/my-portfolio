@@ -2,7 +2,7 @@
 
 import React, { SVGAttributes } from 'react';
 
-const MoonIcon: React.FC<SVGAttributes<any>> = props => {
+const MoonIcon: React.FC<SVGAttributes<SVGElement>> = props => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'

@@ -1,22 +1,13 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: bold !important;
-}
-
 .body {
   @apply font-sans relative sm:pt-[84px] md:pt-[96px] lg:pt-0;
 }
 
 :root {
   --background: #ffffff;
-  --foreground: #1a1a1a;
+  --foreground: #242424;
 }
 
 [data-theme='dark'] {
-  --background: #1a1a1a;
+  --background: #242424;
   --foreground: #ffffff;
 }

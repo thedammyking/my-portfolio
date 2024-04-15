@@ -10,3 +10,8 @@ export enum ContentSection {
   Projects = 'projects',
   Articles = 'articles'
 }
+
+export enum ButtonVariant {
+  Text = 'text',
+  Primary = 'primary'
+}

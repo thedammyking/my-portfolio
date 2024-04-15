@@ -1,6 +1,6 @@
 import React, { SVGAttributes } from 'react';
 
-const XIcon: React.FC<SVGAttributes<any>> = props => {
+const XIcon: React.FC<SVGAttributes<SVGElement>> = props => {
   return (
     <svg
       width='48'

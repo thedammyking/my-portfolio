@@ -1,6 +1,6 @@
 import React, { SVGAttributes } from 'react';
 
-const LinkedInIcon: React.FC<SVGAttributes<any>> = props => {
+const LinkedInIcon: React.FC<SVGAttributes<SVGElement>> = props => {
   return (
     <svg
       width='48'

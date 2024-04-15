@@ -1,6 +1,6 @@
 import { createStore } from 'zustand/vanilla';
 
-import { ContentSection } from '@/types/globals';
+import { ContentSection } from '@/types/enums';
 
 export type ActiveSectionState = {
   activeSection: ContentSection;

@@ -1,6 +1,6 @@
 import React, { SVGAttributes } from 'react';
 
-const AngleUpIcon: React.FC<SVGAttributes<any>> = props => {
+const AngleUpIcon: React.FC<SVGAttributes<SVGElement>> = props => {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' id='angle-up' {...props}>
       <path

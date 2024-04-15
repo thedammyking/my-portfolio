@@ -1,8 +1,11 @@
 export { default as AngleUpIcon } from './AngleUpIcon';
+export { default as DownloadIcon } from './DownloadIcon';
+export { default as ExternalLinkIcon } from './ExternalLinkIcon';
 export { default as GitHubIcon } from './GitHubIcon';
 export { default as InstagramIcon } from './InstagramIcon';
 export { default as LightIcon } from './LightIcon';
 export { default as LinkedInIcon } from './LinkedInIcon';
+export { default as LinkIcon } from './LinkIcon';
 export { default as Loader } from './Loader';
 export { default as MailIcon } from './MailIcon';
 export { default as MoonIcon } from './MoonIcon';

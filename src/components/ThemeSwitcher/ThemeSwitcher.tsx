@@ -5,7 +5,7 @@ import cx from 'classnames';
 import { useTheme } from 'next-themes';
 
 import { LightIcon, MoonIcon } from '@/assets';
-import { ThemeMode } from '@/types/globals';
+import { ThemeMode } from '@/types/enums';
 
 import styles from './ThemeSwitcher.module.scss';
 

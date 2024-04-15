@@ -8,7 +8,7 @@ import BackToTop from '@/components/BackToTop';
 import Footer from '@/components/Footer';
 import ThemeSwitcher from '@/components/ThemeSwitcher';
 import { THEME_MODE_KEY } from '@/data/contants';
-import { ThemeMode } from '@/types/globals';
+import { ThemeMode } from '@/types/enums';
 
 import '../styles/base.scss';
 import '../styles/global.css';
