@@ -16,7 +16,7 @@ const Button: React.FC<ButtonProps> = ({ variant, children, icon, className, ...
         {
           ['selector rounded-lg bg-accent-dark lg:hover:bg-accent-light dark:bg-accent-light lg:dark:hover:bg-accent-dark w-full md:w-max min-w-[168px] leading-tight h-14 px-12 text-white']:
             variant === ButtonVariant.Primary,
-          ['leading-normal text-black dark:text-white lg:hover:text-accent-dark lg:dark::hover:text-accent-light']:
+          ['leading-normal text-black dark:text-white lg:hover:text-accent-dark lg:dark:hover:text-accent-light']:
             variant === ButtonVariant.Text
         },
         className
