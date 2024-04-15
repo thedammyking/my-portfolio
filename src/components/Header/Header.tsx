@@ -23,7 +23,7 @@ const Header: React.FC = () => {
       <h4 className='text-xl md:text-2xl font-normal leading-[1.25] mb-4'>
         Lead Engineer at Brass
       </h4>
-      <p className='leading-normal text-lg md:text-base font-normal text-dark-grey-500 dark:text-dark-grey-200 mb-12'>
+      <p className='leading-normal text-lg md:text-base font-normal body-text mb-12'>
         I build pixel-perfect, engaging, and accessible digital experiences.
       </p>
       <ContactList />

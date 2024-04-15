@@ -1,5 +1,9 @@
 .body {
-  @apply font-sans relative sm:pt-[84px] md:pt-[96px] lg:pt-0;
+  @apply font-sans relative pt-[84px] md:pt-[96px] lg:pt-0;
+}
+
+.body-text {
+  @apply text-light-grey-600 dark:text-dark-grey-200;
 }
 
 :root {

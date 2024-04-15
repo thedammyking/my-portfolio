@@ -11,7 +11,7 @@ const Experience = () => {
   return (
     <div className='w-full h-max'>
       <div className='flex flex-col gap-10 md:gap-14'>
-        {Array(6)
+        {Array(4)
           .fill(1)
           .map(() => (
             <ExperienceCard key={uniqueId('experience-card')} />

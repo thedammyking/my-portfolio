@@ -1,3 +1,4 @@
+export { default as AngleRightIcon } from './AngleRightIcon';
 export { default as AngleUpIcon } from './AngleUpIcon';
 export { default as DownloadIcon } from './DownloadIcon';
 export { default as ExternalLinkIcon } from './ExternalLinkIcon';
