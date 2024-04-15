@@ -45,7 +45,7 @@ const BackToTop = () => {
             })
           }
         >
-          <AngleUpIcon className='text-current' />
+          <AngleUpIcon className='text-current w-8 h-8' />
         </button>
       </div>
     </div>
