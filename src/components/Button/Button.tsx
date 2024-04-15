@@ -12,7 +12,7 @@ const Button: React.FC<ButtonProps> = ({ variant, children, icon, className, ...
   return (
     <button
       className={cx(
-        'text-base font-medium flex items-center',
+        'text-base font-medium flex items-center justify-center',
         {
           ['selector rounded-lg bg-accent-dark lg:hover:bg-accent-light dark:bg-accent-light lg:dark:hover:bg-accent-dark w-full md:w-max min-w-[168px] leading-tight h-14 px-12 text-white']:
             variant === ButtonVariant.Primary,
