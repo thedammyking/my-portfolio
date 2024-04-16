@@ -55,7 +55,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ block }) => {
           </p>
           <Tags>Medium</Tags>
         </div>
-        <h6 className='text-base font-medium leading-none text-black dark:text-light-grey-100 lg:group-hover:text-accent-dark lg:dark:group-hover:text-accent-light'>
+        <h6 className='text-base font-medium leading-snug text-black dark:text-light-grey-100 lg:group-hover:text-accent-dark lg:dark:group-hover:text-accent-light'>
           Best Practices for Scalability and Performance
           <ExternalLinkIcon className='ml-1 w-4 h-4 inline-block' />
         </h6>

@@ -6,7 +6,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-inter)']
+        sans: ['var(--font-inter)'],
+        header: ['var(--font-helvetica)']
       },
       gridTemplateColumns: {
         content: '1fr minmax(34.921875%, 477px)'

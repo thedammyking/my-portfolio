@@ -41,7 +41,7 @@ const ProjectCard = () => {
         <h6 className='text-base font-medium leading-none text-black dark:text-light-grey-100 lg:group-hover:text-accent-dark lg:dark:group-hover:text-accent-light mb-3 flex items-center'>
           Spotify Profile <ExternalLinkIcon className='ml-1 w-4 h-4' />
         </h6>
-        <p className='leading-tight font-normal text-sm body-text lg:group-hover:text-black lg:dark:group-hover:text-white'>
+        <p className='leading-normal font-normal text-sm body-text lg:group-hover:text-black lg:dark:group-hover:text-white'>
           Web app for visualizing personalized Spotify data. View your top artists, top tracks,
           recently played tracks, and detailed audio information about each track. Create and save
           new playlists of recommended tracks based on your existing playlists and more.

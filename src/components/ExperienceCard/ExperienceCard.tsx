@@ -30,7 +30,7 @@ const ExperienceCard = () => {
         <p className='leading-normal font-medium text-base body-text lg:group-hover:text-black lg:dark:group-hover:text-white mb-3'>
           Senior Engineer
         </p>
-        <p className='leading-tight font-normal text-sm body-text lg:group-hover:text-black lg:dark:group-hover:text-white'>
+        <p className='leading-normal font-normal text-sm body-text lg:group-hover:text-black lg:dark:group-hover:text-white'>
           Build, style, and ship high-quality websites, design systems, mobile apps, and digital
           experiences for a diverse array of projects for clients including Harvard Business School,
           Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th
