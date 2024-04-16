@@ -57,10 +57,10 @@ export default function RootLayout({
           themes={[ThemeMode.Dark, ThemeMode.Light]}
           defaultTheme={ThemeMode.Dark}
         >
-          <ThemeSwitcher />
           <div className='mx-auto min-h-screen max-w-screen-xl px-4 md:px-8 lg:px-12 xl:px-20 '>
             {children}
           </div>
+          <ThemeSwitcher />
           <BackToTop />
           <Footer />
         </ThemeProvider>
