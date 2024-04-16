@@ -3,6 +3,7 @@ import { capitalize } from 'lodash';
 
 import AllArticles from '@/components/AllArticles';
 import If from '@/components/If';
+import ProjectArchive from '@/components/ProjectArchive';
 import { Resource } from '@/types/enums';
 
 export default function ResourcePage({ params }: { params: { resource: Resource } }) {
@@ -16,6 +17,9 @@ export default function ResourcePage({ params }: { params: { resource: Resource 
       <main>
         <If condition={params.resource === Resource.Articles}>
           <AllArticles />
+        </If>
+        <If condition={params.resource === Resource.Projects}>
+          <ProjectArchive />
         </If>
       </main>
     </div>

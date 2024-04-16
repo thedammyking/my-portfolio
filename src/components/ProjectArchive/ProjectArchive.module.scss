@@ -1,0 +1,18 @@
+.ProjectArchive {
+  &_table {
+    tr {
+      & > th,
+      & > td {
+        @apply text-sm text-left px-4 first:pl-0 last:pr-0;
+      }
+
+      & > td {
+        @apply py-[18px] border-t-dark-grey-100;
+      }
+    }
+
+    tbody > tr {
+      @apply border border-x-0;
+    }
+  }
+}

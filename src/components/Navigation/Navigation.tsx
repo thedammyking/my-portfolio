@@ -13,6 +13,7 @@ import NavigationItem from './NavigationItem';
 const Navigation = () => {
   const activeSection = useActiveSectionStore(state => state.activeSection);
   const contentSectionKeys = Object.keys(CONTENT_SECTIONS) as ContentSection[];
+
   return (
     <nav role='navigation'>
       <ul className='list-none hidden lg:flex flex-col gap-4'>

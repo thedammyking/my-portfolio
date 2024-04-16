@@ -1,3 +1,4 @@
+export { default as AngleDownIcon } from './AngleDownIcon';
 export { default as AngleRightIcon } from './AngleRightIcon';
 export { default as AngleUpIcon } from './AngleUpIcon';
 export { default as ArrowLeftIcon } from './ArrowLeftIcon';
