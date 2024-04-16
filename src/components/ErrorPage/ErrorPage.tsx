@@ -18,7 +18,7 @@ interface ErrorPageProps {
 
 const ErrorPage: React.FC<ErrorPageProps> = ({ title, subTitle, description, action }) => {
   return (
-    <main className='w-full h-full relative text-center flex flex-col justify-center items-center text-black dark:text-white pt-[88px] pb-[87px] px-6'>
+    <main className='w-full h-[78.3vh] relative text-center flex flex-col justify-center items-center text-black dark:text-white pt-[88px] pb-[87px] px-6 lg:mt-16'>
       <h1 className='text-[70px] md:text-[140px] mb-[16px] md:mb-[30px] leading-normal font-bold'>
         {title}
       </h1>
