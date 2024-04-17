@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: thedammyking/my-portfolio
+  name: git-gateway
   branch: main
 slug:
   encoding: 'ascii'
@@ -42,7 +41,8 @@ collections:
           widget: 'list',
           required: true,
           allow_add: true,
-          default: []
+          default: [],
+          field: { label: Tech, name: tech, widget: string }
         }
       - label: 'Related Articles'
         name: 'articles'
@@ -75,7 +75,8 @@ collections:
           widget: 'list',
           required: true,
           allow_add: true,
-          default: []
+          default: [],
+          field: { label: Tech, name: tech, widget: string }
         }
       - label: 'Stats'
         name: 'stats'
