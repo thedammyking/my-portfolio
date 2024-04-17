@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: thedammyking/my-portfolio
   branch: main
 slug:
   encoding: 'ascii'
