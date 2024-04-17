@@ -1,0 +1,103 @@
+slug:
+  encoding: 'ascii'
+  clean_accents: true
+  sanitize_replacement: '_'
+media_folder: static/media
+collections:
+  - label: 'Pages'
+    name: 'pages'
+    files:
+      - label: 'Header'
+        name: 'header'
+        folder: 'content/home/header.md'
+        fields:
+          - { label: 'Name', name: 'name', widget: 'string', required: true }
+          - { label: 'Role', name: 'role', widget: 'string', required: true }
+          - { label: 'Summary', name: 'summary', widget: 'string', required: true }
+      - label: 'About'
+        name: 'about'
+        folder: 'content/home/about.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string', required: true }
+          - { label: 'Body', name: 'body', widget: 'markdown', required: true }
+  - label: 'Experience'
+    name: 'experience'
+    folder: 'content/experience'
+    create: true
+    identifier_field: company
+    fields:
+      - { label: 'Company', name: 'company', widget: 'string', required: true }
+      - { label: 'Website', name: 'url', widget: 'string', required: true }
+      - { label: 'Role', name: 'role', widget: 'string', required: true }
+      - { label: 'From', name: 'from', widget: 'datetime', required: true, date_format: 'YYYY' }
+      - { label: 'To', name: 'to', widget: 'datetime', required: true, date_format: 'YYYY' }
+      - { label: 'Summary', name: 'summary', widget: 'string', required: true }
+      - {
+          label: 'Stack',
+          name: 'stack',
+          widget: 'list',
+          required: true,
+          allow_add: true,
+          default: []
+        }
+      - label: 'Related Articles'
+        name: 'articles'
+        widget: 'list'
+        allow_add: true
+        default: []
+        fields:
+          - label: 'Publication'
+            name: 'publication'
+            widget: 'string'
+            required: true
+          - label: 'URL'
+            name: 'url'
+            widget: 'string'
+            required: true
+  - label: 'Projects'
+    name: 'projects'
+    folder: 'content/projects'
+    create: true
+    identifier_field: title
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Link', name: 'link', widget: 'string' }
+      - { label: 'Year', name: 'year', widget: 'datetime', required: true, date_format: 'YYYY' }
+      - { label: 'Made at', name: 'made_at', widget: 'string' }
+      - { label: 'Summary', name: 'summary', widget: 'string' }
+      - {
+          label: 'Stack',
+          name: 'stack',
+          widget: 'list',
+          required: true,
+          allow_add: true,
+          default: []
+        }
+      - label: 'Stats'
+        name: 'stats'
+        widget: 'list'
+        allow_add: true
+        default: []
+        fields:
+          - label: 'Count Text'
+            name: 'count_text'
+            widget: 'string'
+            required: true
+          - label: 'URL'
+            name: 'url'
+            widget: 'string'
+            required: true
+          - label: 'Type'
+            name: 'type'
+            widget: 'string'
+            required: true
+  - label: 'Articles'
+    name: 'articles'
+    folder: 'content/articles'
+    create: true
+    identifier_field: title
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Link', name: 'link', widget: 'string', equired: true }
+      - { label: 'Year', name: 'year', widget: 'datetime', required: true, date_format: 'YYYY' }
+      - { label: 'Featured Image', name: 'thumbnail', widget: 'image', required: true }
