@@ -5,7 +5,7 @@ import { uniqueId } from 'lodash';
 
 import { ExternalLinkIcon } from '@/assets';
 
-import Tags from '../Tags';
+import Tags from '../Tag';
 
 const ProjectRow = () => {
   return (

@@ -6,7 +6,7 @@ import { ExternalLinkIcon } from '@/assets';
 import articleImage from '@/assets/images/article.png';
 
 import Card from '../Card';
-import Tags from '../Tags';
+import Tags from '../Tag';
 
 interface ArticleCardProps {
   block?: boolean;

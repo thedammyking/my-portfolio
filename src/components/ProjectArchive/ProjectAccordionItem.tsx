@@ -3,7 +3,7 @@ import React from 'react';
 import { ExternalLinkIcon } from '@/assets';
 
 import { AccordionContent, AccordionHeader, AccordionItem } from '../Accordion';
-import Tags from '../Tags';
+import Tags from '../Tag';
 
 interface ProjectAccordionItemProps {
   isOpenedByDefault?: boolean;

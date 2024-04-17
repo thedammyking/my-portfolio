@@ -4,7 +4,7 @@ import { ExternalLinkIcon } from '@/assets';
 
 import Card from '../Card';
 import LinkWithIcon from '../LinkWithIcon';
-import Tags from '../Tags';
+import Tags from '../Tag';
 
 const ExperienceCard = () => {
   return (

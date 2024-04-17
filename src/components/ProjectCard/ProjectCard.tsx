@@ -6,7 +6,7 @@ import projectImage from '@/assets/images/project.png';
 
 import Card from '../Card';
 import LinkWithIcon from '../LinkWithIcon';
-import Tags from '../Tags';
+import Tags from '../Tag';
 
 const ProjectCard = () => {
   return (
