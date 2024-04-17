@@ -1,5 +1,5 @@
 ---
-name: About
-role: About
-summary: About
+name: Oluwadamilola Babalola
+role: Frontend Engineer
+summary: I build pixel-perfect, engaging, and accessible digital experiences.
 ---
