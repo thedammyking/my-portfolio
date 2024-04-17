@@ -1,3 +1,6 @@
+backend:
+  name: git-gateway
+  branch: main
 slug:
   encoding: 'ascii'
   clean_accents: true
@@ -9,14 +12,14 @@ collections:
     files:
       - label: 'Header'
         name: 'header'
-        folder: 'content/home/header.md'
+        file: 'content/home/header.md'
         fields:
           - { label: 'Name', name: 'name', widget: 'string', required: true }
           - { label: 'Role', name: 'role', widget: 'string', required: true }
           - { label: 'Summary', name: 'summary', widget: 'string', required: true }
       - label: 'About'
         name: 'about'
-        folder: 'content/home/about.md'
+        file: 'content/home/about.md'
         fields:
           - { label: 'Title', name: 'title', widget: 'string', required: true }
           - { label: 'Body', name: 'body', widget: 'markdown', required: true }
