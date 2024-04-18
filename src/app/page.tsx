@@ -4,6 +4,7 @@ import { isEmpty, uniqueId } from 'lodash';
 import ContentContainer from '@/components/ContentContainer';
 import Header from '@/components/Header';
 import { CONTENT_SECTIONS } from '@/data/contentSections';
+import { getAllArticles } from '@/lib/api/articles';
 import { getAllExperience } from '@/lib/api/experience';
 import { getAboutData, getHeaderData } from '@/lib/api/home';
 import { getAllProjects } from '@/lib/api/projects';
@@ -16,7 +17,8 @@ export default async function Home() {
     header: await getHeaderData(),
     about: await getAboutData(),
     experience: await getAllExperience(),
-    projects: await getAllProjects()
+    projects: await getAllProjects(),
+    articles: await getAllArticles()
   };
 
   const contentSectionKeys = Object.keys(CONTENT_SECTIONS).filter(

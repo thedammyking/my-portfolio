@@ -42,6 +42,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
           alt={data.title}
           placeholder='blur'
           blurDataURL={BLUR_IMAGE}
+          quality={100}
           fill
           sizes='(max-width: 768px) 168px, (max-width: 1200px) 120px, 326px'
           style={{
