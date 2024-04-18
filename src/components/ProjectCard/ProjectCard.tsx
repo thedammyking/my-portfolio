@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import { DownloadIcon, ExternalLinkIcon } from '@/assets';
-import projectImage from '@/assets/images/project.png';
+import { Project } from '@/types/interfaces/project';
 
 import Card from '../Card';
 import LinkWithIcon from '../LinkWithIcon';
