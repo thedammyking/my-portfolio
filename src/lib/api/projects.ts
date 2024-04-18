@@ -11,7 +11,7 @@ export const getAllProjects = () => {
     const slugs = getFileNames(Resource.Projects);
     projects = slugs
       .map(slug => getDataByFileName<Project>(slug, Resource.Projects))
-      .sort((projects1, projects2) => Number(projects1.year) - Number(projects2.year));
+      .sort((projects1, projects2) => Number(projects2.year) - Number(projects1.year));
   } catch (error) {
     Sentry.captureException(error);
   } finally {

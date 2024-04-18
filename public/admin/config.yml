@@ -70,10 +70,9 @@ collections:
     identifier_field: title
     fields:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
-      - { label: 'Link', name: 'link', widget: 'string' }
       - { label: 'Year', name: 'year', widget: 'string', required: true }
       - { label: 'Made at', name: 'made_at', widget: 'string' }
-      - { label: 'Summary', name: 'summary', widget: 'string' }
+      - { label: 'Summary', name: 'summary', widget: 'string', required: true }
       - { label: 'Banner', name: 'thumbnail', widget: 'image', required: true }
       - {
           label: 'Stack',
@@ -84,6 +83,12 @@ collections:
           default: [],
           field: { label: Tech, name: tech, widget: string }
         }
+      - label: 'Link'
+        name: 'link'
+        widget: 'object'
+        fields:
+          - { label: 'Label', name: 'label', widget: 'string' }
+          - { label: 'URL', name: 'url', widget: 'string' }
       - label: 'Stats'
         name: 'stats'
         widget: 'list'

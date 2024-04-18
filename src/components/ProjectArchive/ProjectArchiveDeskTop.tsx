@@ -4,11 +4,14 @@ import React from 'react';
 import cx from 'classnames';
 import { uniqueId } from 'lodash';
 
+import { useData } from '@/providers/DataProvider';
+
 import ProjectRow from './ProjectRow';
 
 import styles from './ProjectArchive.module.scss';
 
 const ProjectArchiveDeskTop = () => {
+  const { projects } = useData();
   return (
     <table className={cx('hidden lg:table w-full', styles.ProjectArchive_table)}>
       <thead>
@@ -21,11 +24,7 @@ const ProjectArchiveDeskTop = () => {
         </tr>
       </thead>
       <tbody>
-        {Array(7)
-          .fill(1)
-          .map(() => (
-            <ProjectRow key={uniqueId('project-row')} />
-          ))}
+        {projects?.map(project => <ProjectRow data={project} key={uniqueId('project-row')} />)}
       </tbody>
     </table>
   );

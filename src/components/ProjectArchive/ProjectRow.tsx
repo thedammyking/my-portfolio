@@ -4,41 +4,46 @@ import React from 'react';
 import { uniqueId } from 'lodash';
 
 import { ExternalLinkIcon } from '@/assets';
+import { Project } from '@/types/interfaces/project';
 
 import Tag from '../Tag';
 
-const ProjectRow = () => {
+interface ProjectRowProps {
+  data: Project;
+}
+
+const ProjectRow: React.FC<ProjectRowProps> = ({ data }) => {
   return (
-    <tr
-      className='border-light-grey-700/10 dark:border-dark-grey-100/10'
-      key={uniqueId('project-row')}
-    >
+    <tr className='border-light-grey-700/10 dark:border-dark-grey-100/10'>
       <td>
-        <p className='text-sm font-normal leading-tight text-dark-grey-400'>2023</p>
+        <p className='text-sm font-normal leading-tight text-dark-grey-400'>{data.year}</p>
       </td>
       <td>
         <p className='text-base font-semibold leading-snug text-black dark:text-dark-grey-100'>
-          Emerson Collective
+          {data.title}
         </p>
       </td>
       <td>
-        <p className='text-sm font-normal leading-tight text-dark-grey-400'>Upstatement</p>
+        {data?.made_at && (
+          <p className='text-sm font-normal leading-tight text-dark-grey-400'>{data?.made_at}</p>
+        )}
       </td>
       <td>
         <div className='flex items-center gap-[6px] flex-wrap'>
-          <Tag>CSS</Tag>
-          <Tag>Next.js</Tag>
-          <Tag>jQuery</Tag>
-          <Tag>Javascript</Tag>
+          {data.stack.map(stack => (
+            <Tag key={uniqueId('stack')}>{stack}</Tag>
+          ))}
         </div>
       </td>
       <td>
-        <a
-          className='text-sm font-medium leading-tight flex items-center gap-[2px] text-dark-grey-400 lg:hover:text-accent-dark lg:dark:hover:text-accent-light'
-          href='/'
-        >
-          emersoncollective.com <ExternalLinkIcon className='w-4 h-4 relative' />
-        </a>
+        {data.link && (
+          <a
+            className='text-sm font-medium leading-tight flex items-center gap-[2px] text-dark-grey-400 lg:hover:text-accent-dark lg:dark:hover:text-accent-light'
+            href={data.link.url}
+          >
+            {data.link.label} <ExternalLinkIcon className='w-4 h-4 relative' />
+          </a>
+        )}
       </td>
     </tr>
   );

@@ -1,6 +1,5 @@
 ---
 title: Spotify Profile
-link: https://test.com
 year: "2024"
 made_at: Upstatement
 summary: Web app for visualizing personalized Spotify data. View your top

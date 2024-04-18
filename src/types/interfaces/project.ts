@@ -8,11 +8,14 @@ interface Stats {
 
 export interface Project extends FileData {
   title: string;
-  link: string;
+  link?: {
+    url: string;
+    label: string;
+  };
   year: string;
-  made_at: string;
+  made_at?: string;
   summary: string;
   thumbnail: string;
   stack: string[];
-  stats: Stats[];
+  stats?: Stats[];
 }

@@ -17,20 +17,24 @@ const Projects = () => {
   return (
     <div className='w-full h-max'>
       <div className='flex flex-col gap-10 md:gap-14'>
-        {projects?.map(project => <ProjectCard data={project} key={uniqueId('project-card')} />)}
+        {projects
+          ?.slice(0, 4)
+          .map(project => <ProjectCard data={project} key={uniqueId('project-card')} />)}
       </div>
-      <Button
-        onClick={() =>
-          router.push('/list/projects', {
-            scroll: false
-          })
-        }
-        variant={ButtonVariant.Text}
-        icon={<AngleRightIcon />}
-        className='mt-8 xl:mt-10'
-      >
-        View Projects Archive
-      </Button>
+      {projects && projects.length > 4 && (
+        <Button
+          onClick={() =>
+            router.push('/list/projects', {
+              scroll: false
+            })
+          }
+          variant={ButtonVariant.Text}
+          icon={<AngleRightIcon />}
+          className='mt-8 xl:mt-10'
+        >
+          View Projects Archive
+        </Button>
+      )}
     </div>
   );
 };
