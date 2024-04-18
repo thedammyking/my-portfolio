@@ -3,7 +3,7 @@ import React from 'react';
 import { ExternalLinkIcon } from '@/assets';
 
 import { AccordionContent, AccordionHeader, AccordionItem } from '../Accordion';
-import Tags from '../Tag';
+import Tag from '../Tag';
 
 interface ProjectAccordionItemProps {
   isOpenedByDefault?: boolean;
@@ -34,10 +34,10 @@ const ProjectAccordionItem: React.FC<ProjectAccordionItemProps> = props => {
         <div className='col-start-2 sm:col-start-3 sm:row-start-1 *:text-sm *:font-normal *:leading-tight'>
           <p className='text-black dark:text-light-grey-100 mb-[10px]'>Stack</p>
           <div className='flex flex-wrap gap-3'>
-            <Tags>CSS</Tags>
-            <Tags>Next.js</Tags>
-            <Tags>jQuery</Tags>
-            <Tags>Javascript</Tags>
+            <Tag>CSS</Tag>
+            <Tag>Next.js</Tag>
+            <Tag>jQuery</Tag>
+            <Tag>Javascript</Tag>
           </div>
         </div>
       </AccordionContent>

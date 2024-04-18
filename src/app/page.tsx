@@ -6,6 +6,7 @@ import Header from '@/components/Header';
 import { CONTENT_SECTIONS } from '@/data/contentSections';
 import { getAllExperience } from '@/lib/api/experience';
 import { getAboutData, getHeaderData } from '@/lib/api/home';
+import { getAllProjects } from '@/lib/api/projects';
 import ActiveSectionStoreProvider from '@/providers/ActiveSectionStoreProvider';
 import DataProvider from '@/providers/DataProvider';
 import { ContentSection } from '@/types/enums';
@@ -14,7 +15,8 @@ export default async function Home() {
   const pageData = {
     header: await getHeaderData(),
     about: await getAboutData(),
-    experience: await getAllExperience()
+    experience: await getAllExperience(),
+    projects: await getAllProjects()
   };
 
   const contentSectionKeys = Object.keys(CONTENT_SECTIONS).filter(

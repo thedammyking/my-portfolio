@@ -5,7 +5,11 @@ slug:
   encoding: 'ascii'
   clean_accents: true
   sanitize_replacement: '_'
-media_folder: public/media
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: ds8bd6wxr
+    api_key: 785123966216323
 collections:
   - label: 'Home Page'
     name: 'home_page'
@@ -96,8 +100,11 @@ collections:
             required: true
           - label: 'Type'
             name: 'type'
-            widget: 'string'
+            widget: 'select'
             required: true
+            options:
+              - { label: 'Download', value: 'download' }
+              - { label: 'Star', value: 'star' }
   - label: 'Articles'
     name: 'articles'
     folder: 'content/articles'

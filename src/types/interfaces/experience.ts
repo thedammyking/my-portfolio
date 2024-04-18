@@ -14,6 +14,4 @@ export interface Experience extends FileData {
   to: string;
   stack: string[];
   articles?: Article[];
-  slug: string;
-  content: string;
 }

@@ -6,7 +6,7 @@ import { ExternalLinkIcon } from '@/assets';
 import articleImage from '@/assets/images/article.png';
 
 import Card from '../Card';
-import Tags from '../Tag';
+import Tag from '../Tag';
 
 interface ArticleCardProps {
   block?: boolean;
@@ -57,7 +57,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ block }) => {
           >
             2024
           </p>
-          <Tags>Medium</Tags>
+          <Tag>Medium</Tag>
         </div>
         <h6 className='text-base font-medium leading-snug text-black dark:text-light-grey-100 lg:group-hover:text-accent-dark lg:dark:group-hover:text-accent-light'>
           Best Practices for Scalability and Performance

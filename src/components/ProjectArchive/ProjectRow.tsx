@@ -5,7 +5,7 @@ import { uniqueId } from 'lodash';
 
 import { ExternalLinkIcon } from '@/assets';
 
-import Tags from '../Tag';
+import Tag from '../Tag';
 
 const ProjectRow = () => {
   return (
@@ -26,10 +26,10 @@ const ProjectRow = () => {
       </td>
       <td>
         <div className='flex items-center gap-[6px] flex-wrap'>
-          <Tags>CSS</Tags>
-          <Tags>Next.js</Tags>
-          <Tags>jQuery</Tags>
-          <Tags>Javascript</Tags>
+          <Tag>CSS</Tag>
+          <Tag>Next.js</Tag>
+          <Tag>jQuery</Tag>
+          <Tag>Javascript</Tag>
         </div>
       </td>
       <td>

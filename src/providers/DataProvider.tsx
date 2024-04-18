@@ -4,11 +4,13 @@ import React, { createContext, FC, PropsWithChildren, useContext } from 'react';
 
 import { Experience } from '@/types/interfaces/experience';
 import { About, Header } from '@/types/interfaces/home';
+import { Project } from '@/types/interfaces/project';
 
 export interface Data {
   header?: Header | null;
   about?: About | null;
   experience?: Experience[];
+  projects?: Project[];
 }
 
 export const DataContext = createContext<Data>({});

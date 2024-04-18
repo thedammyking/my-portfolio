@@ -5,6 +5,7 @@ import { uniqueId } from 'lodash';
 import { useRouter } from 'next/navigation';
 
 import { AngleRightIcon } from '@/assets';
+import { useData } from '@/providers/DataProvider';
 import { ButtonVariant } from '@/types/enums';
 
 import Button from '../Button';
@@ -12,14 +13,11 @@ import ProjectCard from '../ProjectCard';
 
 const Projects = () => {
   const router = useRouter();
+  const { projects } = useData();
   return (
     <div className='w-full h-max'>
       <div className='flex flex-col gap-10 md:gap-14'>
-        {Array(4)
-          .fill(1)
-          .map(() => (
-            <ProjectCard key={uniqueId('project-card')} />
-          ))}
+        {projects?.map(project => <ProjectCard data={project} key={uniqueId('project-card')} />)}
       </div>
       <Button
         onClick={() =>

@@ -14,7 +14,7 @@ stack:
   - CSS
   - Javascript
 stats:
-  - count_text: 100k+ Installs
+  - count_text: "7,153"
     url: https://test.com
     type: star
 ---

@@ -22,17 +22,17 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ data }) => {
   return (
     <Card label='Experience' className='p-4 lg:p-6 xl:grid xl:grid-cols-[max-content_1fr] xl:gap-6'>
       <a
-        href='/'
+        href={data.url}
         rel='noreferrer'
         target='_blank'
         className='absolute top-0 left-0 right-0 bottom-0 z-10'
-        aria-label='Upstatement'
+        aria-label={data.company}
       />
       <span className='sr-only'>
         {data.role} - {data.company} ({data.from} - {getTo()})
       </span>
       <p
-        aria-label='2018 — Present'
+        aria-label={`${data.from} - ${getTo()}`}
         className='text-xs font-semibold body-text lg:group-hover:text-black lg:dark:group-hover:text-white uppercase leading-normal mb-2 xl:mb-0'
       >
         {data.from} — {getTo()}

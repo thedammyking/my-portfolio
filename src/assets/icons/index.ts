@@ -12,4 +12,5 @@ export { default as LinkIcon } from './LinkIcon';
 export { default as Loader } from './Loader';
 export { default as MailIcon } from './MailIcon';
 export { default as MoonIcon } from './MoonIcon';
+export { default as StarIcon } from './StarIcon';
 export { default as XIcon } from './XIcon';
