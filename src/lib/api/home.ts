@@ -17,12 +17,12 @@ export const getHeaderData = () => {
 };
 
 export const getAboutData = () => {
-  let header = null;
+  let about = null;
   try {
-    header = getDataByFileName<About>('header', Resource.Home);
+    about = getDataByFileName<About>('about', Resource.Home);
   } catch (error) {
     Sentry.captureException(error);
   } finally {
-    return header;
+    return about;
   }
 };
