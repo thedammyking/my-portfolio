@@ -19,3 +19,7 @@
 .project-table-heading {
   @apply py-4 font-semibold leading-tight text-black dark:text-light-grey-100;
 }
+
+.body-text-white {
+  @apply dark:text-white text-black font-semibold;
+}
