@@ -3,6 +3,7 @@ import { uniqueId } from 'lodash';
 import Image from 'next/image';
 
 import { DownloadIcon, ExternalLinkIcon, StarIcon } from '@/assets';
+import { BLUR_IMAGE } from '@/data/env';
 import { Project } from '@/types/interfaces/project';
 
 import Card from '../Card';
@@ -38,7 +39,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
           src={data.thumbnail}
           alt={data.title}
           placeholder='blur'
-          blurDataURL='https://res.cloudinary.com/ds8bd6wxr/image/upload/v1713452466/my-portfolio/blur_qw0kxf.png'
+          blurDataURL={BLUR_IMAGE}
           fill
           sizes='(max-width: 768px) 168px, (max-width: 1200px) 120px, 326px'
           style={{

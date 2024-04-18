@@ -3,3 +3,4 @@ export const GITHUB_PROFILE = process.env.NEXT_PUBLIC_GITHUB_PROFILE;
 export const LINKEDIN_PROFILE = process.env.NEXT_PUBLIC_LINKEDIN_PROFILE;
 export const X_PROFILE = process.env.NEXT_PUBLIC_X_PROFILE;
 export const INSTAGRAM_PROFILE = process.env.NEXT_PUBLIC_INSTAGRAM_PROFILE;
+export const BLUR_IMAGE = process.env.NEXT_PUBLIC_BLUR_IMAGE;
