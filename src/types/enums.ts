@@ -19,5 +19,6 @@ export enum ButtonVariant {
 export enum Resource {
   Articles = 'articles',
   Projects = 'projects',
-  Home = 'home'
+  Home = 'home',
+  Experience = 'experience'
 }

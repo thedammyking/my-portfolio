@@ -1,22 +1,29 @@
 import React from 'react';
-import { uniqueId } from 'lodash';
+import { isEmpty, uniqueId } from 'lodash';
 
 import ContentContainer from '@/components/ContentContainer';
 import Header from '@/components/Header';
 import { CONTENT_SECTIONS } from '@/data/contentSections';
+import { getAllExperience } from '@/lib/api/experience';
 import { getAboutData, getHeaderData } from '@/lib/api/home';
 import ActiveSectionStoreProvider from '@/providers/ActiveSectionStoreProvider';
 import DataProvider from '@/providers/DataProvider';
 import { ContentSection } from '@/types/enums';
 
 export default async function Home() {
-  const contentSectionKeys = Object.keys(CONTENT_SECTIONS) as ContentSection[];
-  const headerData = await getHeaderData();
-  const aboutData = await getAboutData();
+  const pageData = {
+    header: await getHeaderData(),
+    about: await getAboutData(),
+    experience: await getAllExperience()
+  };
+
+  const contentSectionKeys = Object.keys(CONTENT_SECTIONS).filter(
+    section => !isEmpty(pageData[section as keyof typeof pageData])
+  ) as ContentSection[];
 
   return (
     <ActiveSectionStoreProvider>
-      <DataProvider header={headerData} about={aboutData}>
+      <DataProvider {...pageData}>
         <div className='lg:flex lg:justify-between lg:gap-24'>
           <Header />
           <main

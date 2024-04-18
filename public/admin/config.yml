@@ -5,7 +5,7 @@ slug:
   encoding: 'ascii'
   clean_accents: true
   sanitize_replacement: '_'
-media_folder: static/media
+media_folder: public/media
 collections:
   - label: 'Home Page'
     name: 'home_page'
@@ -67,7 +67,7 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
       - { label: 'Link', name: 'link', widget: 'string' }
-      - { label: 'Year', name: 'year', widget: 'datetime', required: true, date_format: 'YYYY' }
+      - { label: 'Year', name: 'year', widget: 'string', required: true }
       - { label: 'Made at', name: 'made_at', widget: 'string' }
       - { label: 'Summary', name: 'summary', widget: 'string' }
       - { label: 'Banner', name: 'thumbnail', widget: 'image', required: true }

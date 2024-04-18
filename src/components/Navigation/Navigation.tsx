@@ -1,18 +1,23 @@
 'use client';
 
 import React from 'react';
-import { uniqueId } from 'lodash';
+import { isEmpty, uniqueId } from 'lodash';
 import Link from 'next/link';
 
 import { CONTENT_SECTIONS } from '@/data/contentSections';
 import { useActiveSectionStore } from '@/providers/ActiveSectionStoreProvider';
+import { useData } from '@/providers/DataProvider';
 import { ContentSection } from '@/types/enums';
 
 import NavigationItem from './NavigationItem';
 
 const Navigation = () => {
   const activeSection = useActiveSectionStore(state => state.activeSection);
-  const contentSectionKeys = Object.keys(CONTENT_SECTIONS) as ContentSection[];
+  const data = useData();
+
+  const contentSectionKeys = Object.keys(CONTENT_SECTIONS).filter(
+    section => !isEmpty(data[section as keyof typeof data])
+  ) as ContentSection[];
 
   return (
     <nav role='navigation'>

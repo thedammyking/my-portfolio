@@ -10,7 +10,7 @@ export const getAllProjects = () => {
     const slugs = getFileNames(Resource.Projects);
     projects = slugs
       .map(slug => getDataByFileName<{ [x: string]: any }>(slug, Resource.Projects))
-      .sort((projects1, projects2) => (projects1.year > projects2.year ? -1 : 1));
+      .sort((projects1, projects2) => Number(projects1.year) - Number(projects2.year));
   } catch (error) {
     Sentry.captureException(error);
   } finally {
