@@ -12,6 +12,9 @@ stack:
   - CSS
   - jQuery
   - HTML
+link:
+  label: spotify.com
+  url: https://spotify.com
 stats:
   - count_text: 100k+ Installs
     url: https://test.com
