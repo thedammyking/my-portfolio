@@ -118,6 +118,6 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
       - { label: 'Link', name: 'link', widget: 'string', equired: true }
-      - { label: 'Year', name: 'year', widget: 'datetime', required: true, date_format: 'YYYY' }
+      - { label: 'Date', name: 'date', widget: 'string', required: true }
       - { label: 'Featured Image', name: 'thumbnail', widget: 'image', required: true }
       - { label: 'Platform', name: 'platform', widget: 'string', required: true }
