@@ -33,9 +33,9 @@ collections:
       - { label: 'Website', name: 'url', widget: 'string', required: true }
       - { label: 'Role', name: 'role', widget: 'string', required: true }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'From', name: 'from', widget: 'datetime', required: true, date_format: 'YYYY' }
-      - { label: 'To', name: 'to', widget: 'datetime', required: true, date_format: 'YYYY' }
-      - { label: 'Summary', name: 'summary', widget: 'string', required: true }
+      - { label: 'From', name: 'from', widget: 'string', required: true }
+      - { label: 'To', name: 'to', widget: 'string', required: true }
+      - { label: 'Summary', name: 'summary', widget: 'markdown', required: true }
       - {
           label: 'Stack',
           name: 'stack',
