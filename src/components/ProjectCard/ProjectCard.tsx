@@ -38,6 +38,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
           src={data.thumbnail}
           alt={data.title}
           placeholder='blur'
+          blurDataURL='https://res.cloudinary.com/ds8bd6wxr/image/upload/v1713452466/my-portfolio/blur_qw0kxf.png'
           fill
           sizes='(max-width: 768px) 168px, (max-width: 1200px) 120px, 326px'
           style={{
