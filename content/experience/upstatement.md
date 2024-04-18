@@ -1,10 +1,10 @@
 ---
-company: Upstatement Second
+company: Upstatement
 url: https://upstatement.com
 role: Lead Engineer
 title: Senior Engineer
-from: "2020"
-to: "2022"
+from: "2022"
+to: "2024"
 stack:
   - Javascript
   - CSS
