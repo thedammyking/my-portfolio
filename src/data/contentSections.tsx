@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import { capitalize } from 'lodash';
 
 import About from '@/components/About';
 import Articles from '@/components/Articles';
@@ -13,19 +14,19 @@ export const CONTENT_SECTIONS: {
   };
 } = {
   [ContentSection.About]: {
-    label: 'About',
+    label: capitalize(ContentSection.About),
     content: About
   },
   [ContentSection.Experience]: {
-    label: 'Experience',
+    label: capitalize(ContentSection.Experience),
     content: Experience
   },
   [ContentSection.Projects]: {
-    label: 'Projects',
+    label: capitalize(ContentSection.Projects),
     content: Projects
   },
   [ContentSection.Articles]: {
-    label: 'Articles',
+    label: capitalize(ContentSection.Articles),
     content: Articles
   }
 };
