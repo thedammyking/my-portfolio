@@ -41,8 +41,12 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ block }) => {
           src={articleImage}
           alt='Spotify Profile'
           placeholder='blur'
+          quality={100}
           fill
-          className='object-cover'
+          sizes={`(max-width: 768px) 186.67px, (max-width: 1200px) ${block ? '230px' : '120px'}, 326px`}
+          style={{
+            objectFit: 'cover'
+          }}
         />
       </div>
       <div className={cx('p-4 pt-0 lg:p-6 lg:pt-0', { ['sm:p-0 xl:p-0']: !block })}>

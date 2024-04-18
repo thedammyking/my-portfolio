@@ -28,7 +28,10 @@ const ProjectCard = () => {
           alt='Spotify Profile'
           placeholder='blur'
           fill
-          className='object-cover'
+          sizes='(max-width: 768px) 168px, (max-width: 1200px) 120px, 326px'
+          style={{
+            objectFit: 'cover'
+          }}
         />
       </div>
       <div className='p-4 pt-0 sm:p-0 lg:p-6 lg:pt-0 xl:p-0'>
