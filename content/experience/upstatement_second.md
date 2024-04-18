@@ -4,7 +4,7 @@ url: https://upstatement.com
 role: Lead Engineer
 title: Senior Engineer
 from: "2018"
-to: "2024"
+to: "2020"
 summary: Build, style, and ship high-quality websites, design systems, mobile
   apps, and digital experiences for a diverse array of projects for clients
   including Harvard Business School, Everytown for Gun Safety, Pratt
