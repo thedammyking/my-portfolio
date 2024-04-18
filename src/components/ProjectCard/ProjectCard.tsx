@@ -49,7 +49,7 @@ const ProjectCard = () => {
           recently played tracks, and detailed audio information about each track. Create and save
           new playlists of recommended tracks based on your existing playlists and more.
         </p>
-        <div className='flex items-center gap-2.5 mt-4 relative z-20'>
+        <div className='flex items-center gap-2.5 mt-3 relative z-20'>
           <LinkWithIcon href='/' icon={<DownloadIcon />}>
             100k+ Installs
           </LinkWithIcon>

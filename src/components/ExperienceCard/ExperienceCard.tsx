@@ -24,20 +24,20 @@ const ExperienceCard = () => {
         2018 — Present
       </p>
       <div>
-        <h6 className='text-base font-medium leading-none text-black dark:text-light-grey-100 lg:group-hover:text-accent-dark lg:dark:group-hover:text-accent-light mb-1 flex items-center'>
+        <h6 className='text-base font-medium leading-none text-black dark:text-light-grey-100 lg:group-hover:text-accent-dark lg:dark:group-hover:text-accent-light flex items-center'>
           Lead Engineer · Upstatement <ExternalLinkIcon className='ml-1 w-4 h-4' />
         </h6>
-        <p className='leading-normal font-medium text-base body-text lg:group-hover:text-black lg:dark:group-hover:text-white mb-3'>
+        <p className='leading-normal font-medium text-base body-text lg:group-hover:text-black lg:dark:group-hover:text-white mt-2'>
           Senior Engineer
         </p>
-        <p className='leading-normal font-normal text-sm body-text lg:group-hover:text-black lg:dark:group-hover:text-white'>
+        <p className='leading-normal font-normal text-sm body-text lg:group-hover:text-black lg:dark:group-hover:text-white mt-3'>
           Build, style, and ship high-quality websites, design systems, mobile apps, and digital
           experiences for a diverse array of projects for clients including Harvard Business School,
           Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th
           News, and more. Provide leadership within engineering department through close
           collaboration, knowledge shares, and spearheading the development of internal tools.
         </p>
-        <div className='flex items-center gap-2.5 mt-4 relative z-20'>
+        <div className='flex items-center gap-2.5 mt-3 relative z-20'>
           <LinkWithIcon href='/'>MusicKit.js</LinkWithIcon>
           <LinkWithIcon href='/'>The Verge</LinkWithIcon>
           <LinkWithIcon href='/'>9to5Mac</LinkWithIcon>
