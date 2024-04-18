@@ -115,3 +115,4 @@ collections:
       - { label: 'Link', name: 'link', widget: 'string', equired: true }
       - { label: 'Year', name: 'year', widget: 'datetime', required: true, date_format: 'YYYY' }
       - { label: 'Featured Image', name: 'thumbnail', widget: 'image', required: true }
+      - { label: 'Platform', name: 'platform', widget: 'string', required: true }
