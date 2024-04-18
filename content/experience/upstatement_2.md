@@ -3,7 +3,7 @@ company: Upstatement
 url: https://upstatement.com
 role: Lead Engineer
 title: Senior Engineer
-from: "2018"
+from: "2022"
 to: "2024"
 summary: Build, style, and ship high-quality websites, design systems, mobile
   apps, and digital experiences for a diverse array of projects for clients
