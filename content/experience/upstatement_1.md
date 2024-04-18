@@ -1,5 +1,5 @@
 ---
-company: Upstatement
+company: Upstatement 2
 url: https://upstatement.com
 role: Lead Engineer
 title: Senior Engineer
