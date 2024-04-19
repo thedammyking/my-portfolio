@@ -9,7 +9,11 @@ import { getAllProjects } from '@/lib/api/projects';
 import DataProvider from '@/providers/DataProvider';
 import { Resource } from '@/types/enums';
 
-export default async function ResourcePage({ params }: { params: { resource: Resource } }) {
+interface ResourcePageProps {
+  params: { resource: Resource };
+}
+
+const ResourcePage: React.FC<ResourcePageProps> = async ({ params }) => {
   const pageData = {
     articles: await getAllArticles(),
     projects: await getAllProjects()
@@ -34,7 +38,9 @@ export default async function ResourcePage({ params }: { params: { resource: Res
       </div>
     </DataProvider>
   );
-}
+};
+
+export default ResourcePage;
 
 export const dynamicParams = false;
 
@@ -45,4 +51,10 @@ export async function generateStaticParams() {
   if (articles.length > 4) params.push({ resource: Resource.Articles });
   if (projects.length > 4) params.push({ resource: Resource.Projects });
   return params;
+}
+
+export async function generateMetadata({ params }: ResourcePageProps) {
+  return {
+    title: `All ${capitalize(params.resource)}`
+  };
 }
