@@ -10,6 +10,8 @@ import ProjectRow from './ProjectRow';
 
 import styles from './ProjectArchive.module.scss';
 
+import '../../styles/base.scss';
+
 const ProjectArchiveDeskTop = () => {
   const { projects } = useData();
   return (

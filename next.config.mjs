@@ -17,6 +17,9 @@ const nextConfig = {
         hostname: 'res.cloudinary.com'
       }
     ]
+  },
+  experimental: {
+    optimizePackageImports: ['lodash', 'next-themes', 'zustand', 'gray-matter']
   }
 };
 

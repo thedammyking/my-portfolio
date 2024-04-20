@@ -7,6 +7,8 @@ import { Project } from '@/types/interfaces/project';
 import { AccordionContent, AccordionHeader, AccordionItem } from '../Accordion';
 import Tag from '../Tag';
 
+import '../../styles/base.scss';
+
 interface ProjectAccordionItemProps {
   isOpenedByDefault?: boolean;
   data: Project;

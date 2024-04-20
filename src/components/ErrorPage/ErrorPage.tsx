@@ -6,6 +6,8 @@ import { ButtonVariant } from '@/types/enums';
 
 import Button from '../Button';
 
+import '../../styles/base.scss';
+
 interface ErrorPageProps {
   title: string;
   subTitle: string;

@@ -4,6 +4,8 @@ import React from 'react';
 
 import { useData } from '@/providers/DataProvider';
 
+import '../../styles/base.scss';
+
 const About = () => {
   const { about } = useData();
   return (

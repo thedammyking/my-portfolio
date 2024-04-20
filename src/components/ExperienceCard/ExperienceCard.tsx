@@ -8,6 +8,8 @@ import Card from '../Card';
 import LinkWithIcon from '../LinkWithIcon';
 import Tag from '../Tag';
 
+import '../../styles/base.scss';
+
 interface ExperienceCardProps {
   data: Experience;
 }

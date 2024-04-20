@@ -1,5 +1,6 @@
 import React, { HTMLAttributes } from 'react';
 import cx from 'classnames';
+import '../../styles/base.scss';
 
 interface NavigationItemProps extends Omit<HTMLAttributes<HTMLParagraphElement>, 'children'> {
   label: string;

@@ -8,6 +8,8 @@ import { useData } from '@/providers/DataProvider';
 import ContactList from '../ContactList';
 import Navigation from '../Navigation';
 
+import '../../styles/base.scss';
+
 const Header: React.FC = () => {
   const { header } = useData();
   return (

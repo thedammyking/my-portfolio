@@ -2,6 +2,8 @@ import React, { AnchorHTMLAttributes, ReactNode } from 'react';
 
 import { LinkIcon } from '@/assets';
 
+import '../../styles/base.scss';
+
 interface LinkWithIconProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   icon?: ReactNode;
 }

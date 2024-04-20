@@ -9,6 +9,8 @@ import { Article } from '@/types/interfaces/article';
 import Card from '../Card';
 import Tag from '../Tag';
 
+import '../../styles/base.scss';
+
 interface ArticleCardProps {
   block?: boolean;
   data: Article;
