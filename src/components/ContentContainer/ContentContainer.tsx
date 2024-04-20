@@ -34,6 +34,7 @@ const ContentContainer: React.FC<ContentContainerProps> = ({
       {...props}
       className={cx('relative scroll-mt-16 lg:scroll-mt-24 lg:pt-0', className)}
       ref={ref}
+      aria-label={label}
     >
       <div className='top-0 -mx-[16px] md:-mx-[32px] sticky z-30 w-screen py-[30px] px-4 md:px-8 lg:sr-only bg-[var(--background) backdrop-blur'>
         <NavigationItem inContent active label={label} className='lg:sr-only py-0' />
