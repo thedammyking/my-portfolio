@@ -7,7 +7,7 @@ const ContactList: React.FC = () => {
   return (
     <ul
       role='list'
-      className='list-none flex gap-5 lg:mb-16'
+      className='list-none flex flex-wrap gap-3 sm:gap-5 lg:mb-16'
       aria-label='Contacts and Social medai'
     >
       {CONTACT_LINKS.map(({ icon: I, ...link }) => {

@@ -1,10 +1,12 @@
 import { GitHubIcon, InstagramIcon, LinkedInIcon, MailIcon, XIcon } from '@/assets';
+import StackOverflowIcon from '@/assets/icons/StackOverflowIcon';
 
 import {
   EMAIL_ADDRESS,
   GITHUB_PROFILE,
   INSTAGRAM_PROFILE,
   LINKEDIN_PROFILE,
+  STACKOVERFLOW_PROFILE,
   X_PROFILE
 } from './env';
 
@@ -15,6 +17,11 @@ export const CONTACT_LINKS = [
     icon: GitHubIcon,
     label: 'GitHub',
     url: GITHUB_PROFILE
+  },
+  {
+    icon: StackOverflowIcon,
+    label: 'Stack Overflow',
+    url: STACKOVERFLOW_PROFILE
   },
   {
     icon: MailIcon,
@@ -28,7 +35,7 @@ export const CONTACT_LINKS = [
   },
   {
     icon: XIcon,
-    label: 'X',
+    label: 'X(Twitter)',
     url: X_PROFILE
   },
   {
