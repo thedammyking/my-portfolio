@@ -1,5 +1,11 @@
-import { GitHubIcon, InstagramIcon, LinkedInIcon, MailIcon, XIcon } from '@/assets';
-import StackOverflowIcon from '@/assets/icons/StackOverflowIcon';
+import {
+  GitHubIcon,
+  InstagramIcon,
+  LinkedInIcon,
+  MailIcon,
+  StackOverflowIcon,
+  XIcon
+} from '@/assets';
 
 import {
   EMAIL_ADDRESS,
