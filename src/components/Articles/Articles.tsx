@@ -16,11 +16,13 @@ const Articles = () => {
   const { articles } = useData();
   return (
     <div className='w-full h-max'>
-      <div className='flex flex-col gap-10 md:gap-14'>
-        {articles
-          ?.slice(0, 4)
-          .map(article => <ArticleCard data={article} key={uniqueId('article-card')} />)}
-      </div>
+      <ul className='list-none flex flex-col gap-10 md:gap-14'>
+        {articles?.slice(0, 4).map(article => (
+          <li key={uniqueId('article-card')}>
+            <ArticleCard data={article} />
+          </li>
+        ))}
+      </ul>
       {articles && articles.length > 4 && (
         <Button
           onClick={() =>

@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   creator: 'Oluwadamilola Babalola',
   category: 'technology',
   formatDetection: {
-    email: true,
+    email: false,
     address: false,
     telephone: false
   },

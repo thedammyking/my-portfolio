@@ -64,26 +64,26 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
           {data.summary}
         </p>
         {data.stats && (
-          <div className='flex items-center gap-2.5 mt-3 relative z-20'>
+          <ul className='list-none flex items-center gap-2.5 mt-3 relative z-20'>
             {data.stats.map(stat => {
               const Icon = icons[stat.type as keyof typeof icons];
               return (
-                <LinkWithIcon
-                  icon={Icon ? <Icon /> : undefined}
-                  key={uniqueId('stat')}
-                  href={stat.url}
-                >
-                  {stat.count_text}
-                </LinkWithIcon>
+                <li key={uniqueId('stat')}>
+                  <LinkWithIcon icon={Icon ? <Icon /> : undefined} href={stat.url}>
+                    {stat.count_text}
+                  </LinkWithIcon>
+                </li>
               );
             })}
-          </div>
+          </ul>
         )}
-        <div className='flex items-center gap-2 mt-3'>
+        <ul className='list-none flex items-center gap-2 mt-3'>
           {data.stack.map(stack => (
-            <Tag key={uniqueId('stack')}>{stack}</Tag>
+            <li key={uniqueId('stack')}>
+              <Tag>{stack}</Tag>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </Card>
   );

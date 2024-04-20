@@ -10,11 +10,13 @@ import ArticleCard from '../ArticleCard';
 const AllArticles = () => {
   const { articles } = useData();
   return (
-    <div className='w-full h-max flex flex-col sm:grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10'>
+    <ul className='list-none w-full h-max flex flex-col sm:grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10'>
       {articles?.map(article => (
-        <ArticleCard data={article} block key={uniqueId('article-card')} />
+        <li key={uniqueId('article-card')}>
+          <ArticleCard data={article} block />
+        </li>
       ))}
-    </div>
+    </ul>
   );
 };
 

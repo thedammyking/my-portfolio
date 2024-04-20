@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/private/', '/admin/']
+        disallow: ['/admin/']
       }
     ],
     sitemap: 'https://oluwadamilola.me/sitemap.xml'

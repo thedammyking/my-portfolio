@@ -14,11 +14,13 @@ const Experience = () => {
   const { experience } = useData();
   return (
     <div className='w-full h-max'>
-      <div className='flex flex-col gap-10 md:gap-14'>
+      <ul className='flex flex-col gap-10 list-none md:gap-14'>
         {experience?.map(experience => (
-          <ExperienceCard data={experience} key={uniqueId('experience-card')} />
+          <li key={uniqueId('experience-card')}>
+            <ExperienceCard data={experience} />
+          </li>
         ))}
-      </div>
+      </ul>
       <Button variant={ButtonVariant.Text} icon={<DownloadIcon />} className='mt-8 xl:mt-10'>
         View Full Résumé
       </Button>

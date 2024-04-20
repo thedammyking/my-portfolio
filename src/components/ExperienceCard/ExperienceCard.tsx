@@ -51,19 +51,21 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ data }) => {
           dangerouslySetInnerHTML={{ __html: data.content }}
         />
         {data.articles && (
-          <div className='flex items-center gap-2.5 mt-3 relative z-20'>
+          <ul className='flex items-center gap-2.5 list-none mt-3 relative z-20'>
             {data.articles.map(article => (
-              <LinkWithIcon key={uniqueId('related-article')} href={article.url}>
-                {article.publication}
-              </LinkWithIcon>
+              <li key={uniqueId('related-article')}>
+                <LinkWithIcon href={article.url}>{article.publication}</LinkWithIcon>
+              </li>
             ))}
-          </div>
+          </ul>
         )}
-        <div className='flex items-center gap-2 mt-3'>
+        <ul className='flex list-none items-center gap-2 mt-3'>
           {data.stack.map(stack => (
-            <Tag key={uniqueId('stack')}>{stack}</Tag>
+            <li key={uniqueId('stack')}>
+              <Tag>{stack}</Tag>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </Card>
   );

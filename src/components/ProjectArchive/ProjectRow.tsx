@@ -29,11 +29,13 @@ const ProjectRow: React.FC<ProjectRowProps> = ({ data }) => {
         )}
       </td>
       <td>
-        <div className='flex items-center gap-[6px] flex-wrap'>
+        <ul className='list-none flex items-center gap-[6px] flex-wrap'>
           {data.stack.map(stack => (
-            <Tag key={uniqueId('stack')}>{stack}</Tag>
+            <li key={uniqueId('stack')}>
+              <Tag>{stack}</Tag>
+            </li>
           ))}
-        </div>
+        </ul>
       </td>
       <td>
         {data.link && (

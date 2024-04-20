@@ -16,11 +16,13 @@ const Projects = () => {
   const { projects } = useData();
   return (
     <div className='w-full h-max'>
-      <div className='flex flex-col gap-10 md:gap-14'>
-        {projects
-          ?.slice(0, 4)
-          .map(project => <ProjectCard data={project} key={uniqueId('project-card')} />)}
-      </div>
+      <ul className='list-none flex flex-col gap-10 md:gap-14'>
+        {projects?.slice(0, 4).map(project => (
+          <li key={uniqueId('project-card')}>
+            <ProjectCard data={project} />
+          </li>
+        ))}
+      </ul>
       {projects && projects.length > 4 && (
         <Button
           onClick={() =>

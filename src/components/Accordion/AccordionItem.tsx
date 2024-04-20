@@ -27,11 +27,13 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
 
   return (
     <AccordionItemProvider itemId={itemRef.current}>
-      <div
-        className={cx('relative border-0 border-b-[1px] border-dark-grey-100/10', className)}
-        {...props}
-        onClick={() => setActiveAccordion(itemRef.current)}
-      />
+      <li>
+        <div
+          className={cx('relative border-0 border-b-[1px] border-dark-grey-100/10', className)}
+          {...props}
+          onClick={() => setActiveAccordion(itemRef.current)}
+        />
+      </li>
     </AccordionItemProvider>
   );
 };
