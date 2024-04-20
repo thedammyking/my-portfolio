@@ -6,7 +6,6 @@ import localFont from 'next/font/local';
 import { ThemeProvider } from 'next-themes';
 
 import BackToTop from '@/components/BackToTop';
-import Footer from '@/components/Footer';
 import ThemeSwitcher from '@/components/ThemeSwitcher';
 import { THEME_MODE_KEY } from '@/data/contants';
 import { ThemeMode } from '@/types/enums';
@@ -120,7 +119,7 @@ export default function RootLayout({
 }>) {
   return (
     <html suppressHydrationWarning lang='en'>
-      <body className={cx(inter.variable, helvetica.variable, 'body')}>
+      <body className={cx(inter.variable, helvetica.variable, 'font-sans relative')}>
         <ThemeProvider
           attribute='class'
           storageKey={THEME_MODE_KEY}
@@ -132,7 +131,6 @@ export default function RootLayout({
           </div>
           <ThemeSwitcher />
           <BackToTop />
-          <Footer />
         </ThemeProvider>
       </body>
     </html>
