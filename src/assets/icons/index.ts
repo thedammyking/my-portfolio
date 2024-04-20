@@ -14,4 +14,5 @@ export { default as MailIcon } from './MailIcon';
 export { default as MoonIcon } from './MoonIcon';
 export { default as StackOverflowIcon } from './StackOverflowIcon';
 export { default as StarIcon } from './StarIcon';
+export { default as SystemIcon } from './SystemIcon';
 export { default as XIcon } from './XIcon';

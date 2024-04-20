@@ -1,6 +1,6 @@
 .ThemeSwitcher {
-  &_icon {
-    @apply w-8 h-8 flex justify-center items-center text-current rounded-full overflow-hidden transition-all ease-in-out duration-300;
+  &_button {
+    @apply w-8 h-8 appearance-none cursor-pointer flex justify-center items-center text-current rounded-full overflow-hidden transition-all ease-in-out duration-300;
 
     & > svg {
       @apply w-4 h-4 text-inherit;
