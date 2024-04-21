@@ -7,6 +7,7 @@ import { ExternalLinkIcon } from '@/assets';
 import { Project } from '@/types/interfaces/project';
 
 import Tag from '../Tag';
+import TagList from '../TagList';
 
 interface ProjectRowProps {
   data: Project;
@@ -29,13 +30,7 @@ const ProjectRow: React.FC<ProjectRowProps> = ({ data }) => {
         )}
       </td>
       <td>
-        <ul className='list-none flex items-center gap-[6px] flex-wrap'>
-          {data.stack.map(stack => (
-            <li key={uniqueId('stack')}>
-              <Tag>{stack}</Tag>
-            </li>
-          ))}
-        </ul>
+        <TagList tags={data.stack} />
       </td>
       <td>
         {data.link && (

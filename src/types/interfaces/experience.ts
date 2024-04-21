@@ -9,7 +9,7 @@ export interface Experience extends FileData {
   company: string;
   url: string;
   role: string;
-  title?: string;
+  location: string;
   from: string;
   to: string;
   stack: string[];

@@ -9,7 +9,7 @@ import '../../styles/base.scss';
 const About = () => {
   const { about } = useData();
   return (
-    <div className='w-full lg:h-[543px]'>
+    <div className='w-full'>
       <p
         className='w-full text-base font-normal leading-normal body-text'
         dangerouslySetInnerHTML={{ __html: about?.content || '' }}

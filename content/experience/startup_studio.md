@@ -2,7 +2,7 @@
 company: Startup Studio
 url: https://www.linkedin.com/company/sstudio.io/
 role: Frontend Developer
-title: Frontend Developer
+location: Lagos, Nigeria (Remote)
 from: 04/01/2018
 to: 08/30/2018
 stack:

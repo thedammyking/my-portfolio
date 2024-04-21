@@ -26,7 +26,7 @@ const ContentContainer: React.FC<ContentContainerProps> = ({
       const activeSection = entry.target.getAttribute('id');
       inView && activeSection && setActiveSection(activeSection as ContentSection);
     },
-    threshold: 0.2
+    threshold: 0.4
   });
 
   return (

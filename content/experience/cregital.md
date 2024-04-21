@@ -1,8 +1,8 @@
 ---
 company: Cregital
 url: https://www.linkedin.com/company/cregital/
-role: Intern
-title: Web Developer
+role: Web Developer Intern
+location: Lagos, Nigeria
 from: 12/01/2016
 to: 05/30/2017
 stack:

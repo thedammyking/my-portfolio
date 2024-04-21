@@ -11,6 +11,7 @@ import LinkWithIcon from '../LinkWithIcon';
 import Tag from '../Tag';
 
 import '../../styles/base.scss';
+import TagList from '../TagList';
 
 interface ProjectCardProps {
   data: Project;
@@ -79,13 +80,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
             })}
           </ul>
         )}
-        <ul className='list-none flex items-center gap-2 mt-3'>
-          {data.stack.map(stack => (
-            <li key={uniqueId('stack')}>
-              <Tag>{stack}</Tag>
-            </li>
-          ))}
-        </ul>
+        <TagList tags={data.stack} className='mt-3' />
       </div>
     </Card>
   );

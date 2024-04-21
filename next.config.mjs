@@ -19,7 +19,7 @@ const nextConfig = {
     ]
   },
   experimental: {
-    optimizePackageImports: ['lodash', 'next-themes', 'zustand', 'gray-matter']
+    optimizePackageImports: ['lodash', 'next-themes', 'zustand', 'gray-matter', 'date-fns']
   }
 };
 

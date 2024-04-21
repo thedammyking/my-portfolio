@@ -11,7 +11,10 @@ export function getAllExperience() {
     const slugs = getFileNames(Resource.Experience);
     experience = slugs
       .map(slug => getDataByFileName<Experience>(slug, Resource.Experience))
-      .sort((experience1, experience2) => Number(experience2.from) - Number(experience1.from));
+      .sort(
+        (experience1, experience2) =>
+          new Date(experience2.from).getTime() - new Date(experience1.from).getTime()
+      );
   } catch (error) {
     Sentry.captureException(error);
   } finally {

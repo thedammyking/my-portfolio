@@ -1,8 +1,8 @@
 ---
-company: Opensupermall, Kuala Lumpur
+company: Opensupermall
 url: /
 role: Fullstack Developer
-title: React Native Fullstack Developer
+location: Kuala Lumpur, Malaysia (Remote)
 from: 12/01/2018
 to: 03/30/2018
 stack:

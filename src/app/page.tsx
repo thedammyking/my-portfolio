@@ -35,7 +35,7 @@ export default async function Home() {
             <main
               id='content'
               aria-label='content'
-              className='lg:w-1/2 pb-12 lg:py-24 flex flex-col gap-10 md:gap-16 lg:gap-24'
+              className='lg:w-[55%] pb-12 lg:py-24 flex flex-col gap-10 md:gap-16 lg:gap-24'
             >
               {contentSectionKeys.map(key => {
                 const { label, content: Content } = CONTENT_SECTIONS[key];

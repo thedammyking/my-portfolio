@@ -1,5 +1,6 @@
 import React from 'react';
 import { uniqueId } from 'lodash';
+import { format, isDate } from 'date-fns';
 
 import { ExternalLinkIcon } from '@/assets';
 import { Experience } from '@/types/interfaces/experience';
@@ -9,6 +10,7 @@ import LinkWithIcon from '../LinkWithIcon';
 import Tag from '../Tag';
 
 import '../../styles/base.scss';
+import TagList from '../TagList';
 
 interface ExperienceCardProps {
   data: Experience;
@@ -16,11 +18,14 @@ interface ExperienceCardProps {
 
 const ExperienceCard: React.FC<ExperienceCardProps> = ({ data }) => {
   const getTo = () => {
-    const now = new Date().getFullYear();
-    const to = Number(data.to);
-    if (now === to) return 'Present';
-    return data.to;
+    if (!isDate(new Date(data.to))) return 'Present';
+    return format(new Date(data.to), 'MMM yyyy');
   };
+
+  const getFrom = () => {
+    return format(new Date(data.from), 'MMM yyyy');
+  };
+
   return (
     <Card label='Experience' className='p-4 lg:p-6 xl:grid xl:grid-cols-[max-content_1fr] xl:gap-6'>
       <a
@@ -31,23 +36,21 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ data }) => {
         aria-label={data.company}
       />
       <span className='sr-only'>
-        {data.role} - {data.company} ({data.from} - {getTo()})
+        {data.role} - {data.company} ({getFrom()} - {getTo()})
       </span>
       <p
-        aria-label={`${data.from} - ${getTo()}`}
+        aria-label={`${getFrom()} - ${getTo()}`}
         className='text-xs font-semibold body-text lg:group-hover:text-black lg:dark:group-hover:text-white uppercase leading-normal mb-2 xl:mb-0'
       >
-        {data.from} — {getTo()}
+        {getFrom()} — {getTo()}
       </p>
       <div>
         <h6 className='text-base font-medium leading-none text-black dark:text-light-grey-100 lg:group-hover:text-accent-dark lg:dark:group-hover:text-accent-light flex items-center'>
           {data.role} · {data.company} <ExternalLinkIcon className='ml-1 w-4 h-4' />
         </h6>
-        {data?.title && (
-          <p className='leading-normal font-medium text-base body-text lg:group-hover:text-black lg:dark:group-hover:text-white mt-2'>
-            {data.title}
-          </p>
-        )}
+        <p className='leading-normal font-medium text-sm body-text lg:group-hover:text-black lg:dark:group-hover:text-white mt-2'>
+          {data.location}
+        </p>
         <p
           className='leading-normal font-normal text-sm body-text lg:group-hover:text-black lg:dark:group-hover:text-white mt-3'
           dangerouslySetInnerHTML={{ __html: data.content }}
@@ -61,13 +64,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ data }) => {
             ))}
           </ul>
         )}
-        <ul className='flex list-none items-center gap-2 mt-3'>
-          {data.stack.map(stack => (
-            <li key={uniqueId('stack')}>
-              <Tag>{stack}</Tag>
-            </li>
-          ))}
-        </ul>
+        <TagList tags={data.stack} className='mt-3' />
       </div>
     </Card>
   );
