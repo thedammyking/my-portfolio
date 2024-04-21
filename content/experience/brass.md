@@ -32,6 +32,8 @@ stack:
   - Yup
   - ChartJS
   - GSAP
+  - Git
+  - GitHub Actions
 articles: []
 ---
--
+

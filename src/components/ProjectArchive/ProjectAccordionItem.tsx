@@ -5,7 +5,6 @@ import { ExternalLinkIcon } from '@/assets';
 import { Project } from '@/types/interfaces/project';
 
 import { AccordionContent, AccordionHeader, AccordionItem } from '../Accordion';
-import Tag from '../Tag';
 
 import '../../styles/base.scss';
 import TagList from '../TagList';
@@ -28,13 +27,13 @@ const ProjectAccordionItem: React.FC<ProjectAccordionItemProps> = ({ data, ...pr
               e.preventDefault();
             }
           }}
-          className='text-black dark:text-light-grey-100 sm:text-light-grey-600 sm:dark:text-dark-grey-200 flex items-center gap-[2px] w-max col-start-2 sm:col-start-3'
+          className='text-black leading-tight dark:text-light-grey-100 sm:text-light-grey-600 sm:dark:text-dark-grey-200 w-max col-start-2 sm:col-start-3'
         >
           <span className='sm:hidden'>{data.title}</span>
           {data.link && (
             <>
               <span className='hidden sm:inline-flex'>{data.link.label}</span>
-              <ExternalLinkIcon className='w-4 h-4 ml-[2px]' />
+              <ExternalLinkIcon className='w-4 h-4 ml-[2px] inline-block align-top' />
             </>
           )}
         </a>

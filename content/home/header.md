@@ -1,5 +1,5 @@
 ---
 name: Oluwadamilola Babalola
 role: Frontend Engineer
-summary: Building scalable, usable and reliable web products with great performance
+summary: Crafting scalable, user-friendly, and reliable web products with outstanding performance
 ---

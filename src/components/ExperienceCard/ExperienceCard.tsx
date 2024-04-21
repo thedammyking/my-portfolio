@@ -1,13 +1,12 @@
 import React from 'react';
 import { uniqueId } from 'lodash';
-import { format, isDate } from 'date-fns';
+import { format, isValid } from 'date-fns';
 
 import { ExternalLinkIcon } from '@/assets';
 import { Experience } from '@/types/interfaces/experience';
 
 import Card from '../Card';
 import LinkWithIcon from '../LinkWithIcon';
-import Tag from '../Tag';
 
 import '../../styles/base.scss';
 import TagList from '../TagList';
@@ -18,7 +17,7 @@ interface ExperienceCardProps {
 
 const ExperienceCard: React.FC<ExperienceCardProps> = ({ data }) => {
   const getTo = () => {
-    if (!isDate(new Date(data.to))) return 'Present';
+    if (!isValid(new Date(data.to))) return 'Present';
     return format(new Date(data.to), 'MMM yyyy');
   };
 
@@ -45,8 +44,9 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ data }) => {
         {getFrom()} — {getTo()}
       </p>
       <div>
-        <h6 className='text-base font-medium leading-none text-black dark:text-light-grey-100 lg:group-hover:text-accent-dark lg:dark:group-hover:text-accent-light flex items-center'>
-          {data.role} · {data.company} <ExternalLinkIcon className='ml-1 w-4 h-4' />
+        <h6 className='text-base font-medium leading-tight text-black dark:text-light-grey-100 lg:group-hover:text-accent-dark lg:dark:group-hover:text-accent-light'>
+          {data.role} at {data.company}
+          <ExternalLinkIcon className='ml-1 w-4 h-4 inline-block align-top' />
         </h6>
         <p className='leading-normal font-medium text-sm body-text lg:group-hover:text-black lg:dark:group-hover:text-white mt-2'>
           {data.location}

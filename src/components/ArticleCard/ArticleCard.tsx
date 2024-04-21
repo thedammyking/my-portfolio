@@ -67,9 +67,9 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ block, data }) => {
           </p>
           <Tag>{data.platform}</Tag>
         </div>
-        <h6 className='text-base font-medium leading-snug text-black dark:text-light-grey-100 lg:group-hover:text-accent-dark lg:dark:group-hover:text-accent-light'>
+        <h6 className='text-base font-medium leading-tight text-black dark:text-light-grey-100 lg:group-hover:text-accent-dark lg:dark:group-hover:text-accent-light'>
           {data.title}
-          <ExternalLinkIcon className='ml-1 w-4 h-4 inline-block' />
+          <ExternalLinkIcon className='ml-1 w-4 h-4 inline-block align-top' />
         </h6>
       </div>
     </Card>

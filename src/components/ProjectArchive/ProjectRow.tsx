@@ -6,7 +6,6 @@ import { uniqueId } from 'lodash';
 import { ExternalLinkIcon } from '@/assets';
 import { Project } from '@/types/interfaces/project';
 
-import Tag from '../Tag';
 import TagList from '../TagList';
 
 interface ProjectRowProps {
@@ -38,7 +37,8 @@ const ProjectRow: React.FC<ProjectRowProps> = ({ data }) => {
             className='text-sm font-medium leading-tight flex items-center gap-[2px] text-dark-grey-400 lg:hover:text-accent-dark lg:dark:hover:text-accent-light'
             href={data.link.url}
           >
-            {data.link.label} <ExternalLinkIcon className='w-4 h-4 relative' />
+            {data.link.label}
+            <ExternalLinkIcon className='ml-1 w-4 h-4 relative inline-block align-top' />
           </a>
         )}
       </td>
