@@ -1,5 +1,5 @@
 ---
-company: Orb-Digital
+company: Orb Digital
 url: https://www.orb-digital.com
 role: Frontend Engineer
 location: Lagos, Nigeria
