@@ -8,7 +8,7 @@ to: 05/30/2017
 stack:
   - WordPress
   - PHP
-  - JQuery
+  - jQuery
   - MySQL
 articles:
   - url: https://techpoint.africa/2015/04/22/cregital-design-agency-launches-to-set-a-new-standard/

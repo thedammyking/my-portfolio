@@ -11,7 +11,7 @@ stack:
   - Git
   - Redux Thunk
   - Webpack
-  - Gatsby
+  - GatsbyJS
 articles: []
 ---
 I contributed to the development of the platform's initial version and the coming soon website. My work laid the foundation for the platform's functionality and usability, helping it become an effective tool for managing media content.

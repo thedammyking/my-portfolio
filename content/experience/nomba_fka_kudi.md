@@ -9,9 +9,9 @@ stack:
   - React
   - Redux
   - Redux Thunk
-  - Gatsby
+  - GatsbyJS
   - Docker
-  - Node
+  - NodeJS
   - Styled Component
   - Flow
   - Rollup
@@ -19,6 +19,7 @@ stack:
   - Jest
   - Testing Library
   - Semaphore CI
+  - Git
 articles: []
 ---
 I was instrumental in creating a version of the company's website and worked with other developers to maintain it. My role extended to implementing, optimizing, and maintaining web solutions for different teams, ensuring they were efficient, scalable, and aligned with business objectives.
