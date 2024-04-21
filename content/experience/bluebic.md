@@ -12,4 +12,4 @@ stack:
   - Git
 articles: []
 ---
-I supported an older version of the platform while also contributing to the creation of a newer, more user-friendly version alongside a skilled team of developers. This experience enriched my understanding of the system and deepened my expertise in educational technology.
+At BlueBic, an educational software company providing data collection tools for K12 and ECD schools across Africa, I maintained an older version of the platform and played a key role in developing a newer, more user-friendly version.

@@ -14,4 +14,4 @@ stack:
   - GatsbyJS
 articles: []
 ---
-I contributed to the development of the platform's initial version and the coming soon website. My work laid the foundation for the platform's functionality and usability, helping it become an effective tool for managing media content.
+At Fourvill, I contributed to developing the platform's initial version. My role involved laying the groundwork for key features and functionality, helping create a user-friendly system that improved content management and efficiency.

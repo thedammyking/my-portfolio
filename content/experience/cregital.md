@@ -10,8 +10,6 @@ stack:
   - PHP
   - jQuery
   - MySQL
-articles:
-  - url: https://techpoint.africa/2015/04/22/cregital-design-agency-launches-to-set-a-new-standard/
-    publication: Techpoint
+articles: []
 ---
-I contributed to building WordPress websites and plugins for companies like Zenith Bank, David Wei, Uberchic Ville, among others, ensuring they operated smoothly and provided excellent user experiences.
+As a web developer intern at Cregital, I gained valuable experience working on projects for clients like Zenith Bank, David Wei, Uberchic Ville and more. I developed WordPress websites, demonstrating my ability to build functional and visually appealing sites. I also implemented unique solutions, such as an ovulation calculator plugin for a Discourse forum and an ATM locator plugin for Zenith Bank's website. 

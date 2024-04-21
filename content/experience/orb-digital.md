@@ -17,4 +17,4 @@ stack:
   - Git
 articles: []
 ---
-I built websites for businesses and services to support their growth, working with clients like HR Flex, Jollof Republik, and Babelos. Additionally, I contributed to Mallbly, an online store, enhancing its e-commerce functionality and user experience. My role involved creating digital solutions that align with business goals and drive success.
+At Orb Digital, my role centered on building websites to help businesses and services expand their reach and grow. I worked with a diverse range of clients, including HR Flex, Jollof Republik, and Babelos, creating custom web solutions tailored to their needs. Additionally, I contributed to Mallbly, an online store, enhancing its e-commerce capabilities and user experience.

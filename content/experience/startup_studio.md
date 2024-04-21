@@ -13,4 +13,4 @@ stack:
   - jQuery
 articles: []
 ---
-I collaborated with other developers to create websites and apps for various businesses, ensuring they met client needs and industry standards. Additionally, I designed email templates for businesses to enhance their communication and marketing efforts.
+At Startup Studio, I collaborated with other developers to create websites and apps tailored to business needs. My role aslo included designing and building email templates for businesses, enhancing their communication and marketing efforts.
