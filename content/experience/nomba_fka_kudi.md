@@ -12,7 +12,7 @@ stack:
   - GatsbyJS
   - Docker
   - NodeJS
-  - styled-components
+  - Styled Components
   - Flow
   - Rollup
   - SASS
