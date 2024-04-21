@@ -4,7 +4,7 @@ url: https://www.orb-digital.com
 role: Frontend Engineer
 location: Lagos, Nigeria (Remote)
 from: 06/01/2020
-to: 08/30/2020
+to: 07/30/2020
 stack:
   - React
   - Redux
