@@ -4,7 +4,8 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'Oluwadamilola Babalola',
     short_name: `Oluwadamilola's Porfolio`,
-    description: 'I build pixel-perfect, engaging, and accessible digital experiences.',
+    description:
+      'Crafting scalable, user-friendly, and reliable web products with outstanding performance.',
     start_url: '/',
     display: 'standalone',
     background_color: '#1a1a1a',

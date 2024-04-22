@@ -39,7 +39,8 @@ const helvetica = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL('https://oluwadamilola.me'),
   title: { template: 'Oluwadamilola Babalola | %s', default: 'Oluwadamilola Babalola' },
-  description: 'I build pixel-perfect, engaging, and accessible digital experiences.',
+  description:
+    'Crafting scalable, user-friendly, and reliable web products with outstanding performance.',
   generator: 'Oluwadamilola Babalola',
   applicationName: `Oluwadamilola's Portfolio`,
   referrer: 'origin-when-cross-origin',
