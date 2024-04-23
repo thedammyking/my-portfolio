@@ -11,11 +11,14 @@ media_library:
     cloud_name: ds8bd6wxr
     api_key: 785123966216323
 collections:
-  - label: 'Technologies'
-    name: 'technologies'
-    file: 'content/technologies/list.md'
-    fields:
-      - { label: 'Tech', name: 'tech', widget: 'list', required: true }
+  - label: 'Defaults'
+    name: 'defaults'
+    files:
+      - label: 'Technologies'
+        name: 'technologies'
+        file: 'content/technologies/list.md'
+        fields:
+          - { label: 'Tech', name: 'tech', widget: 'list', required: true }
   - label: 'Home Page'
     name: 'home_page'
     files:
@@ -61,9 +64,10 @@ collections:
           - label: 'Tech'
             name: 'tech'
             widget: 'relation'
-            collection: 'technologies'
-            value_field: 'tech'
-            search_fields: ['tech']
+            collection: 'defaults'
+            file: 'technologies'
+            value_field: 'technologies.*.tech'
+            search_fields: ['technologies.*.tech']
             required: true
       - label: 'Related Articles'
         name: 'articles'
