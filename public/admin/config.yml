@@ -13,6 +13,7 @@ media_library:
 collections:
   - label: 'Defaults'
     name: 'defaults'
+    create: true
     folder: 'content/defaults'
     identifier_field: technologies
     fields:
