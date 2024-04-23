@@ -61,9 +61,8 @@ collections:
         name: 'technologies'
         widget: 'relation'
         collection: 'defaults'
-        value_field: 'technologies.*.item'
+        value_field: 'technologies.item'
         search_fields: ['technologies']
-        displayFields: ['technologies.*.item']
         required: true
       - label: 'Related Articles'
         name: 'articles'
