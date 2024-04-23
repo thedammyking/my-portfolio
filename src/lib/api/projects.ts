@@ -11,7 +11,10 @@ export const getAllProjects = () => {
     const slugs = getFileNames(Resource.Projects);
     projects = slugs
       .map(slug => getDataByFileName<Project>(slug, Resource.Projects))
-      .sort((projects1, projects2) => Number(projects2.year) - Number(projects1.year));
+      .sort(
+        (projects1, projects2) =>
+          new Date(projects2.year).getTime() - new Date(projects1.year).getTime()
+      );
   } catch (error) {
     Sentry.captureException(error);
   } finally {

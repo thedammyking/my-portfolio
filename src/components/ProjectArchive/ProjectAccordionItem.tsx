@@ -15,10 +15,11 @@ interface ProjectAccordionItemProps {
 }
 
 const ProjectAccordionItem: React.FC<ProjectAccordionItemProps> = ({ data, ...props }) => {
+  const year = new Date(data.year).getFullYear();
   return (
     <AccordionItem {...props}>
       <AccordionHeader className='grid grid-cols-[max-content_1fr_1fr] gap-x-8 py-[18px]'>
-        <p className='min-w-10 body-text'>{data.year}</p>
+        <p className='min-w-10 body-text'>{year}</p>
         <p className='text-black dark:text-light-grey-100 hidden sm:inline-grid'>{data.title}</p>
         <a
           href={data.link?.url}
@@ -27,6 +28,9 @@ const ProjectAccordionItem: React.FC<ProjectAccordionItemProps> = ({ data, ...pr
               e.preventDefault();
             }
           }}
+          rel='noreferrer'
+          target='_blank'
+          aria-label={data.title}
           className='text-black leading-tight dark:text-light-grey-100 sm:text-light-grey-600 sm:dark:text-dark-grey-200 w-max col-start-2 sm:col-start-3'
         >
           <span className='sm:hidden'>{data.title}</span>

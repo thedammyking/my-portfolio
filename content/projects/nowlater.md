@@ -1,6 +1,6 @@
 ---
 title: Nowlater
-year: "2018"
+year: "10/29/2018"
 made_at: "-"
 summary: I built the Nowlater dashboard UI. Nowlater offers easy financing
   solutions for online purchases through monthly instalment plans.

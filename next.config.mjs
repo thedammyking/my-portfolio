@@ -1,15 +1,6 @@
 import { withSentryConfig } from '@sentry/nextjs';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  webpack(config) {
-    config.module.rules.push({
-      test: /\.svg$/i,
-      issuer: /\.[jt]sx?$/,
-      use: ['@svgr/webpack']
-    });
-
-    return config;
-  },
   images: {
     remotePatterns: [
       {
@@ -19,7 +10,14 @@ const nextConfig = {
     ]
   },
   experimental: {
-    optimizePackageImports: ['lodash', 'next-themes', 'zustand', 'gray-matter', 'date-fns']
+    optimizePackageImports: ['lodash', 'next-themes', 'zustand', 'gray-matter', 'date-fns'],
+    turbo: {
+      rules: {
+        test: /\.svg$/i,
+        issuer: /\.[jt]sx?$/,
+        use: ['@svgr/webpack']
+      }
+    }
   }
 };
 

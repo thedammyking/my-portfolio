@@ -1,6 +1,6 @@
 ---
 title: Babelos
-year: "2020"
+year: "06/23/2020"
 made_at: Orb Digital
 summary: Website for a multilingual solutions company offering a wide range of
   linguistic services - translation, transcription, web, mobile and game

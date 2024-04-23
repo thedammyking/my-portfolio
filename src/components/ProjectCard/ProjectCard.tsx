@@ -21,6 +21,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
     download: DownloadIcon,
     star: StarIcon
   };
+
+  const year = new Date(data.year).getFullYear();
   return (
     <Card
       label='Project'
@@ -36,7 +38,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
         />
       )}
       <span className='sr-only'>
-        {data.title} ({data.year})
+        {data.title} ({year})
       </span>
       <div className='sm:border lg:border-none xl:border border-transparent dark:lg:group-hover:border-light-grey-200 lg:group-hover:border-dark-grey-200 xl:w-[120px] xl:h-20 sm:w-[168px] sm:h-24 w-full h-44 lg:h-44 lg:w-full relative mb-6 lg:mb-6 sm:mb-0 xl:mb-0 sm:rounded-[5px] xl:rounded-[5px] lg:rounded-none overflow-hidden'>
         <Image
@@ -54,10 +56,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
       </div>
       <div className='p-4 pt-0 sm:p-0 lg:p-6 lg:pt-0 xl:p-0'>
         <p
-          aria-label={data.year}
+          aria-label={String(year)}
           className='text-xs font-semibold body-text lg:group-hover:text-black lg:dark:group-hover:text-white uppercase leading-normal mb-1'
         >
-          {data.year}
+          {year}
         </p>
         <h6 className='text-base font-medium leading-tight text-black dark:text-light-grey-100 lg:group-hover:text-accent-dark lg:dark:group-hover:text-accent-light mb-3'>
           {data.title}
