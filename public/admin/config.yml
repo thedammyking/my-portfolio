@@ -13,7 +13,7 @@ media_library:
 collections:
   - label: 'Technologies'
     name: 'technologies'
-    file: 'content/technology/list.md'
+    file: 'content/technologies/list.md'
     fields:
       - { label: 'Tech', name: 'tech', widget: 'string', required: true }
   - label: 'Home Page'
