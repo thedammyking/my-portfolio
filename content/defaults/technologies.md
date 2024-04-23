@@ -1,5 +1,4 @@
 ---
-label: Technologies
 list:
   - ReactJS
   - MobX
@@ -50,5 +49,4 @@ list:
   - Flutter
   - Redux Saga
   - AWS Amplify
-  - Just
 ---

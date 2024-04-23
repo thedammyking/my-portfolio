@@ -13,19 +13,17 @@ media_library:
 collections:
   - label: 'Defaults'
     name: 'defaults'
-    folder: 'content/defaults'
-    identifier_field: label
-    fields:
-      - label: 'Label'
-        name: 'label'
-        widget: 'string'
-        required: true
-      - label: 'List'
-        name: 'list'
-        widget: 'list'
-        required: true
-        default: []
-        field: { label: Item, name: item, widget: string }
+    files:
+      - label: 'Technologies'
+        name: 'technologies'
+        file: 'content/defaults/technologies.md'
+        fields:
+          - label: 'List'
+            name: 'list'
+            widget: 'list'
+            required: true
+            default: []
+            field: { label: Item, name: item, widget: string }
   - label: 'Home Page'
     name: 'home_page'
     files:
