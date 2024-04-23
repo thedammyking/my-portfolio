@@ -13,17 +13,15 @@ media_library:
 collections:
   - label: 'Defaults'
     name: 'defaults'
-    files:
+    folder: 'content/defaults'
+    identifier_field: label
+    fields:
+      - { label: 'Label', name: 'label', widget: 'string' }
       - label: 'Technologies'
         name: 'technologies'
-        file: 'content/defaults/technologies.md'
-        fields:
-          - label: 'Technologies'
-            name: 'technologies'
-            widget: 'list'
-            required: true
-            default: []
-            field: { label: Item, name: item, widget: string }
+        widget: 'list'
+        identifier_field: 'item'
+        field: { label: Item, name: item, widget: string }
   - label: 'Home Page'
     name: 'home_page'
     files:
@@ -63,9 +61,8 @@ collections:
         name: 'technologies'
         widget: 'relation'
         collection: 'defaults'
-        file: 'technologies'
-        value_field: 'technologies.*'
-        search_fields: ['technologies.*']
+        value_field: 'technologies.*.item'
+        search_fields: ['technologies']
         required: true
         multiple: true
       - label: 'Related Articles'

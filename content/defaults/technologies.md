@@ -1,4 +1,5 @@
 ---
+label: Technologies
 technologies:
   - ReactJS
   - MobX
