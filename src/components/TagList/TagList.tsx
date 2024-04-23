@@ -1,6 +1,7 @@
 import React, { HTMLAttributes } from 'react';
 import cx from 'classnames';
 import { uniqueId } from 'lodash';
+
 import Tag from '../Tag';
 
 interface TagListProps extends Omit<HTMLAttributes<HTMLUListElement>, 'children'> {

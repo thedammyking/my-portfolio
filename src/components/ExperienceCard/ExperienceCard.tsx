@@ -1,15 +1,15 @@
 import React from 'react';
-import { uniqueId } from 'lodash';
 import { format, isValid } from 'date-fns';
+import { uniqueId } from 'lodash';
 
 import { ExternalLinkIcon } from '@/assets';
 import { Experience } from '@/types/interfaces/experience';
 
 import Card from '../Card';
 import LinkWithIcon from '../LinkWithIcon';
+import TagList from '../TagList';
 
 import '../../styles/base.scss';
-import TagList from '../TagList';
 
 interface ExperienceCardProps {
   data: Experience;

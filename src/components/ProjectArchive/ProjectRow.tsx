@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import { uniqueId } from 'lodash';
 
 import { ExternalLinkIcon } from '@/assets';
 import { Project } from '@/types/interfaces/project';

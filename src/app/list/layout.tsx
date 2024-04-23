@@ -2,8 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 
 import { ArrowLeftIcon } from '@/assets';
-import ScrollToTop from '@/components/ScrollToTop';
 import Footer from '@/components/Footer';
+import ScrollToTop from '@/components/ScrollToTop';
 
 export default function ListLayout({ children }: { children: React.ReactNode }) {
   return (

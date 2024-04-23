@@ -1,13 +1,12 @@
 import React from 'react';
-import { uniqueId } from 'lodash';
 
 import { ExternalLinkIcon } from '@/assets';
 import { Project } from '@/types/interfaces/project';
 
 import { AccordionContent, AccordionHeader, AccordionItem } from '../Accordion';
+import TagList from '../TagList';
 
 import '../../styles/base.scss';
-import TagList from '../TagList';
 
 interface ProjectAccordionItemProps {
   isOpenedByDefault?: boolean;

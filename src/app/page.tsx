@@ -2,6 +2,7 @@ import React from 'react';
 import { isEmpty, uniqueId } from 'lodash';
 
 import ContentContainer from '@/components/ContentContainer';
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import { CONTENT_SECTIONS } from '@/data/contentSections';
 import { getAllArticles } from '@/lib/api/articles';
@@ -11,7 +12,6 @@ import { getAllProjects } from '@/lib/api/projects';
 import ActiveSectionStoreProvider from '@/providers/ActiveSectionStoreProvider';
 import DataProvider from '@/providers/DataProvider';
 import { ContentSection } from '@/types/enums';
-import Footer from '@/components/Footer';
 
 export default async function Home() {
   const pageData = {

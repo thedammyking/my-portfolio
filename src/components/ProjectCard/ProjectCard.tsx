@@ -8,9 +8,9 @@ import { Project } from '@/types/interfaces/project';
 
 import Card from '../Card';
 import LinkWithIcon from '../LinkWithIcon';
+import TagList from '../TagList';
 
 import '../../styles/base.scss';
-import TagList from '../TagList';
 
 interface ProjectCardProps {
   data: Project;

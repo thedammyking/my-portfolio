@@ -5,9 +5,9 @@ import React from 'react';
 import { ButtonVariant } from '@/types/enums';
 
 import Button from '../Button';
+import Footer from '../Footer';
 
 import '../../styles/base.scss';
-import Footer from '../Footer';
 
 interface ErrorPageProps {
   title: string;

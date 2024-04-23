@@ -8,9 +8,8 @@ import { useData } from '@/providers/DataProvider';
 
 import ProjectRow from './ProjectRow';
 
-import styles from './ProjectArchive.module.scss';
-
 import '../../styles/base.scss';
+import styles from './ProjectArchive.module.scss';
 
 const ProjectArchiveDeskTop = () => {
   const { projects } = useData();
