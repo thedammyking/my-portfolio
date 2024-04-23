@@ -12,6 +12,7 @@ stack:
   - SASS
   - GraphQL
   - GSAP
+  - CSS Modules
 link:
   url: https://www.hr-flex.com
   label: hr-flex.com
