@@ -126,9 +126,10 @@ collections:
           - label: 'Tech'
             name: 'tech'
             widget: 'relation'
-            collection: 'technologies'
-            value_field: 'tech'
-            search_fields: ['tech']
+            collection: 'defaults'
+            file: 'technologies'
+            value_field: 'technologies.*.tech'
+            search_fields: ['technologies.*.tech']
             required: true
       - label: 'Link'
         name: 'link'
