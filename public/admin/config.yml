@@ -65,7 +65,6 @@ collections:
         search_fields: ['technologies.*.item']
         displayFields: ['technologies.*.item']
         required: true
-        multiple: true
       - label: 'Related Articles'
         name: 'articles'
         widget: 'list'
