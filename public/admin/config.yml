@@ -64,13 +64,14 @@ collections:
         widget: 'list'
         required: true
         allow_add: true
+        default: []
         field:
           - label: 'Tech'
             name: 'tech'
             widget: 'relation'
             collection: 'defaults'
-            value_field: 'technologies.list'
-            search_fields: ['technologies.list']
+            value_field: 'technologies.list.item'
+            search_fields: ['technologies.list.item']
             required: true
       - label: 'Related Articles'
         name: 'articles'
