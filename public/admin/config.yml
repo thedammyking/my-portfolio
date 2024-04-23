@@ -61,19 +61,13 @@ collections:
           - { label: 'Freelance', value: 'freelance' }
       - label: 'Technologies'
         name: 'technologies'
-        widget: 'list'
+        widget: 'relation'
+        collection: 'defaults'
+        file: 'technologies'
+        value_field: 'technologies.*.item'
+        search_fields: ['technologies.*.item']
         required: true
-        allow_add: true
-        default: []
-        field:
-          - label: 'Tech'
-            name: 'tech'
-            widget: 'relation'
-            collection: 'defaults'
-            file: 'technologies'
-            value_field: 'technologies.*.item'
-            search_fields: ['technologies.*.item']
-            required: true
+        multiple: true
       - label: 'Related Articles'
         name: 'articles'
         widget: 'list'
