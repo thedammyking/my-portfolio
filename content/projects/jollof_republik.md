@@ -11,6 +11,7 @@ stack:
   - SASS
   - GSAP
   - CSS Modules
+  - GraphQL
 link:
   label: "-"
   url: /
