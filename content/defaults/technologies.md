@@ -50,4 +50,5 @@ list:
   - Flutter
   - Redux Saga
   - AWS Amplify
+  - Just
 ---
