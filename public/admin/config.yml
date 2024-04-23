@@ -19,11 +19,14 @@ collections:
       - label: 'Technologies'
         name: 'technologies'
         widget: 'list'
+        allow_add: true
+        required: true
         default: []
         fields:
           - label: 'Tech'
             name: 'tech'
             widget: 'string'
+            required: true
   - label: 'Home Page'
     name: 'home_page'
     files:
