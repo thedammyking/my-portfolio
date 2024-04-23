@@ -26,17 +26,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
   return (
     <Card
       label='Project'
-      className='p-0 sm:p-4 lg:p-0 xl:p-6 overflow-hidden sm:grid lg:block xl:grid sm:grid-cols-[max-content_1fr] sm:gap-4 md:gap-4 lg:gap-6'
+      className='p-0 sm:p-4 lg:p-0 xl:p-6 overflow-hidden sm:grid lg:block xl:grid sm:grid-cols-[max-content_1fr] sm:gap-4 md:gap-4 lg:gap-6 md:cursor-pointer'
+      aria-label={data.title}
+      onClick={() => data.link?.url && window.open(data.link.url, '_blank', 'noreferrer')}
+      role='link'
     >
-      {data.link && (
-        <a
-          href={data.link?.url}
-          rel='noreferrer'
-          target='_blank'
-          className='absolute top-0 left-0 right-0 bottom-0 z-10'
-          aria-label={data.title}
-        />
-      )}
       <span className='sr-only'>
         {data.title} ({year})
       </span>

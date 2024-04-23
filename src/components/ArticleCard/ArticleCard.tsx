@@ -21,19 +21,15 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ block, data }) => {
   return (
     <Card
       label='Project'
-      className={cx({
+      className={cx('md:cursor-pointer', {
         ['overflow-hidden']: block,
         ['p-0 sm:p-4 lg:p-0 xl:p-6 overflow-hidden sm:grid lg:block xl:grid sm:grid-cols-[max-content_1fr] sm:gap-4 md:gap-4 lg:gap-6 items-center']:
           !block
       })}
+      aria-label={data.title}
+      onClick={() => window.open(data.link, '_blank', 'noreferrer')}
+      role='link'
     >
-      <a
-        href={data.link}
-        rel='noreferrer'
-        target='_blank'
-        className='absolute top-0 left-0 right-0 bottom-0 z-10'
-        aria-label={data.title}
-      />
       <span className='sr-only'>
         {data.title} ({year})
       </span>

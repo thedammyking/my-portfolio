@@ -26,14 +26,13 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ data }) => {
   };
 
   return (
-    <Card label='Experience' className='p-4 lg:p-6 xl:grid xl:grid-cols-[max-content_1fr] xl:gap-6'>
-      <a
-        href={data.url}
-        rel='noreferrer'
-        target='_blank'
-        className='absolute top-0 left-0 right-0 bottom-0 z-10'
-        aria-label={data.company}
-      />
+    <Card
+      label='Experience'
+      className='p-4 lg:p-6 xl:grid xl:grid-cols-[max-content_1fr] xl:gap-6 md:cursor-pointer'
+      aria-label={data.company}
+      onClick={() => window.open(data.url, '_blank', 'noreferrer')}
+      role='link'
+    >
       <span className='sr-only'>
         {data.role} - {data.company} ({getFrom()} - {getTo()})
       </span>
