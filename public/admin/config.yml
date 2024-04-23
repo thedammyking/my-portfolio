@@ -56,18 +56,12 @@ collections:
           - { label: 'Freelance', value: 'freelance' }
       - label: 'Technologies'
         name: 'technologies'
-        widget: 'list'
-        required: true
-        allow_add: true
-        field:
-          - label: 'Tech'
-            name: 'tech'
-            widget: 'relation'
-            collection: 'defaults'
-            file: 'technologies'
-            value_field: 'technologies.tech'
-            search_fields: ['technologies.tech']
-            required: true
+        widget: 'relation'
+        collection: 'defaults'
+        file: 'technologies'
+        value_field: 'technologies.tech'
+        search_fields: ['technologies.tech']
+        multiple: true
       - label: 'Related Articles'
         name: 'articles'
         widget: 'list'
@@ -117,19 +111,12 @@ collections:
       - { label: 'Banner', name: 'thumbnail', widget: 'image', required: true }
       - label: 'Technologies'
         name: 'technologies'
-        widget: 'list'
-        required: true
-        allow_add: true
-        default: []
-        field:
-          - label: 'Tech'
-            name: 'tech'
-            widget: 'relation'
-            collection: 'defaults'
-            file: 'technologies'
-            value_field: 'technologies.tech'
-            search_fields: ['technologies.tech']
-            required: true
+        widget: 'relation'
+        collection: 'defaults'
+        file: 'technologies'
+        value_field: 'technologies.tech'
+        search_fields: ['technologies.tech']
+        multiple: true
       - label: 'Link'
         name: 'link'
         widget: 'object'
