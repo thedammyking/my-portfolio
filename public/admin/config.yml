@@ -59,6 +59,19 @@ collections:
         options:
           - { label: 'Full time', value: 'full-time' }
           - { label: 'Freelance', value: 'freelance' }
+      - label: 'Technologies'
+        name: 'technologies'
+        widget: 'list'
+        required: true
+        allow_add: true
+        field:
+          - label: 'Tech'
+            name: 'tech'
+            widget: 'relation'
+            collection: 'defaults'
+            value_field: 'technologies.tech'
+            search_fields: ['technologies.tech']
+            required: true
       - label: 'Related Articles'
         name: 'articles'
         widget: 'list'
