@@ -15,19 +15,19 @@ collections:
     name: 'defaults'
     create: true
     folder: 'content/defaults'
-    identifier_field: technologies
+    identifier_field: label
     fields:
-      - label: 'Technologies'
-        name: 'technologies'
-        widget: 'list'
-        allow_add: true
+      - label: 'Label'
+        name: 'label'
+        widget: 'string'
         required: true
+      - label: 'List'
+        name: 'list'
+        widget: 'list'
+        required: true
+        allow_add: true
         default: []
-        fields:
-          - label: 'Tech'
-            name: 'tech'
-            widget: 'string'
-            required: true
+        field: { label: Item, name: item, widget: string }
   - label: 'Home Page'
     name: 'home_page'
     files:
