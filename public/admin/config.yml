@@ -13,7 +13,6 @@ media_library:
 collections:
   - label: 'Defaults'
     name: 'defaults'
-    create: true
     folder: 'content/defaults'
     identifier_field: label
     fields:
@@ -25,7 +24,6 @@ collections:
         name: 'list'
         widget: 'list'
         required: true
-        allow_add: true
         default: []
         field: { label: Item, name: item, widget: string }
   - label: 'Home Page'
