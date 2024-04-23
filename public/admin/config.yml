@@ -15,12 +15,14 @@ collections:
     name: 'defaults'
     folder: 'content/defaults'
     identifier_field: label
+    delete: false
     fields:
       - { label: 'Label', name: 'label', widget: 'string' }
       - label: 'Technologies'
         name: 'technologies'
         widget: 'list'
         identifier_field: 'item'
+        allow_add: false
         field: { label: Item, name: item, widget: string }
   - label: 'Home Page'
     name: 'home_page'
@@ -59,18 +61,12 @@ collections:
           - { label: 'Freelance', value: 'freelance' }
       - label: 'Technologies'
         name: 'technologies'
-        widget: 'list'
-        required: true
-        allow_add: true
-        default: []
-        field:
-          - label: 'Tech'
-            name: 'tech'
-            widget: 'relation'
-            collection: 'defaults'
-            value_field: 'technologies.*'
-            search_fields: ['technologies.*']
-            options_length: 50
+        widget: 'relation'
+        collection: 'defaults'
+        value_field: 'technologies.*'
+        search_fields: ['technologies.*']
+        options_length: 50
+        multiple: true
       - label: 'Related Articles'
         name: 'articles'
         widget: 'list'
