@@ -11,6 +11,11 @@ stack:
   - GatsbyJS
   - GraphQL
   - SASS
+  - CSS Modules
+  - Typescript
+  - Redux
+  - Redux Saga
+  - AWS Amplify
 link:
   label: "-"
   url: /
