@@ -70,8 +70,8 @@ collections:
             name: 'tech'
             widget: 'relation'
             collection: 'defaults'
-            value_field: 'technologies.list.item'
-            search_fields: ['technologies.list.item']
+            value_field: 'technologies.*.item'
+            search_fields: ['technologies.*.item']
             required: true
       - label: 'Related Articles'
         name: 'articles'
