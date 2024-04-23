@@ -1,0 +1,52 @@
+---
+tech:
+  - ReactJS
+  - MobX
+  - Webpack
+  - Git
+  - Redux
+  - Redux Thunk
+  - Redux Tool Kit
+  - GatsbyJS
+  - NextJS
+  - NodeJS
+  - Storybook
+  - Babel
+  - Rollup
+  - Vite
+  - Typescript
+  - Jest
+  - Testing Library
+  - Cypress
+  - PostCSS
+  - SASS
+  - Semantic Release
+  - Strapi CMS
+  - GraphQL
+  - Sentry
+  - Algolia
+  - Yup
+  - ChartJS
+  - GSAP
+  - GitHub Actions
+  - WordPress
+  - PHP
+  - jQuery
+  - MySQL
+  - Docker
+  - Styled Components
+  - Flow
+  - Semaphore CI
+  - Laravel
+  - React Native
+  - Subversion
+  - Firebase
+  - CSS Modules
+  - HTML
+  - CSS
+  - Javascript
+  - Dart
+  - Flutter
+  - Redux Saga
+  - AWS Amplify
+---

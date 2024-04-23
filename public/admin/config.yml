@@ -11,6 +11,11 @@ media_library:
     cloud_name: ds8bd6wxr
     api_key: 785123966216323
 collections:
+  - label: 'Technologies'
+    name: 'technologies'
+    file: 'content/technology/list.md'
+    fields:
+      - { label: 'Tech', name: 'tech', widget: 'string', required: true }
   - label: 'Home Page'
     name: 'home_page'
     files:
@@ -46,8 +51,8 @@ collections:
         options:
           - { label: 'Full time', value: 'full-time' }
           - { label: 'Freelance', value: 'freelance' }
-      - label: 'Stack'
-        name: 'stack'
+      - label: 'Technologies'
+        name: 'technologies'
         widget: 'list'
         required: true
         allow_add: true
@@ -55,7 +60,10 @@ collections:
         field:
           - label: 'Tech'
             name: 'tech'
-            widget: 'string'
+            widget: 'relation'
+            collection: 'technologies'
+            value_field: 'tech'
+            search_fields: ['tech']
             required: true
       - label: 'Related Articles'
         name: 'articles'
@@ -104,15 +112,20 @@ collections:
       - { label: 'Made at', name: 'made_at', widget: 'string' }
       - { label: 'Summary', name: 'summary', widget: 'string', required: true }
       - { label: 'Banner', name: 'thumbnail', widget: 'image', required: true }
-      - {
-          label: 'Stack',
-          name: 'stack',
-          widget: 'list',
-          required: true,
-          allow_add: true,
-          default: [],
-          field: { label: Tech, name: tech, widget: string }
-        }
+      - label: 'Technologies'
+        name: 'technologies'
+        widget: 'list'
+        required: true
+        allow_add: true
+        default: []
+        field:
+          - label: 'Tech'
+            name: 'tech'
+            widget: 'relation'
+            collection: 'technologies'
+            value_field: 'tech'
+            search_fields: ['tech']
+            required: true
       - label: 'Link'
         name: 'link'
         widget: 'object'
