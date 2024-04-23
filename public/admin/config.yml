@@ -16,16 +16,14 @@ collections:
     folder: 'content/defaults'
     create: true
     identifier_field: technologies
-    files:
+    fields:
       - label: 'Technologies'
         name: 'technologies'
         widget: 'list'
-        required: true
         fields:
           - label: 'Tech'
             name: 'tech'
             widget: 'string'
-            required: true
   - label: 'Home Page'
     name: 'home_page'
     files:
