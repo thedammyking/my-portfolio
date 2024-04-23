@@ -16,7 +16,7 @@ collections:
     files:
       - label: 'Technologies'
         name: 'technologies'
-        file: 'content/home/technologies.md'
+        file: 'content/defaults/technologies.md'
         fields:
           - label: 'Tech'
             name: 'tech'
