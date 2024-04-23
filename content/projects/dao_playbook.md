@@ -11,7 +11,7 @@ stack:
   - NextJS
   - SASS
   - Typescript
-  - CSS Module
+  - CSS Modules
   - Strapi CMS
 link:
   url: https://daoplaybook.com
