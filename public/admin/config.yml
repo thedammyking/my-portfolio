@@ -15,7 +15,7 @@ collections:
     name: 'technologies'
     file: 'content/technologies/list.md'
     fields:
-      - { label: 'Tech', name: 'tech', widget: 'string', required: true }
+      - { label: 'Tech', name: 'tech', widget: 'list', required: true }
   - label: 'Home Page'
     name: 'home_page'
     files:
