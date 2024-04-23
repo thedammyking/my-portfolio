@@ -13,19 +13,13 @@ media_library:
 collections:
   - label: 'Defaults'
     name: 'defaults'
-    folder: 'content/defaults'
-    create: true
-    identifier_field: technologies
     files:
       - label: 'Technologies'
         name: 'technologies'
+        file: 'content/technologies/list.md'
         widget: 'list'
-        required: true
         fields:
-          - label: 'Tech'
-            name: 'tech'
-            widget: 'string'
-            required: true
+          - { label: 'Tech', name: 'tech', widget: 'string', required: true }
   - label: 'Home Page'
     name: 'home_page'
     files:
@@ -61,6 +55,20 @@ collections:
         options:
           - { label: 'Full time', value: 'full-time' }
           - { label: 'Freelance', value: 'freelance' }
+      - label: 'Technologies'
+        name: 'technologies'
+        widget: 'list'
+        required: true
+        allow_add: true
+        field:
+          - label: 'Tech'
+            name: 'tech'
+            widget: 'relation'
+            collection: 'defaults'
+            file: 'technologies'
+            value_field: 'technologies.tech'
+            search_fields: ['technologies.tech']
+            required: true
       - label: 'Related Articles'
         name: 'articles'
         widget: 'list'
@@ -108,6 +116,21 @@ collections:
       - { label: 'Made at', name: 'made_at', widget: 'string' }
       - { label: 'Summary', name: 'summary', widget: 'string', required: true }
       - { label: 'Banner', name: 'thumbnail', widget: 'image', required: true }
+      - label: 'Technologies'
+        name: 'technologies'
+        widget: 'list'
+        required: true
+        allow_add: true
+        default: []
+        field:
+          - label: 'Tech'
+            name: 'tech'
+            widget: 'relation'
+            collection: 'defaults'
+            file: 'technologies'
+            value_field: 'technologies.tech'
+            search_fields: ['technologies.tech']
+            required: true
       - label: 'Link'
         name: 'link'
         widget: 'object'
