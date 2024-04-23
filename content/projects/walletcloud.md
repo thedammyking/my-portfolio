@@ -17,7 +17,7 @@ stack:
   - Redux Saga
   - AWS Amplify
 link:
-  label: "-"
-  url: /
+  label: walletcloud.app
+  url: https://web.archive.org/web/20230202172510/https://walletcloud.app/
 stats: []
 ---
