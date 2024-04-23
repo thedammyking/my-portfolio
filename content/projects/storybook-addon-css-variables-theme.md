@@ -1,5 +1,5 @@
 ---
-title: storybook-addon-css-variables-theme
+title: Storybook Addon CSS Variables Theme
 year: "2024"
 made_at: Brass
 summary: A CSS variable theming plugin for Storybook with both Webpack and Vite Support.
@@ -9,6 +9,7 @@ stack:
   - React
   - Typescript
   - Babel
+  - Styled Components
 link:
   url: https://github.com/thedammyking/storybook-addon-css-variables-theme
   label: github.com

@@ -24,7 +24,7 @@ const ProjectAccordionItem: React.FC<ProjectAccordionItemProps> = ({ data, ...pr
         <a
           href={data.link?.url}
           onClick={e => {
-            if (!data.link) {
+            if (data.link?.label?.startsWith('-')) {
               e.preventDefault();
             }
           }}
@@ -34,12 +34,13 @@ const ProjectAccordionItem: React.FC<ProjectAccordionItemProps> = ({ data, ...pr
           className='text-black leading-tight dark:text-light-grey-100 sm:text-light-grey-600 sm:dark:text-dark-grey-200 w-max col-start-2 sm:col-start-3'
         >
           <span className='sm:hidden'>{data.title}</span>
-          {data.link && (
-            <>
-              <span className='hidden sm:inline-flex'>{data.link.label}</span>
+
+          <>
+            <span className='hidden sm:inline-flex'>{data.link?.label}</span>
+            {!data.link?.label.startsWith('-') && (
               <ExternalLinkIcon className='w-4 h-4 ml-[2px] inline-block align-top' />
-            </>
-          )}
+            )}
+          </>
         </a>
       </AccordionHeader>
       <AccordionContent className='grid grid-rows-[max-content_max-content] grid-cols-[40px_1fr] sm:grid-rows-1 sm:grid-cols-[40px_1fr_1fr] gap-x-8 gap-y-4 sm:gap-y-0 py-[18px] pt-0'>
