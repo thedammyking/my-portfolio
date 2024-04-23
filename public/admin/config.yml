@@ -35,20 +35,28 @@ collections:
     fields:
       - { label: 'Company', name: 'company', widget: 'string', required: true }
       - { label: 'Website', name: 'url', widget: 'string', required: true }
-      - { label: 'Role', name: 'role', widget: 'string', required: true }
+      - { label: 'Industry', name: 'industry', widget: 'string', required: true }
       - { label: 'Location', name: 'location', widget: 'string', required: true }
       - { label: 'From', name: 'from', widget: 'string', required: true }
       - { label: 'To', name: 'to', widget: 'string', required: true }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-      - {
-          label: 'Stack',
-          name: 'stack',
-          widget: 'list',
-          required: true,
-          allow_add: true,
-          default: [],
-          field: { label: Tech, name: tech, widget: string }
-        }
+      - label: 'Employment Type'
+        name: 'employmentType'
+        widget: 'select'
+        required: true
+        options:
+          - { label: 'Full time', value: 'full-time' }
+          - { label: 'Freelance', value: 'freelance' }
+      - label: 'Stack'
+        name: 'stack'
+        widget: 'list'
+        required: true
+        allow_add: true
+        default: []
+        field:
+          - label: 'Tech'
+            name: 'tech'
+            widget: 'string'
+            required: true
       - label: 'Related Articles'
         name: 'articles'
         widget: 'list'
@@ -62,6 +70,28 @@ collections:
           - label: 'URL'
             name: 'url'
             widget: 'string'
+            required: true
+      - label: 'Roles'
+        name: 'roles'
+        widget: 'list'
+        allow_add: true
+        default: []
+        fields:
+          - label: 'Role'
+            name: 'role'
+            widget: 'string'
+            required: true
+          - label: 'From'
+            name: 'from'
+            widget: 'string'
+            required: true
+          - label: 'To'
+            name: 'to'
+            widget: 'string'
+            required: true
+          - label: 'Body'
+            name: 'body'
+            widget: 'markdown'
             required: true
   - label: 'Projects'
     name: 'projects'
