@@ -18,8 +18,8 @@ collections:
         name: 'technologies'
         file: 'content/defaults/technologies.md'
         fields:
-          - label: 'List'
-            name: 'list'
+          - label: 'Technologies'
+            name: 'technologies'
             widget: 'list'
             required: true
             default: []
@@ -70,6 +70,7 @@ collections:
             name: 'tech'
             widget: 'relation'
             collection: 'defaults'
+            file: 'technologies'
             value_field: 'technologies.*.item'
             search_fields: ['technologies.*.item']
             required: true

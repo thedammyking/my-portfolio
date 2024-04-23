@@ -1,5 +1,5 @@
 ---
-list:
+technologies:
   - ReactJS
   - MobX
   - Webpack
