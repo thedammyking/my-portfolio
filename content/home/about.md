@@ -1,10 +1,10 @@
 ---
 title: About
 ---
-I began my coding journey in 2013, initially writing shell scripts for Linux OS to resolve booting issues. This early experience sparked my interest in web development, leading me to quickly learn HTML, CSS, and PHP. I further honed these skills through an internship at Cregital, where I developed WordPress websites and specialized plugins for clients like Zenith Bank and Uberchic Ville, enhancing functionality and user experience.
+I began my coding journey in 2013, initially writing shell scripts and handling terminal prompts in Linux OS to address booting issues. This early experience sparked my interest in software development, leading me to learn HTML, CSS, and PHP. I further developed these skills through an internship at Cregital and continued to grow professionally at several innovative companies.
 <br />
 <br />
-My career progressed with roles at several innovative companies. At OpenSupermall, as a full stack React Native developer, I crafted an asynchronous scanner module for inventory management, and at Startup Studio, I designed websites and email templates as a frontend developer. My technical prowess expanded at Fourvill, contributing to a media content management platform, and at BlueBic, where I maintained and upgraded educational software tools.
+In a leadership role at Brass, I managed the engineering team and oversaw multiple projects, focusing on improving processes and team productivity.
 <br />
 <br />
-In a leadership capacity at Brass, I lead the frontend team and manage multiple projects, focusing on optimizing development practices and team productivity. Throughout my career, I have consistently demonstrated an ability to master new technologies and lead teams in creating sophisticated web solutions that drive business success.
+Throughout my career, I have consistently demonstrated the ability to master new technologies and lead teams in building scalable, user-friendly, and high-performance frontend applications that have positively impacted users and businesses.
