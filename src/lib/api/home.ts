@@ -3,7 +3,7 @@ import * as Sentry from '@sentry/nextjs';
 import { Resource } from '@/types/enums';
 import { About, Header } from '@/types/interfaces/home';
 
-import { getDataByFileName } from '../mdFileUtils';
+import { getDataByFileName } from '../apiUtils';
 
 export const getHeaderData = () => {
   let header = null;

@@ -3,13 +3,13 @@ import * as Sentry from '@sentry/nextjs';
 import { Resource } from '@/types/enums';
 import { Experience } from '@/types/interfaces/experience';
 
-import { getDataByFileName, getFileNames } from '../mdFileUtils';
+import { getDataByFileName, getFileNames } from '../apiUtils';
 
 export function getAllExperience() {
-  let experience: Experience[] = [];
+  let experiences: Experience[] = [];
   try {
     const slugs = getFileNames(Resource.Experience);
-    experience = slugs
+    experiences = slugs
       .map(slug => getDataByFileName<Experience>(slug, Resource.Experience))
       .sort(
         (experience1, experience2) =>
@@ -18,6 +18,6 @@ export function getAllExperience() {
   } catch (error) {
     Sentry.captureException(error);
   } finally {
-    return experience;
+    return experiences;
   }
 }

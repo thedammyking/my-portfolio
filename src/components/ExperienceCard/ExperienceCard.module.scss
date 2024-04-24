@@ -1,0 +1,19 @@
+.ExperienceCard {
+  &_content {
+    &_wrapper {
+      & > ul {
+        @apply flex flex-col gap-2;
+      }
+      & > ul > li {
+        @apply pl-4 relative;
+
+        &::before {
+          content: '';
+          background-color: currentColor;
+
+          @apply absolute w-[5px] h-[5px] rounded-full left-0 top-2;
+        }
+      }
+    }
+  }
+}

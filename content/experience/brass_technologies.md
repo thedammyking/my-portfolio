@@ -8,6 +8,33 @@ to: "-"
 employmentType: full-time
 technologies:
   - ReactJS
+  - Redux
+  - Redux Thunk
+  - Redux Tool Kit
+  - GatsbyJS
+  - NextJS
+  - NodeJS
+  - Storybook
+  - Babel
+  - Rollup
+  - Vite
+  - Webpack
+  - Typescript
+  - Jest
+  - Testing Library
+  - Cypress
+  - PostCSS
+  - SASS
+  - Semantic Release
+  - Strapi CMS
+  - GraphQL
+  - Sentry
+  - Algolia
+  - Yup
+  - ChartJS
+  - GSAP
+  - Git
+  - GitHub Actions
 articles:
   - url: https://africa.businessinsider.com/local/markets/nigerian-fintech-brass-secures-dollar17mn-financing-round-to-power-expansion-into/74mwmjq
     publication: Business Insider

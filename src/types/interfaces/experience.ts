@@ -5,13 +5,22 @@ interface Article {
   url: string;
 }
 
-export interface Experience extends FileData {
-  company: string;
-  url: string;
-  role: string;
-  location: string;
+interface Role {
   from: string;
+  role: string;
   to: string;
-  stack: string[];
+  body: string;
+}
+
+export interface Experience extends FileData {
   articles?: Article[];
+  company: string;
+  employmentType: string;
+  from: string;
+  industry: string;
+  location: string;
+  to: string;
+  technologies: string[];
+  roles: Role[];
+  url: string;
 }

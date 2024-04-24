@@ -3,7 +3,7 @@ import * as Sentry from '@sentry/nextjs';
 import { Resource } from '@/types/enums';
 import { Project } from '@/types/interfaces/project';
 
-import { getDataByFileName, getFileNames } from '../mdFileUtils';
+import { getDataByFileName, getFileNames } from '../apiUtils';
 
 export const getAllProjects = () => {
   let projects: Project[] = [];

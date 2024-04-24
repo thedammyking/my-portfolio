@@ -3,7 +3,7 @@ import * as Sentry from '@sentry/nextjs';
 import { Resource } from '@/types/enums';
 import { Article } from '@/types/interfaces/article';
 
-import { getDataByFileName, getFileNames } from '../mdFileUtils';
+import { getDataByFileName, getFileNames } from '../apiUtils';
 
 export function getAllArticles() {
   let articles: Article[] = [];

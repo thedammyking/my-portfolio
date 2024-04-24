@@ -50,3 +50,10 @@ export const CONTACT_LINKS = [
     url: INSTAGRAM_PROFILE
   }
 ];
+
+export const EMPLOYMENT_TYPES = {
+  'full-time': 'Full Type',
+  freelance: 'Freelance'
+};
+
+export const DATE_FORMAT = 'MMM yyyy';
