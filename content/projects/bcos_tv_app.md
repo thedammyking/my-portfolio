@@ -8,6 +8,7 @@ technologies:
   - React Native
   - Redux
   - Redux Thunk
+  - Git
 link:
   url: " https://apkcombo.com/bcos-tv/com.bcos"
   label: apkcombo.com
