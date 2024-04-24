@@ -1,6 +1,6 @@
 ---
 title: HR Flex
-year: "07/05/2020"
+year: 07/05/2020
 made_at: Orb Digital
 summary: Website for a company that empowers HR professionals to streamline
   their processes, enhance efficiency, and unlock the true potential of their
@@ -13,6 +13,7 @@ technologies:
   - GraphQL
   - GSAP
   - CSS Modules
+  - Git
 link:
   url: https://www.hr-flex.com
   label: hr-flex.com
