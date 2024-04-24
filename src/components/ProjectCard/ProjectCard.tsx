@@ -31,7 +31,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
       role='link'
     >
       <span className='sr-only'>{data.title}</span>
-      <div className='sm:border lg:border-none xl:border border-transparent dark:lg:group-hover:border-light-grey-200 lg:group-hover:border-dark-grey-200 xl:w-[120px] xl:h-20 sm:w-[168px] sm:h-24 w-full h-44 lg:h-44 lg:w-full relative mb-6 lg:mb-6 sm:mb-0 xl:mb-0 sm:rounded-[5px] xl:rounded-[5px] lg:rounded-none overflow-hidden'>
+      <div className='border border-light-grey-100 xl:w-[120px] xl:h-20 sm:w-[168px] sm:h-24 w-full h-44 lg:h-44 lg:w-full relative mb-6 lg:mb-6 sm:mb-0 xl:mb-0 sm:rounded-[5px] xl:rounded-[5px] lg:rounded-none overflow-hidden'>
         <Image
           src={data.thumbnail}
           alt={data.title}
