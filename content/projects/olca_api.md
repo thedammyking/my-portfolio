@@ -8,6 +8,7 @@ technologies:
   - PHP
   - Laravel
   - MySQL
+  - Git
 link:
   url: https://www.olcang.com
   label: olcang.com
