@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
   return (
     <footer className='w-full py-5'>
       <p className='text-dark-grey-400 text-sm leading-5 text-center md:text-left font-medium'>
-        &copy; {`${currentYear}`} - Oluwadamilola Babalola. Designed by{' '}
+        &copy; {`${currentYear}`} - Oluwadamilola - A Frontend Engineer. Designed by{' '}
         <a
           href='/'
           rel='noreferrer'
@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
         >
           Templatecookie
         </a>{' '}
-        and developed in VSCode by yours truly. Built with Next.js and Tailwind CSS, deployed with
+        and developed in VSCode. Built with Next.js, Tailwind CSS and Decap CMS, deployed with
         Netlify.
       </p>
     </footer>
