@@ -16,6 +16,7 @@ technologies:
   - Redux
   - Redux Saga
   - AWS Amplify
+  - Git
 link:
   label: walletcloud.app
   url: https://web.archive.org/web/20230202172510/https://walletcloud.app/
