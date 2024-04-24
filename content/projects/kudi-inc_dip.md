@@ -1,6 +1,6 @@
 ---
 title: "@kudi-inc/dip"
-year: "8/7/2019"
+year: 8/7/2019
 made_at: Nomba
 summary: A React component library to improved development process by providing
   consistent style and functionality
@@ -12,6 +12,7 @@ technologies:
   - Babel
   - SASS
   - CSS Modules
+  - Git
 link:
   url: https://www.npmjs.com/package/@kudi-inc/dip
   label: npmjs.com
