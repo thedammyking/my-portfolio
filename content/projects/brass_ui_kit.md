@@ -4,7 +4,7 @@ year: "2021"
 made_at: Brass
 summary: The official UI component library for Brass React projects
 thumbnail: https://res.cloudinary.com/ds8bd6wxr/image/upload/v1713979812/my-portfolio/Screenshot_2024-04-24_at_18.22.12_qdygu9.png
-priority: "5"
+priority: "1"
 technologies:
   - ReactJS
   - Rollup

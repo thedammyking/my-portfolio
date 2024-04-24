@@ -14,10 +14,11 @@ import ProjectCard from '../ProjectCard';
 const Projects = () => {
   const router = useRouter();
   const { projects } = useData();
+  const sorted = projects?.sort((a, b) => Number(a.priority) - Number(b.priority));
   return (
     <div className='w-full h-max'>
       <ul className='list-none flex flex-col gap-10 md:gap-14'>
-        {projects?.slice(0, 4).map(project => (
+        {sorted?.slice(0, 4).map(project => (
           <li key={uniqueId('project-card')}>
             <ProjectCard data={project} />
           </li>

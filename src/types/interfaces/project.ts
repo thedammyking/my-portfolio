@@ -13,6 +13,7 @@ export interface Project extends FileData {
     label: string;
   };
   year: string;
+  priority: string;
   made_at?: string;
   summary: string;
   thumbnail: string;
