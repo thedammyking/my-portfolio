@@ -16,6 +16,6 @@ export interface Project extends FileData {
   made_at?: string;
   summary: string;
   thumbnail: string;
-  stack: string[];
+  technologies: string[];
   stats?: Stats[];
 }

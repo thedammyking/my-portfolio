@@ -114,6 +114,14 @@ collections:
       - { label: 'Made at', name: 'made_at', widget: 'string' }
       - { label: 'Summary', name: 'summary', widget: 'string', required: true }
       - { label: 'Banner', name: 'thumbnail', widget: 'image', required: true }
+      - label: 'Technologies'
+        name: 'technologies'
+        widget: 'relation'
+        collection: 'defaults'
+        value_field: 'technologies.*'
+        search_fields: ['technologies.*']
+        options_length: 50
+        multiple: true
       - label: 'Link'
         name: 'link'
         widget: 'object'

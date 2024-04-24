@@ -76,7 +76,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
             })}
           </ul>
         )}
-        <TagList tags={data.stack} className='mt-3' />
+        <TagList tags={data.technologies} className='mt-3' />
       </div>
     </Card>
   );

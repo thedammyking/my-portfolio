@@ -46,7 +46,7 @@ const ProjectAccordionItem: React.FC<ProjectAccordionItemProps> = ({ data, ...pr
         </div>
         <div className='col-start-2 sm:col-start-3 sm:row-start-1 *:text-sm *:font-normal *:leading-tight'>
           <p className='text-black dark:text-light-grey-100 mb-[10px]'>Stack</p>
-          <TagList tags={data.stack} />
+          <TagList tags={data.technologies} />
         </div>
       </AccordionContent>
     </AccordionItem>

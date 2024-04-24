@@ -31,7 +31,7 @@ const ProjectRow: React.FC<ProjectRowProps> = ({ data }) => {
         )}
       </td>
       <td>
-        <TagList tags={data.stack} />
+        <TagList tags={data.technologies} />
       </td>
       <td>
         {data.link && !data.link.label.startsWith('-') && (
