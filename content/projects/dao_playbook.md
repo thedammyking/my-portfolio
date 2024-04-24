@@ -13,6 +13,7 @@ technologies:
   - Typescript
   - CSS Modules
   - Strapi CMS
+  - Git
 link:
   url: https://daoplaybook.com
   label: daoplaybook.com
