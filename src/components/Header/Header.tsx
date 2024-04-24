@@ -22,7 +22,7 @@ const Header: React.FC = () => {
       <h4 className='text-xl md:text-2xl font-normal font-header leading-[1.25] mb-4'>
         {header?.role}
       </h4>
-      <p className='leading-normal text-lg md:text-base font-normal font-header body-text mb-12'>
+      <p className='leading-normal text-lg md:text-base font-normal font-header mb-12'>
         {header?.summary}
       </p>
       <ContactList />
