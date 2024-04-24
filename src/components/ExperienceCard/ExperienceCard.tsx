@@ -26,8 +26,6 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ data }) => {
       body: markdownToHtml(role.body)
     }));
 
-  console.log('roles :>> ', roles);
-
   return (
     <Card
       label='Experience'
@@ -69,7 +67,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ data }) => {
             </div>
           ))}
         </div>
-        {data.articles?.length && (
+        {data.articles && data.articles.length > 0 && (
           <ul className='flex flex-wrap items-center gap-2.5 list-none mt-4 relative z-20'>
             {data.articles.map(article => (
               <li key={uniqueId('related-article')}>
@@ -78,7 +76,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ data }) => {
             ))}
           </ul>
         )}
-        <TagList tags={data.technologies} className='mt-3' />
+        <TagList tags={data.technologies} className='mt-4' />
       </div>
     </Card>
   );
