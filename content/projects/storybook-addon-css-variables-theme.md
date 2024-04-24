@@ -10,6 +10,7 @@ technologies:
   - Typescript
   - Babel
   - Styled Components
+  - Git
 link:
   url: https://github.com/thedammyking/storybook-addon-css-variables-theme
   label: github.com
