@@ -17,8 +17,10 @@ roles:
     from: 12/01/2016
     to: 05/30/2017
     body: >-
-      - Developed WordPress websites, demonstrating my ability to build functional and visually appealing sites.
+      - Developed WordPress websites for businesses, customizing themes and plugins to meet client needs and ensuring optimal performance and user experience.
 
-      - Implemented unique solutions, such as an ovulation calculator plugin for a Discourse forum and an ATM locator plugin for Zenith Bank's website.
+      - Developed an ovulation calculator plugin, to assist women in tracking their ovulation cycles on a Discourse forum.
+
+      - Implemented an ATM locator plugin for Zenith Bank's website to help customers find the nearest ATMs easily.
 ---
 

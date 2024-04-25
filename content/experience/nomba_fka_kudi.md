@@ -27,7 +27,7 @@ roles:
     from: 07/01/2019
     to: 10/30/2020
     body: >-
-      - Created and managed a version of the company's website and supported other developers.
+      - Developed and managed a version of the company's website to improve customer engagement and communication.
 
       - Implemented, optimized, and maintained web solutions across teams, ensuring efficiency and scalability.
 
