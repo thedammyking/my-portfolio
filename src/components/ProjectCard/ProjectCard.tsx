@@ -46,10 +46,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
         />
       </div>
       <div className='p-4 pt-0 sm:p-0 lg:p-6 lg:pt-0 xl:p-0'>
-        <h6 className='text-base font-medium leading-tight text-black dark:text-light-grey-100 lg:group-hover:text-accent-dark lg:dark:group-hover:text-accent-light mb-3'>
+        <h3 className='text-base font-medium leading-tight text-black dark:text-light-grey-100 lg:group-hover:text-accent-dark lg:dark:group-hover:text-accent-light mb-3'>
           {data.title}
           <ExternalLinkIcon className='ml-1 w-4 h-4 inline-block align-top' />
-        </h6>
+        </h3>
         <p className='leading-normal font-normal text-sm body-text lg:group-hover:text-black lg:dark:group-hover:text-white'>
           {data.summary}
         </p>

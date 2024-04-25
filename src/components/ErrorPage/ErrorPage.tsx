@@ -26,9 +26,9 @@ const ErrorPage: React.FC<ErrorPageProps> = ({ title, subTitle, description, act
         <h1 className='text-[70px] md:text-[140px] mb-[16px] md:mb-[30px] leading-normal font-bold'>
           {title}
         </h1>
-        <h3 className='text-[28px] md:text-5xl mb-[8px] md:mb-[13px] leading-[33.60px] font-semibold md:leading-[56px]'>
+        <h2 className='text-[28px] md:text-5xl mb-[8px] md:mb-[13px] leading-[33.60px] font-semibold md:leading-[56px]'>
           {subTitle}
-        </h3>
+        </h2>
         <p className='text-opacity-80 body-text text-lg mb-6 md:mb-10 leading-7'>{description}</p>
         <Button variant={ButtonVariant.Primary} onClick={action.onClick}>
           {action.label}

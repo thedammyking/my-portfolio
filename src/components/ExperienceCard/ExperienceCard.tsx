@@ -38,19 +38,19 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ data }) => {
         {data.company} ({formatDate(data.from)} - {formatDate(data.to, 'Current')})
       </span>
       <div>
-        <h5 className='text-base font-medium leading-tight text-black dark:text-light-grey-100 lg:group-hover:text-accent-dark lg:dark:group-hover:text-accent-light'>
+        <h3 className='text-base font-medium leading-tight text-black dark:text-light-grey-100 lg:group-hover:text-accent-dark lg:dark:group-hover:text-accent-light'>
           {data.company}
           <ExternalLinkIcon className='ml-1 w-4 h-4 inline-block align-top' />
-        </h5>
+        </h3>
         <p className='leading-tight font-medium text-sm body-text lg:group-hover:text-black lg:dark:group-hover:text-white mt-1'>
           {data.location}
         </p>
         <div className='w-full flex flex-col gap-3 mt-4'>
           {roles.map(role => (
             <div key={uniqueId('roles')}>
-              <h6 className='text-sm font-medium leading-tight text-black dark:text-light-grey-100 mb-1'>
+              <h4 className='text-sm font-medium leading-tight text-black dark:text-light-grey-100 mb-1'>
                 {role.role}
-              </h6>
+              </h4>
               <p
                 aria-label={`${formatDate(role.from)} - ${formatDate(role.to, 'Current')}`}
                 className='text-xs font-semibold body-text lg:group-hover:text-black lg:dark:group-hover:text-white uppercase leading-normal mb-1'
