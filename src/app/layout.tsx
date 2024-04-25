@@ -138,7 +138,7 @@ export default function RootLayout({
           attribute='class'
           storageKey={THEME_MODE_KEY}
           enableSystem
-          defaultTheme={ThemeMode.System}
+          defaultTheme={ThemeMode.Dark}
         >
           <div className='mx-auto min-h-screen max-w-screen-xl px-4 md:px-8 lg:px-12 xl:px-20 '>
             {children}
