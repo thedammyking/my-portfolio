@@ -43,6 +43,7 @@
     "postcss": "^8",
     "prettier": "^3.2.5",
     "sass": "^1.75.0",
+    "schema-dts": "^1.1.2",
     "stylelint": "^16.3.1",
     "stylelint-config-prettier-scss": "^1.0.0",
     "stylelint-config-recommended-scss": "^14.0.0",

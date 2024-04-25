@@ -1,9 +1,11 @@
 import React from 'react';
 import { isEmpty, uniqueId } from 'lodash';
+import { Graph } from 'schema-dts';
 
 import ContentContainer from '@/components/ContentContainer';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
+import JsonLd from '@/components/JsonLd';
 import { CONTENT_SECTIONS } from '@/data/contentSections';
 import { getAllArticles } from '@/lib/api/articles';
 import { getAllExperience } from '@/lib/api/experience';
@@ -12,6 +14,41 @@ import { getAllProjects } from '@/lib/api/projects';
 import ActiveSectionStoreProvider from '@/providers/ActiveSectionStoreProvider';
 import DataProvider from '@/providers/DataProvider';
 import { ContentSection } from '@/types/enums';
+
+const jsonLd: Graph = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'AboutPage',
+      '@id': 'https://oluwadamilola.me/#about',
+      url: 'https://oluwadamilola.me/#about',
+      name: 'Oluwadamilola - A Frontend Engineer',
+      inLanguage: 'en-US',
+      description:
+        'Crafting scalable, user-friendly, and reliable web products with outstanding performance.',
+      mainEntity: { '@id': 'https://oluwadamilola.me/#about' }
+    },
+    {
+      '@type': 'ResumeAction',
+      '@id': 'https://oluwadamilola.me/#experience',
+      name: 'Download Résumé',
+      url: 'https://oluwadamilola.me/#experience',
+      description: `Oluwadamilola's Résumé`
+    },
+    {
+      '@type': 'WebPage',
+      '@id': 'https://oluwadamilola.me/#experience',
+      url: 'https://oluwadamilola.me/#experience',
+      name: 'Experience',
+      inLanguage: 'en-US',
+      isPartOf: {
+        '@id': 'https://oluwadamilola.me'
+      },
+      about: { '@id': 'https://oluwadamilola.me/#about' },
+      mainEntity: { '@id': 'https://oluwadamilola.me/#experience' }
+    }
+  ]
+};
 
 export default async function Home() {
   const pageData = {
@@ -28,6 +65,7 @@ export default async function Home() {
 
   return (
     <>
+      <JsonLd json={jsonLd} />
       <ActiveSectionStoreProvider>
         <DataProvider {...pageData}>
           <div className='lg:flex lg:justify-between lg:gap-24 pt-[84px] md:pt-[96px] lg:pt-0'>

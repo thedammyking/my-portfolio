@@ -102,6 +102,9 @@ importers:
       sass:
         specifier: ^1.75.0
         version: 1.75.0
+      schema-dts:
+        specifier: ^1.1.2
+        version: 1.1.2(typescript@5.4.4)
       stylelint:
         specifier: ^16.3.1
         version: 16.3.1(typescript@5.4.4)
@@ -3142,6 +3145,11 @@ packages:
 
   scheduler@0.23.0:
     resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
+
+  schema-dts@1.1.2:
+    resolution: {integrity: sha512-MpNwH0dZJHinVxk9bT8XUdjKTxMYrA5bLtrrGmFA6PTLwlOKnhi67XoRd6/ty+Djt6ZC0slR57qFhZDNMI6DhQ==}
+    peerDependencies:
+      typescript: '>=4.1.0'
 
   section-matter@1.0.0:
     resolution: {integrity: sha512-vfD3pmTzGpufjScBh50YHKzEu2lxBWhVEHsNGoEXmCmn2hKGfeNLYMzCJpe8cD7gqX7TJluOVpBkAequ6dgMmA==}
@@ -7126,6 +7134,10 @@ snapshots:
   scheduler@0.23.0:
     dependencies:
       loose-envify: 1.4.0
+
+  schema-dts@1.1.2(typescript@5.4.4):
+    dependencies:
+      typescript: 5.4.4
 
   section-matter@1.0.0:
     dependencies:
