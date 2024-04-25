@@ -19,9 +19,9 @@ const Header: React.FC = () => {
       <h1 className='text-[40px] xl:text-[68px] md:text-16 lg:text-[60px] font-bold tracking-tight font-header leading-[1.05] mb-3'>
         {header?.name}
       </h1>
-      <h4 className='text-xl md:text-2xl font-normal font-header leading-[1.25] mb-4'>
+      <h2 className='text-xl md:text-2xl font-normal font-header leading-[1.25] mb-4'>
         {header?.role}
-      </h4>
+      </h2>
       <p className='leading-normal text-lg md:text-base font-normal font-header mb-12'>
         {header?.summary}
       </p>
