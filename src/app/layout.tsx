@@ -39,20 +39,20 @@ const helvetica = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL('https://oluwadamilola.me'),
   title: {
-    template: 'Oluwadamilola - A Frontend Engineer | %s',
-    default: 'Oluwadamilola - A Frontend Engineer'
+    template: 'Oluwadamilola, A Frontend Engineer | %s',
+    default: 'Oluwadamilola, A Frontend Engineer'
   },
   description:
     'Crafting scalable, user-friendly, and reliable web products with outstanding performance.',
   generator: 'Oluwadamilola Babalola',
-  applicationName: `Oluwadamilola - A Frontend Engineer`,
+  applicationName: `Oluwadamilola, A Frontend Engineer`,
   referrer: 'origin-when-cross-origin',
   keywords: [
     'Oluwadamilola Babalola',
     'Portfolio',
     'Oluwadamilola Babalola Portfolio',
     'Frontend Engineer',
-    'Oluwadamilola - A Frontend Engineer',
+    'Oluwadamilola, A Frontend Engineer',
     'Oluwadamilola Babalola - A Frontend Engineer',
     'Oluwadamilola Babalola Frontend Engineer',
     'Babalola Frontend Engineer',
@@ -71,11 +71,11 @@ export const metadata: Metadata = {
   },
   openGraph: {
     url: 'https://oluwadamilola.me',
-    siteName: 'Oluwadamilola - A Frontend Engineer',
+    siteName: 'Oluwadamilola, A Frontend Engineer',
     type: 'website',
     images: {
       url: 'https://res.cloudinary.com/ds8bd6wxr/image/upload/v1713566195/my-portfolio/og-image_qyxxjr.png',
-      alt: 'Oluwadamilola - A Frontend Engineer',
+      alt: 'Oluwadamilola, A Frontend Engineer',
       width: 1200,
       height: 630
     }
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
     creator: '@monsieurdammy',
     images: {
       url: 'https://res.cloudinary.com/ds8bd6wxr/image/upload/v1713566200/my-portfolio/twitter-image_m1izdt.png',
-      alt: 'Oluwadamilola - A Frontend Engineer',
+      alt: 'Oluwadamilola, A Frontend Engineer',
       width: 1200,
       height: 630
     }

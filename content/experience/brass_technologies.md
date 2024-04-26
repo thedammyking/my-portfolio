@@ -62,22 +62,22 @@ roles:
     from: 08/30/2021
     to: "-"
     body: >-
-      - Led the frontend engineering team consisting of three frontend engineers and two mobile engineers, with a focus on building and maintaining various products and applications.
+      - I lead the frontend engineering team consisting of three frontend engineers and two mobile engineers, with a focus on building, maintaining and improving multiple products and applications.
 
-      - Maintained code quality through optimization and strict adherence to conventions, while also scaling and upgrading the codebase. These efforts ensured the reliability of our products and applications.
+      - Maintain code quality through optimization and strict adherence to conventions, while also scaling and upgrading the codebase. These efforts ensure the reliability of our products and applications.
 
-      - Collaborated with cross-functional teams and stakeholders to plan, design, and implement products, ensuring alignment with business objectives.
+      - Collaborate with cross-functional teams and stakeholders to plan, design, and implement products, while maintaining alignment with business objectives.
 
       - Developed products such as Payroll, Virtual Terminals, Cash Collections, Fixed Savings, and more, all designed to help customers grow their businesses.
   - role: Engineering Manager
     from: 01/01/2022
     to: "-"
     body: >-
-      - Develop comprehensive roadmaps designed to align with the broader goals and objectives of the business.
+      - Prepare comprehensive engineering roadmaps designed to align with the company’s broader business goals and objectives.
 
       - Managed several projects, such as the Brass Starter mobile app, in-app onboarding, Brass Business mobile app revamp and more. This involved coordinating teams, meeting project objectives, and developing effective strategies for successful implementation.
 
-      - Held regular one-on-one sessions with my direct reports to offer guidance, feedback, and support. These meetings helped address concerns, discuss career development, and set performance goals, promoting a positive work environment.
+      - Hold regular one-on-one sessions with my direct reports to offer guidance, feedback, and support. These meetings promote a positive work environment by addressing personal concerns, discussing career development, and setting feasible performance goals.
 
       - Led sprint planning meetings and worked on improving processes to boost efficiency and productivity.
 ---

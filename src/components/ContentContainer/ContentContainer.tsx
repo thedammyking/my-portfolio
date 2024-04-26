@@ -30,7 +30,7 @@ const ContentContainer: React.FC<ContentContainerProps> = ({
     <InView
       as='section'
       {...props}
-      threshold={0.2}
+      threshold={label.toLowerCase() === ContentSection.Experience ? [0.1, 0.4, 0.8] : 0.2}
       className={cx('relative scroll-mt-16 lg:scroll-mt-24 lg:pt-0', className)}
       aria-label={label}
       onChange={handleIntersectionChange}
