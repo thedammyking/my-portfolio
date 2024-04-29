@@ -11,6 +11,7 @@ technologies:
   - PHP
   - jQuery
   - MySQL
+  - PhpMyAdmin
 articles: []
 roles:
   - role: Web Developer Intern

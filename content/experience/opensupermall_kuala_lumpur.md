@@ -12,6 +12,7 @@ technologies:
   - Laravel
   - React Native
   - Subversion
+  - PhpMyAdmin
 articles: []
 roles:
   - role: Fullstack Developer

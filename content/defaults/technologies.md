@@ -50,4 +50,5 @@ technologies:
   - Flutter
   - Redux Saga
   - AWS Amplify
+  - PhpMyAdmin
 ---
