@@ -22,7 +22,7 @@ collections:
         name: 'technologies'
         widget: 'list'
         identifier_field: 'item'
-        allow_add: false
+        allow_add: true
         field: { label: Item, name: item, widget: string }
   - label: 'Home Page'
     name: 'home_page'

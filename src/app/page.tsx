@@ -11,6 +11,7 @@ import { getAllArticles } from '@/lib/api/articles';
 import { getAllExperience } from '@/lib/api/experience';
 import { getAboutData, getHeaderData } from '@/lib/api/home';
 import { getAllProjects } from '@/lib/api/projects';
+import { getSkillsData, getStackData, getSummaryData } from '@/lib/api/resume';
 import ActiveSectionStoreProvider from '@/providers/ActiveSectionStoreProvider';
 import DataProvider from '@/providers/DataProvider';
 import { ContentSection } from '@/types/enums';
@@ -56,7 +57,10 @@ export default async function Home() {
     about: await getAboutData(),
     experience: await getAllExperience(),
     projects: await getAllProjects(),
-    articles: await getAllArticles()
+    articles: await getAllArticles(),
+    skills: await getSkillsData(),
+    stack: await getStackData(),
+    summary: await getSummaryData()
   };
 
   const contentSectionKeys = Object.keys(CONTENT_SECTIONS).filter(

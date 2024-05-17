@@ -5,7 +5,7 @@ languages:
   - HTML
   - CSS
   - GraphQL
-  - MySQL
+  - SQL
 frameworks:
   - ReactJS
   - Redux

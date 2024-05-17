@@ -6,6 +6,7 @@ import { Article } from '@/types/interfaces/article';
 import { Experience } from '@/types/interfaces/experience';
 import { About, Header } from '@/types/interfaces/home';
 import { Project } from '@/types/interfaces/project';
+import { Skills, Stack, Summary } from '@/types/interfaces/Resume';
 
 export interface Data {
   header?: Header | null;
@@ -13,6 +14,9 @@ export interface Data {
   experience?: Experience[];
   projects?: Project[];
   articles?: Article[];
+  skills?: Skills | null;
+  stack?: Stack | null;
+  summary?: Summary | null;
 }
 
 export const DataContext = createContext<Data>({});
