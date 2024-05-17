@@ -34,6 +34,7 @@ technologies:
   - PHP
   - jQuery
   - MySQL
+  - SQL
   - Docker
   - Styled Components
   - Flow
