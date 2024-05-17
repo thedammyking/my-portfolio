@@ -1,12 +1,43 @@
 ---
 languages:
   - Typescript
+  - Javascript
+  - HTML
+  - CSS
+  - GraphQL
+  - MySQL
 frameworks:
   - ReactJS
   - Redux
+  - NextJS
+  - Testing Library
+  - Redux Saga
+  - GatsbyJS
+  - GSAP
+  - React Native
+  - Redux Thunk
 tools:
   - Webpack
   - Rollup
   - Vite
   - Git
+  - Redux Tool Kit
+  - NodeJS
+  - Babel
+  - Storybook
+  - CSS Modules
+  - Styled Components
+  - Docker
+  - Cypress
+  - PostCSS
+  - SASS
+  - Jest
+  - Semantic Release
+  - Strapi CMS
+  - Sentry
+  - Algolia
+  - Yup
+  - ChartJS
+  - GitHub Actions
+  - Firebase
 ---
