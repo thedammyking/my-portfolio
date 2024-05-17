@@ -18,13 +18,7 @@ const Download = dynamic(
         function Download({ data }: DownloadProps) {
           const [instance] = modules.usePDF({ document: <Resume data={data} /> });
 
-          return (
-            <>
-              {instance.url && (
-                <a hidden href={instance.url} target='_blank' download='Oluwadamilola-resume.pdf' />
-              )}
-            </>
-          );
+          return <>{instance.url && <a hidden href={instance.url} target='_blank' />}</>;
         }
     ),
   {

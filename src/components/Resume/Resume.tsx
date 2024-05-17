@@ -67,7 +67,7 @@ const Resume: React.FC<ResumeProps> = ({ data }) => {
           fixed
           style={styles.pageNumber}
           render={({ pageNumber, totalPages }) =>
-            totalPages <= 1 ? '' : `Page ${pageNumber} of ${totalPages}`
+            totalPages <= 1 ? '' : `${header?.name} Page ${pageNumber}`
           }
         />
       </Page>

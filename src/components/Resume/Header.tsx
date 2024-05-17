@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    rowGap: 15,
+    rowGap: 10,
     marginTop: 12
   },
   contactInfo: {
