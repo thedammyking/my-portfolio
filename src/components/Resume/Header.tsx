@@ -5,7 +5,7 @@ import { Link, StyleSheet, Text, View } from '@react-pdf/renderer';
 import { uniqueId } from 'lodash';
 
 import { RESUME_CONTACT_LINKS } from '@/data/contants';
-import { Header as HeaderType } from '@/types/interfaces/home';
+import { Header as HeaderData } from '@/types/interfaces/home';
 
 const styles = StyleSheet.create({
   section: {
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
 });
 
 interface HeaderProps {
-  data: HeaderType | null;
+  data: HeaderData | null;
 }
 
 const Header: React.FC<HeaderProps> = ({ data }) => (

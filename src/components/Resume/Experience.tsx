@@ -4,7 +4,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from '@react-pdf/renderer';
 import { uniqueId } from 'lodash';
 
-import { Experience as ExperienceType } from '@/types/interfaces/experience';
+import { Experience as ExperienceData } from '@/types/interfaces/experience';
 
 import ExperienceEntry from './ExperienceEntry';
 
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
 });
 
 interface ExperienceProps {
-  data: ExperienceType[];
+  data: ExperienceData[];
 }
 
 const Experience: React.FC<ExperienceProps> = ({ data }) => {

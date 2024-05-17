@@ -1,6 +1,10 @@
 'use client';
 
+import React from 'react';
 import { StyleSheet, Text, View } from '@react-pdf/renderer';
+import { uniqueId } from 'lodash';
+
+import { Skills as SkillsData } from '@/types/interfaces/Resume';
 
 const styles = StyleSheet.create({
   section: { paddingHorizontal: 30, paddingVertical: 20 },
@@ -11,18 +15,34 @@ const styles = StyleSheet.create({
     fontWeight: 'semibold',
     marginBottom: 10
   },
-  text: {
+  value: { display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: 5 },
+  valueText: {
+    paddingHorizontal: 6,
+    paddingVertical: 3,
+    borderRadius: 10,
+    color: '#0279CE',
+    fontWeight: 'medium',
+    lineHeight: 1.2,
+    backgroundColor: 'rgb(2 121 206 / 0.1)',
     fontFamily: 'Inter',
-    color: '#1A1A1A',
-    fontSize: 11,
-    lineHeight: 1.5
+    fontSize: 10
   }
 });
 
-const Skills = () => (
+interface SkillsProps {
+  data: SkillsData | null;
+}
+
+const Skills: React.FC<SkillsProps> = ({ data }) => (
   <View style={styles.section}>
     <Text style={styles.heading}>Skills</Text>
-    <Text style={styles.text}>Web application development, Leadership, Problem Solving</Text>
+    <View style={styles.value}>
+      {data?.skills.map(skill => (
+        <Text style={styles.valueText} key={uniqueId('skill')}>
+          {skill}
+        </Text>
+      ))}
+    </View>
   </View>
 );
 

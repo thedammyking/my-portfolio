@@ -1,6 +1,10 @@
 'use client';
 
+import React from 'react';
 import { StyleSheet, Text, View } from '@react-pdf/renderer';
+import { uniqueId } from 'lodash';
+
+import { Stack } from '@/types/interfaces/Resume';
 
 const styles = StyleSheet.create({
   section: { paddingHorizontal: 30, paddingVertical: 20, borderBottom: '1px solid #E5E5E5' },
@@ -14,13 +18,13 @@ const styles = StyleSheet.create({
   container: {
     display: 'flex',
     flexDirection: 'column',
-    rowGap: 4
+    rowGap: 12
   },
   item: {
     display: 'flex',
     flexDirection: 'row',
-    columnGap: 3,
-    alignItems: 'center'
+    columnGap: 6,
+    alignItems: 'flex-start'
   },
   itemText: {
     fontFamily: 'Inter',
@@ -28,24 +32,57 @@ const styles = StyleSheet.create({
     lineHeight: 1.5,
     fontSize: 11
   },
-  label: { fontWeight: 'semibold' }
+  label: { fontWeight: 'semibold', padding: 2, width: '24%' },
+  value: { display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: 5, width: '76%' },
+  valueText: {
+    paddingHorizontal: 6,
+    paddingVertical: 3,
+    borderRadius: 10,
+    color: '#0279CE',
+    fontWeight: 'medium',
+    lineHeight: 1.2,
+    backgroundColor: 'rgb(2 121 206 / 0.1)',
+    fontSize: 10
+  }
 });
 
-const TechnologyStack = () => (
+interface TechnologyStackProps {
+  data: Stack | null;
+}
+
+const TechnologyStack: React.FC<TechnologyStackProps> = ({ data }) => (
   <View style={styles.section}>
     <Text style={styles.heading}>Technology Stack</Text>
     <View style={styles.container}>
       <View style={styles.item}>
         <Text style={[styles.itemText, styles.label]}>Languages:</Text>
-        <Text style={styles.itemText}>JavaScript, TypeScript</Text>
+        <View style={styles.value}>
+          {data?.languages.map(language => (
+            <Text style={[styles.itemText, styles.valueText]} key={uniqueId('language')}>
+              {language}
+            </Text>
+          ))}
+        </View>
       </View>
       <View style={styles.item}>
         <Text style={[styles.itemText, styles.label]}>Libraries/Frameworks:</Text>
-        <Text style={styles.itemText}>React, Redux, NextJs, Redux Thunk</Text>
+        <View style={styles.value}>
+          {data?.frameworks.map(framework => (
+            <Text style={[styles.itemText, styles.valueText]} key={uniqueId('framework')}>
+              {framework}
+            </Text>
+          ))}
+        </View>
       </View>
       <View style={styles.item}>
         <Text style={[styles.itemText, styles.label]}>Tools:</Text>
-        <Text style={styles.itemText}>Webpack, Rollup, Vite</Text>
+        <View style={styles.value}>
+          {data?.tools.map(tool => (
+            <Text style={[styles.itemText, styles.valueText]} key={uniqueId('tool')}>
+              {tool}
+            </Text>
+          ))}
+        </View>
       </View>
     </View>
   </View>
