@@ -161,3 +161,50 @@ collections:
       - { label: 'Date', name: 'date', widget: 'string', required: true }
       - { label: 'Featured Image', name: 'thumbnail', widget: 'image', required: true }
       - { label: 'Platform', name: 'platform', widget: 'string', required: true }
+  - label: 'Resume'
+    name: 'resume'
+    files:
+      - label: 'Stack'
+        name: 'stack'
+        file: 'content/resume/stack.md'
+        fields:
+          - label: 'Languages'
+            name: 'languages'
+            widget: 'relation'
+            collection: 'defaults'
+            value_field: 'technologies.*'
+            search_fields: ['technologies.*']
+            options_length: 50
+            multiple: true
+          - label: 'Frameworks'
+            name: 'frameworks'
+            widget: 'relation'
+            collection: 'defaults'
+            value_field: 'technologies.*'
+            search_fields: ['technologies.*']
+            options_length: 50
+            multiple: true
+          - label: 'Tools'
+            name: 'tools'
+            widget: 'relation'
+            collection: 'defaults'
+            value_field: 'technologies.*'
+            search_fields: ['technologies.*']
+            options_length: 50
+            multiple: true
+      - label: 'Skills'
+        name: 'skills'
+        file: 'content/resume/skills.md'
+        fields:
+          - label: 'Skills'
+            name: 'skills'
+            widget: 'list'
+            identifier_field: 'item'
+            allow_add: true
+            field: { label: Item, name: item, widget: string }
+      - label: 'Summary'
+        name: 'summary'
+        file: 'content/resume/summary.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string', required: true }
+          - { label: 'Body', name: 'body', widget: 'markdown', required: true }
