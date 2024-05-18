@@ -4,7 +4,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from '@react-pdf/renderer';
 import { uniqueId } from 'lodash';
 
-import { Stack } from '@/types/interfaces/Resume';
+import { Skills, Stack } from '@/types/interfaces/Resume';
 
 const styles = StyleSheet.create({
   section: { paddingHorizontal: 30, paddingVertical: 20, borderBottom: '1px solid #E5E5E5' },
@@ -48,11 +48,12 @@ const styles = StyleSheet.create({
 
 interface TechnologyStackProps {
   data: Stack | null;
+  expertise: Skills['expertise'];
 }
 
-const TechnologyStack: React.FC<TechnologyStackProps> = ({ data }) => (
+const TechnologyStack: React.FC<TechnologyStackProps> = ({ data, expertise }) => (
   <View style={styles.section}>
-    <Text style={styles.heading}>Technology Stack</Text>
+    <Text style={styles.heading}>Key Skills and Technologies</Text>
     <View style={styles.container}>
       <View style={styles.item}>
         <Text style={[styles.itemText, styles.label]}>Languages:</Text>
@@ -80,6 +81,16 @@ const TechnologyStack: React.FC<TechnologyStackProps> = ({ data }) => (
           {data?.tools.map(tool => (
             <Text style={[styles.itemText, styles.valueText]} key={uniqueId('tool')}>
               {tool}
+            </Text>
+          ))}
+        </View>
+      </View>
+      <View style={styles.item}>
+        <Text style={[styles.itemText, styles.label]}>Expertise:</Text>
+        <View style={styles.value}>
+          {expertise.map(item => (
+            <Text style={[styles.itemText, styles.valueText]} key={uniqueId('expertise')}>
+              {item}
             </Text>
           ))}
         </View>

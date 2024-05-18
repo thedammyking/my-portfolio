@@ -4,7 +4,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from '@react-pdf/renderer';
 import { uniqueId } from 'lodash';
 
-import { Skills as SkillsData } from '@/types/interfaces/Resume';
+import { Skills } from '@/types/interfaces/Resume';
 
 const styles = StyleSheet.create({
   section: { paddingHorizontal: 30, paddingVertical: 20 },
@@ -29,15 +29,15 @@ const styles = StyleSheet.create({
   }
 });
 
-interface SkillsProps {
-  data: SkillsData | null;
+interface SoftSkillsProps {
+  data: Skills['softSkills'];
 }
 
-const Skills: React.FC<SkillsProps> = ({ data }) => (
+const SoftSkills: React.FC<SoftSkillsProps> = ({ data }) => (
   <View style={styles.section}>
-    <Text style={styles.heading}>Skills</Text>
+    <Text style={styles.heading}>Soft Skills</Text>
     <View style={styles.value}>
-      {data?.skills.map(skill => (
+      {data.map(skill => (
         <Text style={styles.valueText} key={uniqueId('skill')}>
           {skill}
         </Text>
@@ -46,4 +46,4 @@ const Skills: React.FC<SkillsProps> = ({ data }) => (
   </View>
 );
 
-export default Skills;
+export default SoftSkills;

@@ -196,8 +196,14 @@ collections:
         name: 'skills'
         file: 'content/resume/skills.md'
         fields:
-          - label: 'Skills'
-            name: 'skills'
+          - label: 'Expertise'
+            name: 'expertise'
+            widget: 'list'
+            identifier_field: 'item'
+            allow_add: true
+            field: { label: Item, name: item, widget: string }
+          - label: 'Soft Skills'
+            name: 'softSkills'
             widget: 'list'
             identifier_field: 'item'
             allow_add: true

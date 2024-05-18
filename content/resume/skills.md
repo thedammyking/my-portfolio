@@ -1,23 +1,21 @@
 ---
-skills:
-  - Frontend Development
+expertise:
   - Scalable Application Development
   - API Integration
   - Responsive/Mobile Design
   - Codebase Maintenance
   - Git/Version Control
-  - Web Accessibility
   - Cross-Browser Development
   - Performance Optimization
   - Testing/Debugging
   - User Experience Enhancement
-  - Technology Adaptability
   - Team Management & Leadership
-  - Problem-Solving
   - Cross-Functional Collaboration
+softSkills:
+  - Technology Adaptability
+  - Problem-Solving
   - Accountability
   - Effective Communication
   - Time management
   - Attention to detail
-  - Accountability
 ---

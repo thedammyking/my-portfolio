@@ -7,7 +7,8 @@ export interface Stack extends FileData {
 }
 
 export interface Skills extends FileData {
-  skills: string[];
+  expertise: string[];
+  softSkills: string[];
 }
 
 export interface Summary extends FileData {

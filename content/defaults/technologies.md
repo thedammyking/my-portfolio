@@ -36,7 +36,7 @@ technologies:
   - MySQL
   - SQL
   - Docker
-  - Styled Components
+  - Styled-components
   - Flow
   - Semaphore CI
   - Laravel

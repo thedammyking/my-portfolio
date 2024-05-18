@@ -7,7 +7,6 @@ languages:
   - GraphQL
   - SQL
 frameworks:
-  - NodeJS
   - ReactJS
   - React Native
   - Redux
@@ -17,44 +16,20 @@ frameworks:
   - NextJS
   - Testing Library
   - GSAP
-  - Lodash
-  - Date-fns
   - Tailwind CSS
-  - Styled Components
-  - ChartJS
-  - Yup
-  - Zod
+  - Styled-components
+  - NodeJS
 tools:
   - Webpack
   - Rollup
-  - Vite
-  - Git
-  - Redux Tool Kit
-  - Babel
   - Storybook
-  - CSS Modules
-  - Docker
-  - Cypress
-  - PostCSS
-  - SASS
   - Jest
+  - SASS
   - Semantic Release
-  - Strapi CMS
   - Sentry
-  - Algolia
   - GitHub Actions
-  - Firebase
   - Axios
   - React Router
-  - Cloudflare
   - PNPM
-  - NPM
-  - Yarn
-  - Vercel
-  - Netlify
-  - Stylelint
-  - Husky
   - Eslint
-  - Prettier
-  - Commitlint
 ---

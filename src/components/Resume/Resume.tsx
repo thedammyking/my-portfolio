@@ -8,7 +8,7 @@ import { Data } from '@/providers/DataProvider';
 import Education from './Education';
 import Experience from './Experience';
 import Header from './Header';
-import Skills from './Skills';
+import SoftSkills from './SoftSkills';
 import Summary from './Summary';
 import TechnologyStack from './TechnologyStack';
 
@@ -58,14 +58,15 @@ const Resume: React.FC<ResumeProps> = ({ data }) => {
       creator='Oluwadamilola Babalola'
       producer='Oluwadamilola Babalola'
       creationDate={new Date()}
+      keywords='Oluwadamilola Babalola, Resume, Senior Frontend Engineer'
     >
       <Page size='A4' style={styles.page}>
         <Header data={header || null} />
         <Summary data={summary || null} />
-        <TechnologyStack data={stack || null} />
+        <TechnologyStack data={stack || null} expertise={skills?.expertise || []} />
         <Experience data={experience || []} />
         <Education />
-        <Skills data={skills || null} />
+        <SoftSkills data={skills?.softSkills || []} />
         <Text
           fixed
           style={styles.pageNumber}
