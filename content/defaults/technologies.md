@@ -52,4 +52,23 @@ technologies:
   - Redux Saga
   - AWS Amplify
   - PhpMyAdmin
+  - VueJS
+  - Lodash
+  - Date-fns
+  - Prettier
+  - Eslint
+  - Husky
+  - Stylelint
+  - Netlify
+  - Vercel
+  - Cloudflare
+  - PNPM
+  - Yarn
+  - NPM
+  - Tailwind CSS
+  - React Router
+  - ExpressJS
+  - NestJS
+  - Axios
+  - D3
 ---
