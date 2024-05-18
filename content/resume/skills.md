@@ -1,8 +1,7 @@
 ---
 skills:
-  - System Design
-  - Architecture
-  - Prototyping
+  - Frontend Development
+  - Scalable Application Development
   - API Integration
   - Responsive/Mobile Design
   - Codebase Maintenance
@@ -11,13 +10,14 @@ skills:
   - Cross-Browser Development
   - Performance Optimization
   - Testing/Debugging
-  - User Experience
-  - Documentation
-  - Problem-Solving
+  - User Experience Enhancement
+  - Technology Adaptability
   - Team Management & Leadership
-  - Collaboration
+  - Problem-Solving
+  - Cross-Functional Collaboration
   - Accountability
-  - Communication
+  - Effective Communication
   - Time management
   - Attention to detail
+  - Accountability
 ---
