@@ -1,8 +1,4 @@
 ---
 title: Summary
 ---
-A skilled Senior Frontend Engineer with over 7 years of experience, I began my programming journey in
-2013 with scripting in Linux OS, which sparked my interest in software development. My expertise lies
-in managing engineering teams and overseeing multiple projects to enhance technical processes. I specialize in building scalable, user-friendly, and high-performing frontend applications. I have consistently
-demonstrated the ability to master new technologies and lead teams in developing digital products that
-align with business objectives and enhance user engagement.
+A Senior Frontend Engineer with over 7 years of experience, specializing in building scalable, user-friendly, and high-performing frontend applications. Adept at managing engineering teams and overseeing multiple projects to enhance technical processes and align with business objectives. Demonstrated expertise in mastering new technologies and leading teams to develop digital products that enhance user engagement and drive business growth. Proficient in a wide array of technologies, including HTML, CSS, JavaScript, TypeScript, ReactJS, and various other libraries and tools. Proven track record of delivering high-quality solutions and maintaining code quality through optimization and strict adherence to conventions. Strong leadership, collaboration, and communication skills, with a focus on fostering a positive work environment and promoting career development.
