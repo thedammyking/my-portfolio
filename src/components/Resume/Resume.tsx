@@ -55,7 +55,14 @@ interface ResumeProps {
 const Resume: React.FC<ResumeProps> = ({ data }) => {
   const { experience, header, skills, stack, summary } = data;
   return (
-    <Document title='Oluwadamilola Resume' author='Oluwadamilola Babalola'>
+    <Document
+      title='Oluwadamilola Resume'
+      subject='Oluwadamilola Resume'
+      author='Oluwadamilola Babalola'
+      creator='Oluwadamilola Babalola'
+      producer='Oluwadamilola Babalola'
+      creationDate={new Date()}
+    >
       <Page size='A4' style={styles.page}>
         <Header data={header || null} />
         <Summary data={summary || null} />
