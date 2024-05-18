@@ -1,6 +1,23 @@
 ---
 skills:
-  - Web application development
-  - Team Leadership
-  - Problem Solving
+  - System Design
+  - Architecture
+  - Prototyping
+  - API Integration
+  - Responsive/Mobile Design
+  - Codebase Maintenance
+  - Git/Version Control
+  - Web Accessibility
+  - Cross-Browser Development
+  - Performance Optimization
+  - Testing/Debugging
+  - User Experience
+  - Documentation
+  - Problem-Solving
+  - Team Management & Leadership
+  - Collaboration
+  - Accountability
+  - Communication
+  - Time management
+  - Attention to detail
 ---
