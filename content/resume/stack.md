@@ -1,32 +1,38 @@
 ---
 languages:
-  - Typescript
-  - Javascript
   - HTML
   - CSS
+  - Javascript
+  - Typescript
   - GraphQL
   - SQL
 frameworks:
+  - NodeJS
   - ReactJS
+  - React Native
   - Redux
+  - Redux Saga
+  - Redux Thunk
+  - GatsbyJS
   - NextJS
   - Testing Library
-  - Redux Saga
-  - GatsbyJS
   - GSAP
-  - React Native
-  - Redux Thunk
+  - Lodash
+  - Date-fns
+  - Tailwind CSS
+  - Styled Components
+  - ChartJS
+  - Yup
+  - Zod
 tools:
   - Webpack
   - Rollup
   - Vite
   - Git
   - Redux Tool Kit
-  - NodeJS
   - Babel
   - Storybook
   - CSS Modules
-  - Styled Components
   - Docker
   - Cypress
   - PostCSS
@@ -36,8 +42,19 @@ tools:
   - Strapi CMS
   - Sentry
   - Algolia
-  - Yup
-  - ChartJS
   - GitHub Actions
   - Firebase
+  - Axios
+  - React Router
+  - Cloudflare
+  - PNPM
+  - NPM
+  - Yarn
+  - Vercel
+  - Netlify
+  - Stylelint
+  - Husky
+  - Eslint
+  - Prettier
+  - Commitlint
 ---

@@ -71,4 +71,6 @@ technologies:
   - NestJS
   - Axios
   - D3
+  - Zod
+  - Commitlint
 ---
