@@ -40,10 +40,6 @@ Font.register({
     {
       src: 'https://res.cloudinary.com/ds8bd6wxr/raw/upload/v1715929185/my-portfolio/font-inter/Inter-SemiBold_ihjout.ttf',
       fontWeight: 600
-    },
-    {
-      src: 'https://res.cloudinary.com/ds8bd6wxr/raw/upload/v1715929184/my-portfolio/font-inter/Inter-Bold_qskknj.ttf',
-      fontWeight: 700
     }
   ]
 });
