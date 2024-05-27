@@ -3,7 +3,6 @@ export const GITHUB_PROFILE = process.env.NEXT_PUBLIC_GITHUB_PROFILE;
 export const LINKEDIN_PROFILE = process.env.NEXT_PUBLIC_LINKEDIN_PROFILE;
 export const X_PROFILE = process.env.NEXT_PUBLIC_X_PROFILE;
 export const INSTAGRAM_PROFILE = process.env.NEXT_PUBLIC_INSTAGRAM_PROFILE;
-export const STACKOVERFLOW_PROFILE = process.env.NEXT_PUBLIC_STACKOVERFLOW_PROFILE;
 export const BLUR_IMAGE = process.env.NEXT_PUBLIC_BLUR_IMAGE;
 export const WEBSITE_URL = process.env.NEXT_PUBLIC_WEBSITE_URL;
 export const PHONE_NUMBER = process.env.NEXT_PUBLIC_PHONE_NUMBER;

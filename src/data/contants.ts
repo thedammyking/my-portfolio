@@ -9,7 +9,6 @@ import {
   ResumeLocationIcon,
   ResumeMailIcon,
   ResumePhoneIcon,
-  StackOverflowIcon,
   XIcon
 } from '@/assets';
 
@@ -20,7 +19,6 @@ import {
   LINKEDIN_PROFILE,
   LOCATION,
   PHONE_NUMBER,
-  STACKOVERFLOW_PROFILE,
   WEBSITE_URL,
   X_PROFILE
 } from './env';
@@ -32,11 +30,6 @@ export const CONTACT_LINKS = [
     icon: GitHubIcon,
     label: 'GitHub',
     url: GITHUB_PROFILE
-  },
-  {
-    icon: StackOverflowIcon,
-    label: 'Stack Overflow',
-    url: STACKOVERFLOW_PROFILE
   },
   {
     icon: MailIcon,

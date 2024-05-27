@@ -18,7 +18,6 @@ export { default as ResumeLinkIcon } from './ResumeLinkIcon';
 export { default as ResumeLocationIcon } from './ResumeLocationIcon';
 export { default as ResumeMailIcon } from './ResumeMailIcon';
 export { default as ResumePhoneIcon } from './ResumePhoneIcon';
-export { default as StackOverflowIcon } from './StackOverflowIcon';
 export { default as StarIcon } from './StarIcon';
 export { default as SystemIcon } from './SystemIcon';
 export { default as XIcon } from './XIcon';
