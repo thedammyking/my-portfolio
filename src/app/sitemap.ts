@@ -13,13 +13,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8
-    },
-    {
-      url: 'https://oluwadamilola.me/list/articles',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8
     }
+    // {
+    //   url: 'https://oluwadamilola.me/list/articles',
+    //   lastModified: new Date(),
+    //   changeFrequency: 'monthly',
+    //   priority: 0.8
+    // }
   ];
 }
 
