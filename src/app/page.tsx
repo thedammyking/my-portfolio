@@ -23,7 +23,7 @@ const jsonLd: Graph = {
       '@type': 'AboutPage',
       '@id': 'https://oluwadamilola.me/#about',
       url: 'https://oluwadamilola.me/#about',
-      name: 'Oluwadamilola, A Frontend Engineer',
+      name: 'Oluwadamilola, Senior Frontend Engineer',
       inLanguage: 'en-US',
       description:
         'Crafting scalable, user-friendly, and reliable web products with outstanding performance.',
